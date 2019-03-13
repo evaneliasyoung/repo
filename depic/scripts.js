@@ -24,7 +24,7 @@ function getFooter () {
   let timeSt = `${hr}:${min}:${sec}`
   document.querySelector('footer').innerHTML = `Hosting ${
     window.pkgs
-  } Packages<br>Currently: ${timeSt}<br>Copyright Evan ${ctt.getUTCFullYear()}`
+  } Packages<br>Currently: ${timeSt}<br>Copyright Evan Elias Young ${ctt.getUTCFullYear()}`
 }
 
 function checkCydia () {
