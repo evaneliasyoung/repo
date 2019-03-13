@@ -51,35 +51,52 @@ function correctCydia () {
   }
 }
 
+function updateMainDepiction () {
+  document.querySelector('[href="changelog.html"]').href = `changelog.html${
+    window.location.search
+  }`
+  for (let el of document.querySelectorAll('[data-depic]')) {
+    el.innerHTML += window.depic[el.dataset.depic]
+  }
+  if (window.depic.screenshots.length > 0) {
+    spawnScreenshots()
+  }
+}
+
+function updateChangeDepiction () {
+  for (let v in window.depic.changelog) {
+    document.querySelector(
+      '#list'
+    ).innerHTML += `<li><p><strong>Changes in Version ${v}</strong></p><p></p><ul>${
+      window.depic.changelog[v]
+    }</ul></li>`
+  }
+}
+
+function updateScreenDepiction () {
+  for (let e of window.depic.screenshots) {
+    document.querySelector(
+      '#list'
+    ).innerHTML += `<li><img src="${e}" class="screenshot-image"></li>`
+  }
+}
+
 function updateDepiction () {
   if (window.body.dataset.purpose === 'main') {
-    for (let el of document.querySelectorAll('[data-depic]')) {
-      el.innerHTML += window.depic[el.dataset.depic]
-    }
-    if (window.depic.screenshots.length > 0) {
-      spawnScreenshots()
-    }
+    updateMainDepiction()
   } else if (window.body.dataset.purpose === 'changelog') {
-    for (let v in window.depic.changelog) {
-      document.querySelector(
-        '#list'
-      ).innerHTML += `<li><p><strong>Changes in Version ${v}</strong></p><p></p><ul>${
-        window.depic.changelog[v]
-      }</ul></li>`
-    }
+    updateChangeDepiction()
   } else if (window.body.dataset.purpose === 'screenshots') {
-    for (let e of window.depic.screenshots) {
-      document.querySelector(
-        '#list'
-      ).innerHTML += `<li><img src="${e}" class="screenshot-image"></li>`
-    }
+    updateScreenDepiction()
   }
 }
 
 function spawnScreenshots () {
   document.querySelector(
     '#content > ul'
-  ).innerHTML += `<li><a href='screenshots.html${window.location.search}' role='button' class='cydia_blank'>View Screenshots</a></li>`
+  ).innerHTML += `<li><a href='screenshots.html${
+    window.location.search
+  }' role='button' class='cydia_blank'>View Screenshots</a></li>`
 }
 
 function load () {
@@ -90,7 +107,6 @@ function load () {
   if (!window.params.repo) {
     window.location.href = '..'
   } else {
-    document.querySelector('[href="changelog.html"]').href = `changelog.html${window.location.search}`
     window
       .fetch(`${window.params.repo}.json`)
       .then(r => r.json())
