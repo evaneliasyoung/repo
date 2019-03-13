@@ -56,7 +56,7 @@ function updateDepiction () {
     for (let el of document.querySelectorAll('[data-depic]')) {
       el.innerHTML += window.depic[el.dataset.depic]
     }
-    window.title = document.getElementById('title').innerHTML
+    window.title = window.depic.title
   } else if (window.body.dataset.purpose === 'changelog') {
     for (let v in window.depic.changelog) {
       document.querySelector(
