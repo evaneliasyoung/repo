@@ -1,0 +1,8 @@
+printf "\e[1mExecute MachStrate\e[0m\n"
+cd /usr/libexec
+./substrate
+find /Library/LaunchDaemons/ -name '*.plist' ! -name "0.reload.plist" -exec launchctl load {} \;
+killall imagent
+printf \e[1m"Daemons Properly Configured\e[0m\n"
+printf "\e[1mStandbye for Respring\e[0m\n"
+killall SpringBoard

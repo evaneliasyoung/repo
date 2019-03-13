@@ -1,0 +1,15 @@
+{
+  "title": "MachSpring",
+  "compat": "10 (mach_portal)",
+  "update": "2017-03-20",
+  "desc": "<p>A simulated, and functional, respring performed from a terminal app (machspring). Please only use this on devices using mach_portal (Yalu101), not Yalu102.</p>",
+  "ver": "0.1.3",
+  "change": "<li>Authorised machspring to run</li><li>Renamed to machspring</li>",
+  "screenshots": [],
+  "changelog": {
+    "0.1.3": "<li>Authorised machspring to run</li><li>Renamed to machspring</li>",
+    "0.1.2": "<li>Fixed internal category</li>",
+    "0.1.1": "<li>Fixed internal depiction</li>",
+    "0.1": "<li>Initial Release</li>"
+  }
+}

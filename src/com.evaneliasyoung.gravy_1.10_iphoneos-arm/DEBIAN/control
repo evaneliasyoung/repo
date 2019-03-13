@@ -1,0 +1,10 @@
+Package: com.evaneliasyoung.gravy
+Name: Gravy
+Version: 1.10
+Architecture: iphoneos-arm
+Depends: com.anemonetheming.anemone
+Description: More icons for ArkLotif's Biscuit
+Author: Evan <evanyoung762@gmail.com>
+Maintainer: Evan <evanyoung762@gmail.com>
+Depiction: https://evaneliasyoung.github.io/depic/com.evaneliasyoung.gravy/
+Section: Themes

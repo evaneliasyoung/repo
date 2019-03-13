@@ -1,0 +1,18 @@
+{
+  "title": "Daßperre",
+  "compat": "7-11",
+  "update": "2017-03-19",
+  "desc": "<p>A LockHTML remake for one of my favorite GroovyLock themes. The original theme is TheStudent's GRAND LS, this is optimised for LockHTML with various settings.</p>",
+  "ver": "1.0.2",
+  "change": "<li>Actually fixed the 24 Hour switch</li>",
+  "screenshots": [
+    "com.evaneliasyoung.achtsperre/screen1.png",
+    "com.evaneliasyoung.achtsperre/screen2.png",
+    "com.evaneliasyoung.achtsperre/screen3.png"
+  ],
+  "changelog": {
+    "1.0.2": "<li>Actually fixed the 24 Hour switch</li>",
+    "1.0.1": "<li>Fixed the 24 Hour switch</li>",
+    "1.0": "<li>Initial Release</li>"
+  }
+}

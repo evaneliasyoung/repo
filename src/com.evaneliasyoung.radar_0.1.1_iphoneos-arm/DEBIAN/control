@@ -1,0 +1,10 @@
+Package: com.evaneliasyoung.radar
+Name: radar
+Version: 0.1.1
+Architecture: iphoneos-arm
+Depends: libactivator
+Description: Control your iOS device over ssh.
+Author: Evan <evanyoung762@gmail.com>
+Maintainer: Evan <evanyoung762@gmail.com>
+Depiction: https://evaneliasyoung.github.io/depic/com.evaneliasyoung.radar/
+Section: Development

@@ -1,0 +1,34 @@
+@font-face {
+   font-family: SanFrancisco;
+   src: url(sanfran.ttf);
+}
+@font-face {
+   font-family: Quicksand;
+   src: url(quicksand.ttf);
+}
+* {
+   font-family: SanFrancisco, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+#precache {
+    opacity: 0;
+}
+
+#clock {
+   z-index: 50;
+   transition: 500ms all;
+}
+#hour, #min1, #min2 {
+    position: relative;
+    animation-duration: 750ms;
+}
+
+@keyframes slideOut {
+    from {left: 0px;}
+    to {left: -1280px;}
+}
+@keyframes slideIn {
+    from {left: 1280px;}
+    to {left: 0px;}
+}

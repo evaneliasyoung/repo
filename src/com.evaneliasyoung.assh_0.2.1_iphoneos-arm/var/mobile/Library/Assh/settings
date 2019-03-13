@@ -1,0 +1,9 @@
+false
+192.168.1.1
+root
+22
+-----------
+is edited, change to true when you're ready
+ip address of target
+user of target
+port to use

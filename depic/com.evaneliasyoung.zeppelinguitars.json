@@ -1,0 +1,17 @@
+{
+  "title": "Zeppelin - Guitars",
+  "compat": "4.2-11",
+  "update": "2017-03-10",
+  "desc": "<p>Adds popular guitar brand logos to Zeppelin.<br>Currently it adds the following brands' logo.</p><ul><li>Gibson</li><li>Gretsch</li><li>Höfner</li><li>Rickenbacker</li></ul>",
+  "ver": "1.1.1",
+  "change": "<li>Added Gretsch</li><li>Fixed Gretsch directory</li>",
+  "screenshots": [
+    "com.evaneliasyoung.zeppelinguitars/screen1.png"
+  ],
+  "changelog": {
+    "1.1.1": "<li>Fixed Gretsch directory</li>",
+    "1.1": "<li>Added Gretsch</li>",
+    "1.0.1": "<li>Fixed .DS_Store</li>",
+    "1.0": "<li>Initial Release</li>"
+  }
+}

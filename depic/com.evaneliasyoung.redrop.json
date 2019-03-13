@@ -1,0 +1,17 @@
+{
+  "title": "ReDrop",
+  "compat": "10 (mach_portal)",
+  "update": "2017-04-27",
+  "desc": "<p>An easier way to restart dropbear (redrop). Please only use this on devices using mach_portal (Yalu101), not Yalu102.</p>",
+  "ver": "0.1.5",
+  "change": "<li>Added su again, you need it</li>",
+  "screenshots": [],
+  "changelog": {
+    "0.1.5": "<li>Added su again, you need it</li>",
+    "0.1.4": "<li>Didn't really need su</li>",
+    "0.1.3": "<li>Added a line-feed</li>",
+    "0.1.2": "<li>Removed extra code</li>",
+    "0.1.1": "<li>Added quotes, should work now</li>",
+    "0.1": "<li>Initial Release</li>"
+  }
+}

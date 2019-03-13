@@ -1,0 +1,9 @@
+Package: com.evaneliasyoung.machspring
+Name: MachSpring
+Version: 0.1.3
+Architecture: iphoneos-arm
+Description: An alternative way to respring with mach_portal
+Author: Evan <evanyoung762@gmail.com>
+Maintainer: Evan <evanyoung762@gmail.com>
+Depiction: https://evaneliasyoung.github.io/depic/com.evaneliasyoung.machspring/
+Section: Development

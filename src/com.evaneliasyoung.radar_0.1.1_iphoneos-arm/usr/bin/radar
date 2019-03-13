@@ -1,0 +1,105 @@
+req=$1
+case $req in
+    "home")
+        que="libactivator.system.homebutton"
+        ;;
+    "lock")
+        que="libactivator.system.sleepbutton"
+        ;;
+    "brightup")
+        que="libactivator.screen.brightness.increase"
+        ;;
+    "brightdown")
+        que="libactivator.screen.brightness.decrease"
+        ;;
+    "brightmax")
+        que="libactivator.screen.brightness.100"
+        ;;
+    "brightmin")
+        que="libactivator.screen.brightness.0"
+        ;;
+    "clearswitch")
+        que="libactivator.system.clear-switcher"
+        ;;
+    "cc")
+        que="libactivator.system.activate-control-center"
+        ;;
+    "switcher")
+        que="libactivaor.system.activate-switcher"
+        ;;
+    "vibe")
+        que="libactivator.system.vibrate"
+        ;;
+    "hapq")
+        que="libactivator.system.haptic.quirk"
+        ;;
+    "hapf")
+        que="libactivator.system.haptic.flick"
+        ;;
+    "hapt")
+        que="libactivator.system.haptic.tap"
+        ;;
+    "respring")
+        que="libactivator.system.respring"
+        ;;
+    "pwrmenu")
+        que="libactivator.system.power-menu"
+        ;;
+    "reach")
+        que="libactivator.system.activate-reachability"
+        ;;
+    "siri")
+        que="libactivator.system.virtual-assistant"
+        ;;
+    "screencap")
+        que="libactivator.system.take-screenshot"
+        ;;
+    "volup")
+        que="libactivator.audio.increase-volume"
+        ;;
+    "voldown")
+        que="libactivator.audio.decrease-volume"
+        ;;
+    "muspause")
+        que="libactivator.ipod.pause-playback"
+        ;;
+    "musplay")
+        que="libactivator.ipod.resume-playback"
+        ;;
+    "app")
+        que=$2
+        ;;
+    "help")
+        echo "Usage: radar <COMMAND> [<app id>]"
+        echo "help - display this help message"
+        echo "home - Press the home button"
+        echo "lock - Press the lock/sleep button"
+        echo "brightup - Increase the brightness"
+        echo "brightdown - Decrease the brightness"
+        echo "brightmax - Maximum the brightness"
+        echo "brightmin - Minimum brightness"
+        echo "clearswitch - Clear the App-Switcher"
+        echo "cc - Display the Control Center"
+        echo "switcher - Display the App-Switcher"
+        echo "vibe - Plays a vibration"
+        echo "hapq - Plays the Haptic 'quirk' (iPhone 6S or newer)"
+        echo "hapf - Plays the Haptic 'flick' (iPhone 6S or newer)"
+        echo "hapt - Plays the Haptic 'tap' (iPhone 6S or newer)"
+        echo "respring - Respring the device"
+        echo "pwrmenu - Display the Power-Menu"
+        echo "reach - Activate reachability mode (iPhone 6 or newer)"
+        echo "siri - Activate siri"
+        echo "screencap - Take a screenshot"
+        echo "volup - Increase the volume"
+        echo "voldown - Decrease the volume"
+        echo "muspause - Pause the playing song"
+        echo "musplay - Play the paused song"
+        echo "app - Launch the appid specified"
+        exit 0
+        ;;
+    *)
+        echo "Unknown command $req: type radar help for help"
+        exit 1
+        ;;
+esac
+activator send $que

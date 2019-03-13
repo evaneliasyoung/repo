@@ -1,0 +1,13 @@
+{
+  "title": "Wemo",
+  "compat": "7-12",
+  "update": "2017-07-21",
+  "desc": "<p>I hate the wemo app, so I made a command line tool for it.</p>",
+  "ver": "0.2",
+  "change": "<li>Precached fonts</li><li>Added proper language picker</li>",
+  "screenshots": [],
+  "changelog": {
+    "0.2": "<li>Added a toggle command</li>",
+    "0.1": "<li>Initial Release</li>"
+  }
+}
