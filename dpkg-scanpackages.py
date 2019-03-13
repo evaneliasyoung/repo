@@ -59,6 +59,8 @@ def getWrite(deb):
     for f in fields:
         if (f in ['MD5sum', 'SHA1', 'SHA256']):
             t = getHash(deb, f)
+        elif (f == 'Size'):
+            t = os.path.getsize(deb)
         else:
             t = runCommand(['dpkg-deb', '-f', deb, f]).strip()
         if t != '':
