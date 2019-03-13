@@ -6,5 +6,5 @@ Depends: com.alexzielenski.zeppelin
 Description: Popular guitar brands for Zeppelin
 Author: Evan <evanyoung762@gmail.com>
 Maintainer: Evan <evanyoung762@gmail.com>
-Depiction: https://evaneliasyoung.github.io/depic/com.evaneliasyoung.zeppelinguitars/
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.zeppelinguitars
 Section: Addons (Zeppelin)

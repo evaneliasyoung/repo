@@ -5,5 +5,5 @@ Architecture: iphoneos-arm
 Description: An easier way to ssh into things, instead of having to retype the info this will do it for you.
 Author: Evan <evanyoung762@gmail.com>
 Maintainer: Evan <evanyoung762@gmail.com>
-Depiction: https://evaneliasyoung.github.io/depic/com.evaneliasyoung.assh/
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.assh
 Section: Development

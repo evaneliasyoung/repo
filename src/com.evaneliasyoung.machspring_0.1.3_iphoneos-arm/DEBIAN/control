@@ -5,5 +5,5 @@ Architecture: iphoneos-arm
 Description: An alternative way to respring with mach_portal
 Author: Evan <evanyoung762@gmail.com>
 Maintainer: Evan <evanyoung762@gmail.com>
-Depiction: https://evaneliasyoung.github.io/depic/com.evaneliasyoung.machspring/
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.machspring
 Section: Development

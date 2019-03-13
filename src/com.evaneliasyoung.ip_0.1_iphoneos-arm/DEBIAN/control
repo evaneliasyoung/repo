@@ -5,5 +5,5 @@ Architecture: iphoneos-arm
 Description: Easily get your ip address.
 Author: Evan <evanyoung762@gmail.com>
 Maintainer: Evan <evanyoung762@gmail.com>
-Depiction: https://evaneliasyoung.github.io/depic/com.evaneliasyoung.ip/
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.ip
 Section: Development

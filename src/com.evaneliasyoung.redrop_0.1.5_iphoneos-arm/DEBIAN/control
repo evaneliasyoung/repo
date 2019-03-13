@@ -5,5 +5,5 @@ Architecture: iphoneos-arm
 Description: An easier way to restart dropbear
 Author: Evan <evanyoung762@gmail.com>
 Maintainer: Evan <evanyoung762@gmail.com>
-Depiction: https://evaneliasyoung.github.io/depic/com.evaneliasyoung.redrop/
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.redrop
 Section: Development
