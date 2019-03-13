@@ -81,6 +81,7 @@ function spawnScreenshots () {
 }
 
 function load () {
+  window.body = document.querySelector('body')
   window.params = parseSearch()
   window.pkgs = 16
 
