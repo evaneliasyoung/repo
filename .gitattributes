@@ -7,3 +7,12 @@
 *.jpeg binary
 *.ico binary
 *.icns binary
+*.aiff binary
+*.mp3 binary
+*.ogg binary
+*.m4a binary
+*.mp4 binary
+*.mov binary
+*.ttf binary
+*.otf binary
+*.woff binary
