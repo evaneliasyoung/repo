@@ -79,7 +79,7 @@ function updateDepiction () {
 function spawnScreenshots () {
   document.querySelector(
     '#content > ul'
-  ).innerHTML += `<li><a href='screenshots.html' role='button' class='cydia_blank'>View Screenshots</a></li>`
+  ).innerHTML += `<li><a href='screenshots.html${window.location.search}' role='button' class='cydia_blank'>View Screenshots</a></li>`
 }
 
 function load () {
@@ -90,6 +90,7 @@ function load () {
   if (!window.params.repo) {
     window.location.href = '..'
   } else {
+    document.querySelector('[href="changelog.html"]').href = `changelog.html${window.location.search}`
     window
       .fetch(`${window.params.repo}.json`)
       .then(r => r.json())
