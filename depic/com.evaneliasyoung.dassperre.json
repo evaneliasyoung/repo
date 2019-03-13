@@ -6,9 +6,9 @@
   "ver": "1.0.2",
   "change": "<li>Actually fixed the 24 Hour switch</li>",
   "screenshots": [
-    "com.evaneliasyoung.achtsperre/screen1.png",
-    "com.evaneliasyoung.achtsperre/screen2.png",
-    "com.evaneliasyoung.achtsperre/screen3.png"
+    "com.evaneliasyoung.dassperre/screen1.png",
+    "com.evaneliasyoung.dassperre/screen2.png",
+    "com.evaneliasyoung.dassperre/screen3.png"
   ],
   "changelog": {
     "1.0.2": "<li>Actually fixed the 24 Hour switch</li>",

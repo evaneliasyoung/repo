@@ -1,0 +1,8 @@
+Origin: Evan's Repo
+Label: Evan's Repo
+Suite: stable
+Version: 3.0.0
+Codename: evaneliasyoung
+Architectures: iphoneos-arm
+Components: main
+Description: Just another hobbyist
