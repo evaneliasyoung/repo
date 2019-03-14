@@ -48,6 +48,8 @@ function correctCydia () {
     for (var i = 0; i < cydiaBlankLinks.length; i++) {
       cydiaBlankLinks[i].target = '_blank'
     }
+    document.querySelector('header').remove()
+    document.querySelector('body').style.margin = '0 0 35px 0'
   }
 }
 
