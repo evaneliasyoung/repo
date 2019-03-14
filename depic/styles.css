@@ -9,7 +9,7 @@ body {
   margin: 80px 0 35px 0;
 }
 .font-body, body {
-  font: 400 16px/1.3em system-ui,BlinkMacSystemFont,-apple-system-font,'Helvetica Neue',sans-serif;
+  font: 400 16px/1.3em system-ui,BlinkMacSystemFont,-apple-system-font,"Helvetica Neue",sans-serif;
   font: -apple-system-body;
 }
 
@@ -17,7 +17,7 @@ body {
 
 h1 {
   font: -apple-system-headline;
-  font-family: system-ui,BlinkMacSystemFont,-apple-system-font,'Helvetica Neue',sans-serif;
+  font-family: system-ui,BlinkMacSystemFont,-apple-system-font,"Helvetica Neue",sans-serif;
   font-weight: 500;
 }
 [role=footer], body > p, h2 {
@@ -75,7 +75,7 @@ h2 {
   padding: 11px 15px;
 }
 .font-bold, b, strong {
-  font-family: system-ui,BlinkMacSystemFont,-apple-system-font,'Helvetica Neue',sans-serif;
+  font-family: system-ui,BlinkMacSystemFont,-apple-system-font,"Helvetica Neue",sans-serif;
   font-weight: 600;
 }
 #content > ul > li > [role=button], #content > ul > li > [role=link], #content > ul > li > p {
@@ -105,14 +105,15 @@ a {
   margin-top: -7px;
   top: 50%;
   right: 15px;
-  content: '';
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NSIgaGVpZ2h0PSI5OSI+PHBvbHlnb24gcG9pbnRzPSIzNC43LDQ5LjcgMCw4NC40IDE1LjEsOTkuNSA2NC44LDQ5LjcgNDkuNywzNC43IDE1LjEsMCAwLDE1LjEiIHN0eWxlPSJmaWxsOiNjN2M3Y2MiLz48L3N2Zz4=);
+  content: "";
+  /* background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NSIgaGVpZ2h0PSI5OSI+PHBvbHlnb24gcG9pbnRzPSIzNC43LDQ5LjcgMCw4NC40IDE1LjEsOTkuNSA2NC44LDQ5LjcgNDkuNywzNC43IDE1LjEsMCAwLDE1LjEiIHN0eWxlPSJmaWxsOiNjN2M3Y2MiLz48L3N2Zz4=); */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMCIgaWQ9IkxheWVyXzEiICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItNzMzLjUgOTc2LjMgNTggOTYuNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAtNzMzLjUgOTc2LjMgNTggOTYuNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+ICAgIDxwb2x5Z29uIGRpc3BsYXk9Im5vbmUiIGZpbGw9IiNDN0M3Q0MiIHBvaW50cz0iLTcxOS45LDk3NSAtNzM1LDk5MC4xIC03MDAuMywxMDI0LjcgLTczNSwxMDU5LjQgLTcxOS45LDEwNzQgLTY3MC4yLDEwMjQuNyAiLz4gICAgPHBhdGggZmlsbD0iI0M3QzdDQyIgZD0iTS02NzYuNiwxMDI3LjFsLTQ0LjYsNDQuNmMtMS40LDEuNC0zLjcsMS40LTUuMSwwbC02LjItNi4yYy0xLjQtMS40LTEuNC0zLjcsMC01LjFsMzMuMi0zMy4yYzEuNC0xLjQsMS40LTMuNywwLTUuMWwtMzMuMi0zMy4yYy0xLjQtMS40LTEuNC0zLjcsMC01LjFsNi4yLTYuMmMxLjQtMS40LDMuNy0xLjQsNS4xLDBsNDQuNiw0NC42Qy02NzUuMSwxMDIzLjMtNjc1LjEsMTAyNS43LTY3Ni42LDEwMjcuMXoiLz48L3N2Zz4=);
   background-size: 100% 100%;
 }
 #content > ul:last-child {
   margin: 5px 0px 0px 0px;
 }
-footer[role='footer'] {
+footer[role="footer"] {
   text-align: center;
 }
 
