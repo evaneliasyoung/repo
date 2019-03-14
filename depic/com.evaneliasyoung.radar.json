@@ -3,8 +3,6 @@
   "compat": "7-12",
   "update": "2017-06-09",
   "desc": "<p>Control your device over ssh</p>",
-  "ver": "0.1.1",
-  "change": "<li>Fixed the help message</li>",
   "screenshots": [],
   "changelog": {
     "0.1.1": "<li>Fixed the help message</li>",

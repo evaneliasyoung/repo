@@ -1,6 +1,6 @@
 Package: com.evaneliasyoung.flachsperre
 Name: Flachsperre
-Version: 1.0.2
+Version: 1.0.3
 Architecture: iphoneos-arm
 Depends: com.bushe.lockhtml4
 Description: Flat design for LockHTML

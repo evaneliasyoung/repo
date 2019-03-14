@@ -1,6 +1,6 @@
 Package: com.evaneliasyoung.achtsperre
 Name: Achtsperre
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Depends: com.bushe.lockhtml4
 Description: Galaxy S8 style clock for LockHTML

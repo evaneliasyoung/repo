@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
 }
+
 #precache {
   opacity: 0;
 }
@@ -21,11 +22,13 @@
   line-height: 100px;
   color: #FFFFFF;
 }
+
 #date-master {
   font-size: 16px;
   line-height: 65px;
   font-weight: bold;
 }
+
 #day, #date {
   font-family: Arial;
 }

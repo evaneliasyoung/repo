@@ -3,8 +3,6 @@
   "compat": "7-10",
   "update": "2017-04-23",
   "desc": "<p>An easier way to use ssh, instead of having to retype all of the connection information it fills it all in from a config file. The information is stored in /var/mobile/Library/Assh/settings.</p>",
-  "ver": "0.2.1",
-  "change": "<li>Nano not needed since privileges are a pain</li>",
   "screenshots": [],
   "changelog": {
     "0.2.1": "<li>Nano not needed since privileges are a pain</li>",

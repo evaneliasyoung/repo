@@ -1,7 +1,5 @@
 function parseSearch () {
-  let query = window.location.search
-    .substring(window.location.search.indexOf('?') + 1)
-    .split('&')
+  let query = window.location.search.substring(window.location.search.indexOf('?') + 1).split('&')
   let params = {}
   let pair
 
@@ -15,16 +13,12 @@ function parseSearch () {
 
 function getFooter () {
   var ctt = new Date()
-  var dct = new Date(
-    ctt.getTime() + ctt.getTimezoneOffset() * 60 * 1000 - 5 * 60 * 60 * 1000
-  )
+  var dct = new Date(ctt.getTime() + ctt.getTimezoneOffset() * 60 * 1000 - 5 * 60 * 60 * 1000)
   let hr = dct.getHours()
   let min = dct.getMinutes() < 10 ? '0' + dct.getMinutes() : dct.getMinutes()
   let sec = dct.getSeconds() < 10 ? '0' + dct.getSeconds() : dct.getSeconds()
   let timeSt = `${hr}:${min}:${sec}`
-  document.querySelector('footer').innerHTML = `Hosting ${
-    window.pkgs
-  } Packages<br>Currently: ${timeSt}<br>Copyright Evan Elias Young 2017-${ctt.getUTCFullYear()}`
+  document.querySelector('footer').innerHTML = `Hosting ${window.pkgs} Packages<br>Currently: ${timeSt}<br>Copyright Evan Elias Young 2017-${ctt.getUTCFullYear()}`
 }
 
 function checkCydia () {
@@ -54,32 +48,25 @@ function correctCydia () {
 }
 
 function updateMainDepiction () {
-  document.querySelector('[href="changelog.html"]').href = `changelog.html${
-    window.location.search
-  }`
-  for (let el of document.querySelectorAll('[data-depic]')) {
-    el.innerHTML += window.depic[el.dataset.depic]
-  }
-  if (window.depic.screenshots.length > 0) {
-    spawnScreenshots()
-  }
+  document.querySelector('[href="changelog.html"]').href = `changelog.html${window.location.search}`
+
+  document.querySelectorAll('[data-depic]').forEach(e => {
+    e.innerHTML = e.innerHTML + window.depic[e.dataset.depic]
+    if (window.depic.screenshots.length > 0) {
+      spawnScreenshots()
+    }
+  })
 }
 
 function updateChangeDepiction () {
   for (let v in window.depic.changelog) {
-    document.querySelector(
-      '#list'
-    ).innerHTML += `<li><p><strong>Changes in Version ${v}</strong></p><p></p><ul>${
-      window.depic.changelog[v]
-    }</ul></li>`
+    document.querySelector('#list').innerHTML += `<li><p><strong>Changes in Version ${v}</strong></p><p></p><ul>${window.depic.changelog[v]}</ul></li>`
   }
 }
 
 function updateScreenDepiction () {
   for (let e of window.depic.screenshots) {
-    document.querySelector(
-      '#list'
-    ).innerHTML += `<li><img src="${e}" class="screenshot-image"></li>`
+    document.querySelector('#list').innerHTML += `<li><img src="${e}" class="screenshot-image"></li>`
   }
 }
 
@@ -94,11 +81,7 @@ function updateDepiction () {
 }
 
 function spawnScreenshots () {
-  document.querySelector(
-    '#content > ul'
-  ).innerHTML += `<li><a href='screenshots.html${
-    window.location.search
-  }' role='button' class='cydia_blank'>View Screenshots</a></li>`
+  document.querySelector('#content > ul').innerHTML += `<li><a href='screenshots.html${window.location.search}' role='button' class='cydia_blank'>View Screenshots</a></li>`
 }
 
 function load () {
@@ -114,6 +97,8 @@ function load () {
       .then(r => r.json())
       .then(r => {
         window.depic = r
+        window.depic.version = Object.keys(window.depic.changelog)[0]
+        window.depic.change = window.depic.changelog[window.depic.version]
       })
       .then(updateDepiction)
   }

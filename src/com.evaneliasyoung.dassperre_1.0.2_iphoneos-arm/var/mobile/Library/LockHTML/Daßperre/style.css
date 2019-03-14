@@ -1,31 +1,29 @@
 @font-face {
-	font-family: AntonioBold;
-	src: url(AntonioBold.ttf);
+  font-family: AntonioBold;
+  src: url(AntonioBold.ttf);
 }
 
 * {
-   font-family: AntonioBold;
-   margin: 0;
-   padding: 0;
+  font-family: AntonioBold;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 #clock {
-	line-height: 96%;
-	text-align: center;
+  line-height: 96%;
+  text-align: center;
 }
-#min {
-}
-#hour {
-}
+
 #date {
-	line-height: 90%;
-	position: relative;
+  line-height: 90%;
+  position: relative;
 }
 #date div {
-	display: inline;
+  display: inline;
 }

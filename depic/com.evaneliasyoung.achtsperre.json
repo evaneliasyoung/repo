@@ -3,12 +3,11 @@
   "compat": "7-11",
   "update": "2017-05-01",
   "desc": "<p>Galaxy S8 style clock for LockHTML, it features an array of customisation features (including languages!).<br>It includes support for the following languages.</p><ul><li>English</li><li>Español</li><li>Deutsche</li></ul>",
-  "ver": "1.0.1",
-  "change": "<li>Fixed language setting</li>",
   "screenshots": [
     "com.evaneliasyoung.achtsperre/screen1.png"
   ],
   "changelog": {
+    "1.0.2": "<li>Format updates</li>",
     "1.0.1": "<li>Fixed language setting</li>",
     "1.0.0": "<li>Initial Release</li>"
   }

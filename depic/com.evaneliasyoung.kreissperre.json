@@ -3,13 +3,12 @@
   "compat": "7-11",
   "update": "2017-03-28",
   "desc": "<p>An Apple Watch style clock for LockHTML. It's a clone of the utility watch face from the Apple Watch. It has a few customisable features; color, size, etc.</p>",
-  "ver": "1.1",
-  "change": "<li>Added date option</li><li>Properly precached fonts</li>",
   "screenshots": [
     "com.evaneliasyoung.kreissperre/screen1.png",
     "com.evaneliasyoung.kreissperre/screen2.png"
   ],
   "changelog": {
+    "1.1.1": "<li>Format updates</li>",
     "1.1": "<li>Added date option</li><li>Properly precached fonts</li>",
     "1.0.2": "<li>Precached fonts</li>",
     "1.0.1": "<li>Fixed dark blue background</li>",
