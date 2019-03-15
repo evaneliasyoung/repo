@@ -78,7 +78,6 @@ def loopDeb(deb):
 
 runCommand(['rm', '-rf', 'Packages*'])
 
-
 listdir = [f for f in os.listdir(os.path.join('.', 'deb'))]
 listdir = [f for f in listdir if (f.endswith('.deb'))]
 listdir.sort()
