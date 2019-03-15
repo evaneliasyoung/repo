@@ -52,10 +52,10 @@ function updateMainDepiction () {
 
   document.querySelectorAll('[data-depic]').forEach(e => {
     e.innerHTML = e.innerHTML + window.depic[e.dataset.depic]
-    if (window.depic.screenshots.length > 0) {
-      spawnScreenshots()
-    }
   })
+  if (window.depic.screenshots.length > 0) {
+    spawnScreenshots()
+  }
 }
 
 function updateChangeDepiction () {
