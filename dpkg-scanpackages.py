@@ -76,13 +76,14 @@ def loopDeb(deb):
     packages.writelines(getWrite(deb))
 
 
-os.system('rm -rf Packages*')
+runCommand(['rm', '-rf', 'Packages*'])
+
+
+listdir = [f for f in os.listdir(os.path.join('.', 'deb'))]
+listdir = [f for f in listdir if (f.endswith('.deb'))]
+listdir.sort()
 
 packages = open('Packages', 'w')
-
-listdir = [f for f in os.listdir(
-    os.path.join('.', 'deb')) if (f.endswith('.deb'))]
-listdir.sort()
 
 for f in listdir:
     loopDeb(os.path.join('.', 'deb', f))
