@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import shutil
+import subprocess
 
 
 def deleteDS():
@@ -14,33 +15,32 @@ def deleteDB():
     os.system(f'rm -rf {os.path.join(".", "deb", "*")}')
 
 
-def parseControl(pkg):
+def runCommand(cmd):
+    out = subprocess.run(cmd, stdout=subprocess.PIPE)
+    out = out.stdout.decode('utf-8')
+    return out
+
+
+def parseControl(root):
     ret = {}
-    ctrl = open(os.path.join('.', 'src', pkg, 'DEBIAN', 'control'), 'r').read()
+    ctrl = open(os.path.join(root, 'DEBIAN', 'control'), 'r').read().strip()
     for l in ctrl.split('\n'):
         ret[l.split(': ')[0].lower()] = ''.join(l.split(': ')[1:])
     return ret
 
 
-def makeDeb(pkg):
-    fld = os.path.join('.', 'src', pkg)
-    deb = os.path.join('.', 'deb', f'{pkg}.deb')
-    os.system(f'dpkg-deb -bZgzip {fld}')
-    shutil.move(f'{fld}.deb', deb)
-
-
 def loopPackage(pkg):
-    ctrl = parseControl(pkg)
-    oldName = pkg
-    oldRoot = os.path.join('.', 'src', oldName)
-    newName = '_'.join(
-        [ctrl['package'], ctrl['version'], ctrl['architecture']])
-    newRoot = os.path.join('.', 'src', newName)
+    ctrl = parseControl(os.path.join('.', 'src', pkg))
+    pkgRoot = os.path.join('.', 'src', pkg)
+    oldDeb = f'{pkg}.deb'
+    oldDebRoot = os.path.join('.', 'src', oldDeb)
+    newDeb = '_'.join([ctrl['package'], ctrl['version'],
+                       ctrl['architecture']]) + '.deb'
+    newDebRoot = os.path.join('.', 'deb', newDeb)
 
-    if (oldRoot != newRoot):
-        shutil.move(oldRoot, newRoot)
-
-    makeDeb(newName)
+    runCommand(['dpkg-deb', '-bZgzip', pkgRoot])
+    shutil.move(oldDebRoot, newDebRoot)
+    print(f'{pkg} => {newDeb}')
 
 
 deleteDS()
