@@ -2,14 +2,17 @@
 import os
 import shutil
 
+
 def deleteDS():
     for root, dirs, files in os.walk('.'):
         for f in files:
             if f.endswith(".DS_Store"):
                 os.remove(os.path.join(root, f))
 
+
 def deleteDB():
     os.system(f'rm -rf {os.path.join(".", "deb", "*")}')
+
 
 def parseControl(pkg):
     ret = {}
@@ -18,19 +21,27 @@ def parseControl(pkg):
         ret[l.split(': ')[0].lower()] = ''.join(l.split(': ')[1:])
     return ret
 
+
 def makeDeb(pkg):
     fld = os.path.join('.', 'src', pkg)
     deb = os.path.join('.', 'deb', f'{pkg}.deb')
     os.system(f'dpkg-deb -bZgzip {fld}')
-    os.rename(f'{fld}.deb', deb)
+    shutil.move(f'{fld}.deb', deb)
+
 
 def loopPackage(pkg):
     ctrl = parseControl(pkg)
-    root = os.path.join('.', 'src', pkg)
-    pkg = '_'.join([ctrl['package'], ctrl['version'], ctrl['architecture']])
-    newt = os.path.join('.', 'src', pkg)
-    shutil.move(root, newt)
-    makeDeb(pkg)
+    oldName = pkg
+    oldRoot = os.path.join('.', 'src', oldName)
+    newName = '_'.join(
+        [ctrl['package'], ctrl['version'], ctrl['architecture']])
+    newRoot = os.path.join('.', 'src', newName)
+
+    if (oldRoot != newRoot):
+        shutil.move(oldRoot, newRoot)
+
+    makeDeb(newName)
+
 
 deleteDS()
 deleteDB()

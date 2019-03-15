@@ -38,10 +38,12 @@ fields = [
     'Icon'
 ]
 
+
 def runCommand(cmd):
     out = subprocess.run(cmd, stdout=subprocess.PIPE)
     out = out.stdout.decode('utf-8')
     return out
+
 
 def getHash(file, type):
     raw = open(file, 'rb').read()
@@ -51,8 +53,9 @@ def getHash(file, type):
         hsh = hashlib.sha1(raw)
     if type == 'SHA256':
         hsh = hashlib.sha256(raw)
-        
+
     return hsh.hexdigest()
+
 
 def getWrite(deb):
     lines = []
@@ -68,14 +71,17 @@ def getWrite(deb):
     lines.append('\n')
     return lines
 
+
 def loopDeb(deb):
     packages.writelines(getWrite(deb))
+
 
 os.system('rm -rf Packages*')
 
 packages = open('Packages', 'w')
 
-listdir = [f for f in os.listdir(os.path.join('.', 'deb')) if (f.endswith('.deb'))]
+listdir = [f for f in os.listdir(
+    os.path.join('.', 'deb')) if (f.endswith('.deb'))]
 listdir.sort()
 
 for f in listdir:
