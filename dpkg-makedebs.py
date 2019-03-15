@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import shutil
 
 def deleteDS():
     for root, dirs, files in os.walk('.'):
@@ -26,8 +27,9 @@ def makeDeb(pkg):
 def loopPackage(pkg):
     ctrl = parseControl(pkg)
     root = os.path.join('.', 'src', pkg)
-    newt = os.path.join('.', 'src', '_'.join([ctrl['package'], ctrl['version'], ctrl['architecture']]))
-    os.rename(root, newt)
+    pkg = '_'.join([ctrl['package'], ctrl['version'], ctrl['architecture']])
+    newt = os.path.join('.', 'src', pkg)
+    shutil.move(root, newt)
     makeDeb(pkg)
 
 deleteDS()
