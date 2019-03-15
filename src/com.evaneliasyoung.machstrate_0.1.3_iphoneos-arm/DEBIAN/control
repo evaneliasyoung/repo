@@ -1,9 +1,0 @@
-Package: com.evaneliasyoung.machstrate
-Name: MachStrate
-Version: 0.1.3
-Architecture: iphoneos-arm
-Description: The correct way to enable substrate for mach_portal.
-Author: Evan <evanyoung762@gmail.com>
-Maintainer: Evan <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.machstrate
-Section: Development

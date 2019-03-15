@@ -1,0 +1,9 @@
+Package: com.evaneliasyoung.ip
+Name: ip
+Version: 0.1
+Architecture: iphoneos-arm
+Description: Easily get your ip address.
+Author: Evan <evanyoung762@gmail.com>
+Maintainer: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.ip
+Section: Development

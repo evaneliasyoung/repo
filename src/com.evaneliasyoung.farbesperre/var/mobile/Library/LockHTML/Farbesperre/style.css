@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#precache {
+  opacity: 0;
+}
+
+#clock {
+  float: right;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,10 @@
+Package: com.evaneliasyoung.dassperre
+Name: Daßperre
+Version: 1.0.3
+Architecture: iphoneos-arm
+Depends: com.bushe.lockhtml4
+Description: A remake of my favorite GroovyLock theme.
+Author: Evan <evanyoung762@gmail.com>
+Maintainer: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.dassperre
+Section: Widgets

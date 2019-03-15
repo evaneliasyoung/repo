@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>default</key>
+            <string>384</string>
+            <key>label</key>
+            <string>Clock Radius</string>
+            <key>name</key>
+            <string>clockRadius</string>
+            <key>type</key>
+            <string>edit</string>
+        </dict>
+        <dict>
+            <key>default</key>
+            <string>FFCC00</string>
+            <key>label</key>
+            <string>Second Hand Color</string>
+            <key>name</key>
+            <string>secColor</string>
+            <key>type</key>
+            <string>edit</string>
+        </dict>
+        <dict>
+            <key>default</key>
+            <string>000000</string>
+            <key>label</key>
+            <string>Knot Hole Color</string>
+            <key>name</key>
+            <string>knotColor</string>
+            <key>type</key>
+            <string>edit</string>
+        </dict>
+        <dict>
+            <key>default</key>
+            <string>true</string>
+            <key>label</key>
+            <string>Show Date</string>
+            <key>name</key>
+            <string>showDate</string>
+            <key>type</key>
+            <string>switch</string>
+        </dict>
+        <dict>
+            <key>default</key>
+            <string>true</string>
+            <key>label</key>
+            <string>Show Hour Numbers</string>
+            <key>name</key>
+            <string>showHours</string>
+            <key>type</key>
+            <string>switch</string>
+        </dict>
+        <dict>
+            <key>default</key>
+            <string>true</string>
+            <key>label</key>
+            <string>Show Second Hand</string>
+            <key>name</key>
+            <string>showSecHand</string>
+            <key>type</key>
+            <string>switch</string>
+        </dict>
+    </array>
+</plist>

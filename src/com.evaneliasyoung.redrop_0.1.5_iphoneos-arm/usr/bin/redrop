@@ -1,2 +1,0 @@
-printf "\e[1mRestarting DropBear\e[0m\n"
-su -c 'dropbear -F -R -p 22'

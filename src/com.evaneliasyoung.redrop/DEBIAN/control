@@ -1,0 +1,9 @@
+Package: com.evaneliasyoung.redrop
+Name: ReDrop
+Version: 0.1.5
+Architecture: iphoneos-arm
+Description: An easier way to restart dropbear
+Author: Evan <evanyoung762@gmail.com>
+Maintainer: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.redrop
+Section: Development

@@ -1,0 +1,9 @@
+Package: com.evaneliasyoung.wemo
+Name: Wemo
+Version: 0.2
+Architecture: iphoneos-arm
+Description: I hate the wemo app, so I made a command line tool for it.
+Author: Evan <evanyoung762@gmail.com>
+Maintainer: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.wemo
+Section: Development
