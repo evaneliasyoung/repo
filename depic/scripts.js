@@ -3,7 +3,7 @@ function parseSearch () {
   let params = {}
   let pair
 
-  for (var i = query.length - 1; i >= 0; i--) {
+  for (let i = query.length - 1; i >= 0; i--) {
     pair = query[i].split('=')
     params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '')
   }
@@ -12,8 +12,8 @@ function parseSearch () {
 }
 
 function getFooter () {
-  var ctt = new Date()
-  var dct = new Date(ctt.getTime() + ctt.getTimezoneOffset() * 60 * 1000 - 5 * 60 * 60 * 1000)
+  let ctt = new Date()
+  let dct = new Date(ctt.getTime() + ctt.getTimezoneOffset() * 60 * 1000 - 5 * 60 * 60 * 1000)
   let hr = dct.getHours()
   let min = dct.getMinutes() < 10 ? '0' + dct.getMinutes() : dct.getMinutes()
   let sec = dct.getSeconds() < 10 ? '0' + dct.getSeconds() : dct.getSeconds()
@@ -22,28 +22,26 @@ function getFooter () {
 }
 
 function checkCydia () {
-  var classList = document.documentElement.classList
   if (navigator.userAgent.indexOf('Cydia') !== -1) {
     if (document.title.indexOf(' \u00b7 ') !== -1) {
       document.title = document.title.split(' \u00b7 ')[0]
     }
-    classList.add('cydia')
+    document.documentElement.classList.add('cydia')
   } else {
-    classList.remove('cydia', 'depiction')
+    document.documentElement.classList.remove('cydia', 'depiction')
   }
 }
 
 function correctCydia () {
   if (document.documentElement.classList.contains('cydia')) {
-    var base = document.createElement('base')
-    var cydiaBlankLinks = document.getElementsByClassName('cydia_blank')
+    let base = document.createElement('base')
+    let cydiaBlankLinks = document.getElementsByClassName('cydia_blank')
+
     base.target = '_open'
     document.head.appendChild(base)
-    for (var i = 0; i < cydiaBlankLinks.length; i++) {
+    for (let i = 0; i < cydiaBlankLinks.length; i++) {
       cydiaBlankLinks[i].target = '_blank'
     }
-    document.querySelector('header').remove()
-    document.querySelector('body').style.margin = '0 0 35px 0'
   }
 }
 
@@ -73,15 +71,23 @@ function updateScreenDepiction () {
 function updateDepiction () {
   if (window.body.dataset.purpose === 'main') {
     updateMainDepiction()
+    spawnBackButton()
   } else if (window.body.dataset.purpose === 'changelog') {
     updateChangeDepiction()
+    spawnBackButton()
   } else if (window.body.dataset.purpose === 'screenshots') {
     updateScreenDepiction()
+    spawnBackButton()
   }
 }
 
+function spawnBackButton () {
+  document.querySelector('header > div > a').innerHTML = window.body.dataset.purpose === 'main' ? "Evan's Repo" : window.depic.title
+  document.querySelector('header > div > a').href = window.body.dataset.purpose === 'main' ? '..' : `./${window.location.search}`
+}
+
 function spawnScreenshots () {
-  document.querySelector('#content > ul').innerHTML += `<li><a href='screenshots.html${window.location.search}' role='button' class='cydia_blank'>View Screenshots</a></li>`
+  document.querySelector('main > ul').innerHTML += `<li><a href='screenshots.html${window.location.search}' role='button' class='cydia_blank'>View Screenshots</a></li>`
 }
 
 function load () {
