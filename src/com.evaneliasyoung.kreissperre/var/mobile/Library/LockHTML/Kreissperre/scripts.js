@@ -11,14 +11,17 @@ function drawCircle (ctx, color, radius, pos) {
   ctx.arc(pos[0], pos[1], radius, 0, 2 * Math.PI)
   ctx.fill()
 }
+
 function drawFace (ctx, color, radius) {
   drawCircle(ctx, color, radius * 0.04, [0, 0])
   ctx.strokeStyle = 'white'
 }
+
 function drawCenter (ctx, color, radius) {
   drawCircle(ctx, color, radius * 0.03, [0, 0])
   drawCircle(ctx, '#' + window['knotColor'], radius * 0.01, [0, 0])
 }
+
 function drawHours (ctx, color, radius) {
   let ang
   let num
@@ -40,6 +43,7 @@ function drawHours (ctx, color, radius) {
     }
   }
 }
+
 function drawDate (ctx, color, radius) {
   ctx.font = 'bold 72px SanFrancisco, sans-serif'
   ctx.fillStyle = color
@@ -48,6 +52,7 @@ function drawDate (ctx, color, radius) {
 
   ctx.fillText(window['now'].getDate().toString(), radius / 2.5, 0)
 }
+
 function drawHands (ctx, color, radius) {
   let hour = window['now'].getHours()
   let minute = window['now'].getMinutes()
@@ -69,6 +74,7 @@ function drawHands (ctx, color, radius) {
     drawHand(ctx, second, radius * -0.1, radius * 0.01, true)
   }
 }
+
 function drawHand (ctx, pos, length, width, second) {
   let y = 0
   if (!second) {
@@ -91,6 +97,7 @@ function drawHand (ctx, pos, length, width, second) {
   ctx.stroke()
   ctx.rotate(-pos)
 }
+
 function drawLines (ctx, color, radius, length, width, cap) {
   let ang
   for (let angle = 0; angle < 60; angle++) {

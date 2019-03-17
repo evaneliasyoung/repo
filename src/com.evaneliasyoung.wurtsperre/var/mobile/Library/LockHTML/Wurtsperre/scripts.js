@@ -97,6 +97,7 @@ function numText (hr, min) {
   }
   return words
 }
+
 function updateConfig () {
   document.getElementById('clock').style.opacity = window['clockOpacity']
   document.getElementById('clock').style.textAlign = window['clockAlignHoriz']
@@ -134,10 +135,12 @@ function updateConfig () {
       break
   }
 }
+
 function animatePhaseTwo (elem, newt) {
   elem.innerHTML = newt
   elem.style['animation-name'] = 'slideIn'
 }
+
 function animateClock (elem, newt) {
   if (elem.innerHTML === newt) {
   } else {

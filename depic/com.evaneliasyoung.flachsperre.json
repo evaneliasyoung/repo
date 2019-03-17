@@ -1,13 +1,14 @@
 {
   "title": "Flachsperre",
   "compat": "7-11",
-  "update": "2019-03-14",
+  "update": "2019-03-16",
   "desc": "<p>Flat clock for LockHTML. Includes a line to the left of the time for aesthetics.<br>It includes support for the following languages.</p><ul><li>English</li><li>Español</li><li>Deutsche</li></ul>",
   "screenshots": [
     "com.evaneliasyoung.flachsperre/screen1.png",
     "com.evaneliasyoung.flachsperre/screen2.png"
   ],
   "changelog": {
+    "1.0.4": "<li>Format updates</li>",
     "1.0.3": "<li>Format updates</li>",
     "1.0.2": "<li>Precached fonts</li><li>Added proper language picker</li>",
     "1.0.1": "<li>Fixed .DS_STORE</li>",

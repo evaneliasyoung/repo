@@ -1,10 +1,12 @@
 @font-face {
   font-family: SanFrancisco;
+
   src: url(sanfran.ttf);
 }
 
 * {
   font-family: SanFrancisco, sans-serif;
+
   margin: 0;
   padding: 0;
 }
@@ -19,9 +21,10 @@
 
 #clock {
   position: relative;
-  display: inline-block;
-  top: -14px;
   z-index: 50;
+  top: -14px;
+
+  display: inline-block;
 }
 
 #time {

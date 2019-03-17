@@ -1,10 +1,12 @@
 @font-face {
   font-family: Nougat;
+
   src: url(nougat.ttf);
 }
 
 * {
   font-family: Nougat, sans-serif;
+
   margin: 0;
   padding: 0;
 }
@@ -14,19 +16,23 @@
 }
 
 #clock {
-  z-index: 50;
-  text-align: center;
-  margin-top: 50px;
   font-size: 112px;
   font-weight: 100;
   line-height: 100px;
+
+  z-index: 50;
+
+  margin-top: 50px;
+
+  text-align: center;
+
   color: #FFFFFF;
 }
 
 #date-master {
   font-size: 16px;
-  line-height: 65px;
   font-weight: bold;
+  line-height: 65px;
 }
 
 #day, #date {

@@ -1,10 +1,12 @@
 @font-face {
   font-family: AntonioBold;
+
   src: url(AntonioBold.ttf);
 }
 
 * {
   font-family: AntonioBold;
+
   margin: 0;
   padding: 0;
 }
@@ -17,11 +19,13 @@ body {
 
 #clock {
   line-height: 96%;
+
   text-align: center;
 }
 
 #date {
   line-height: 90%;
+
   position: relative;
 }
 #date div {

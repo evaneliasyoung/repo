@@ -1,13 +1,14 @@
 {
   "title": "Kreißperre",
   "compat": "7-11",
-  "update": "2019-03-14",
+  "update": "2019-03-16",
   "desc": "<p>An Apple Watch style clock for LockHTML. It's a clone of the utility watch face from the Apple Watch. It has a few customisable features; color, size, etc.</p>",
   "screenshots": [
     "com.evaneliasyoung.kreissperre/screen1.png",
     "com.evaneliasyoung.kreissperre/screen2.png"
   ],
   "changelog": {
+    "1.1.2": "<li>Format updates</li>",
     "1.1.1": "<li>Format updates</li>",
     "1.1": "<li>Added date option</li><li>Properly precached fonts</li>",
     "1.0.2": "<li>Precached fonts</li>",

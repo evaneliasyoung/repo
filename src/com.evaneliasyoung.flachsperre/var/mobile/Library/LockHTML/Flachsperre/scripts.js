@@ -19,9 +19,11 @@ function drawLine () {
 
   return ctx
 }
+
 function updateConfig () {
   document.getElementById('clock').style.opacity = window['clockOpacity']
   document.getElementById('clock').style.color = `#${window['clockColor']}`
+
   for (let i = 0; i < document.getElementsByTagName('*').length; i++) {
     document.getElementsByTagName('*')[i].style.fontFamily = 'SanFrancisco'
   }
@@ -29,6 +31,7 @@ function updateConfig () {
     document.getElementById('clock').style['text-shadow'] = '0 5px 10px rgba(0,0,0,0.2)'
   }
 }
+
 function updateClock () {
   let currentTime = new Date()
   let currentHours = currentTime.getHours()

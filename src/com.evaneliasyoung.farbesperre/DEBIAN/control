@@ -1,6 +1,6 @@
 Package: com.evaneliasyoung.farbesperre
 Name: Farbesperre
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Depends: com.bushe.lockhtml4
 Description: Color Apple Watch style clock for LockHTML
