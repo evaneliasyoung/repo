@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "San Fran Symbols";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("sanfransymbols.woff2") format("woff2"),
+  url("sanfransymbols.woff") format("woff");
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -54,6 +63,7 @@ article, aside, footer, header, nav, section {
 }
 
 header {
+  position: fixed;
   z-index: 10;
 
   width: 100%;
@@ -83,26 +93,29 @@ header > div * {
 header > div > a {
   position: relative;
 
-  padding-left: 20px;
+  padding-left: 24px;
 
   text-align: left;
 }
 
-header > div > a:first-child::before {
+main > ul > li > [role=button]:after, main > ul > li > [role=link]:after, header > div > a:first-child::before {
+  font-family: "San Fran Symbols";
+
   position: absolute;
-  top: 50%;
-  left: 0px;
 
   display: block;
+}
+
+header > div > a:first-child::before {
+  font-size: 28px;
+
+  left: 0px;
 
   width: 15px;
   height: 21px;
-  margin-top: -10px;
+  margin-top: 1px;
 
-  content: "";
-
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItNzM4IDk3Ni42IDU4IDk2LjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTczOCA5NzYuNiA1OCA5Ni40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2Rpc3BsYXk6bm9uZTtmaWxsOiNDN0M3Q0M7fS5zdDF7ZmlsbDojMDA3QUZGO308L3N0eWxlPjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iLTE0NTcuOSwxOTUxLjYgLTE0NzMsMTk2Ni43IC0xNDM4LjMsMjAwMS4zIC0xNDczLDIwMzYgLTE0NTcuOSwyMDUwLjYgLTE0MDguMiwyMDAxLjMgIi8+PHBhdGggY2xhc3M9InN0MSIgZD0iTS03MzYuOSwxMDIwLjRsNDEuNS00MS41YzMuMS0zLjEsOC4yLTMuMSwxMS4zLDBsMCwwYzMuMSwzLjEsMy4xLDguMiwwLDExLjNsLTI3LDI3Yy0zLjEsMy4xLTMuMSw4LjIsMCwxMS4zbDI3LDI3YzMuMSwzLjEsMy4xLDguMiwwLDExLjNoMGMtMy4xLDMuMS04LjIsMy4xLTExLjMsMGwtNDEuNS00MS41Qy03MzguNCwxMDI0LjItNzM4LjQsMTAyMS44LTczNi45LDEwMjAuNHoiLz48L3N2Zz4=);
-  background-size: 100% 100%;
+  content: "\E92A";
 }
 
 header > div > h1 {
@@ -184,21 +197,16 @@ a {
 }
 
 main > ul > li > [role=button]:after, main > ul > li > [role=link]:after {
-  position: absolute;
   top: 50%;
   right: 15px;
 
-  display: block;
-
   width: 10px;
   height: 13px;
-  margin-top: -7px;
+  margin-top: -10px;
 
-  content: "";
-  /* background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NSIgaGVpZ2h0PSI5OSI+PHBvbHlnb24gcG9pbnRzPSIzNC43LDQ5LjcgMCw4NC40IDE1LjEsOTkuNSA2NC44LDQ5LjcgNDkuNywzNC43IDE1LjEsMCAwLDE1LjEiIHN0eWxlPSJmaWxsOiNjN2M3Y2MiLz48L3N2Zz4=); */
+  content: "\E929";
 
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMCIgaWQ9IkxheWVyXzEiICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItNzMzLjUgOTc2LjMgNTggOTYuNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAtNzMzLjUgOTc2LjMgNTggOTYuNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+ICAgIDxwb2x5Z29uIGRpc3BsYXk9Im5vbmUiIGZpbGw9IiNDN0M3Q0MiIHBvaW50cz0iLTcxOS45LDk3NSAtNzM1LDk5MC4xIC03MDAuMywxMDI0LjcgLTczNSwxMDU5LjQgLTcxOS45LDEwNzQgLTY3MC4yLDEwMjQuNyAiLz4gICAgPHBhdGggZmlsbD0iI0M3QzdDQyIgZD0iTS02NzYuNiwxMDI3LjFsLTQ0LjYsNDQuNmMtMS40LDEuNC0zLjcsMS40LTUuMSwwbC02LjItNi4yYy0xLjQtMS40LTEuNC0zLjcsMC01LjFsMzMuMi0zMy4yYzEuNC0xLjQsMS40LTMuNywwLTUuMWwtMzMuMi0zMy4yYy0xLjQtMS40LTEuNC0zLjcsMC01LjFsNi4yLTYuMmMxLjQtMS40LDMuNy0xLjQsNS4xLDBsNDQuNiw0NC42Qy02NzUuMSwxMDIzLjMtNjc1LjEsMTAyNS43LTY3Ni42LDEwMjcuMXoiLz48L3N2Zz4=);
-  background-size: 100% 100%;
+  color: #C7C7CC;
 }
 
 main > ul:last-child {
