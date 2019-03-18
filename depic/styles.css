@@ -7,6 +7,11 @@
   url("sanfransymbols.woff") format("woff");
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
