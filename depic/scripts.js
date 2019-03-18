@@ -11,16 +11,6 @@ function parseSearch () {
   return params
 }
 
-function getFooter () {
-  let txt = [`Hosting ${window.pkgs} Packages`, `${window.d.name} iOS ${window.d.ver}`, 'Copyright Evan Elias Young 2017-2019']
-
-  if (window.d.name === 'Unknown') {
-    txt[1] = 'Device Unknown'
-  }
-
-  document.querySelector('footer').innerHTML = txt.join('<br>')
-}
-
 function checkCydia () {
   if (navigator.userAgent.indexOf('Cydia') !== -1) {
     if (document.title.indexOf(' \u00b7 ') !== -1) {
@@ -43,6 +33,15 @@ function correctCydia () {
       cydiaBlankLinks[i].target = '_blank'
     }
   }
+}
+
+function getFooter () {
+  let txt = [`Hosting ${window.pkgs} Packages`, ``, 'Copyright Evan Elias Young 2017-2019']
+
+  txt[1] = window.d.name !== 'Unknown' ? window.d.name : 'Device Unknown'
+  txt[1] += window.d.version !== '' ? ` iOS ${window.d.version}` : ''
+
+  document.querySelector('footer').innerHTML = txt.join('<br>')
 }
 
 function updateMainDepiction () {
@@ -92,8 +91,8 @@ function spawnScreenshots () {
 
 function mainLoad () {
   window.d = new window.Device()
-  window.d.name = window.d.product_name()
-  window.d.ver = window.d.version()
+  window.d.name = window.d.getName()
+  window.d.version = window.d.getVersion()
   window.body = document.querySelector('body')
   window.params = parseSearch()
   window.pkgs = 16
