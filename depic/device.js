@@ -50,7 +50,7 @@ Device.prototype.getBetween = function (content, start, end) {
 }
 
 Device.prototype.getVersion = function () {
-  let ver = this.getBetween(navigator.userAgent, ' OS ', ' like').replace('_', '.')
+  let ver = this.getBetween(navigator.userAgent, ' OS ', ' like').replace(/_/g, '.')
 
   return ver !== undefined || ver !== null || ver !== '' ? ver : 'Unknown'
 }
