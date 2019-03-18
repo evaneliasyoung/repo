@@ -77,6 +77,10 @@ header {
   grid-row: 1 / span 1;
 }
 
+header, header * {
+  overflow-x: hidden;
+}
+
 header > div {
   display: grid;
 

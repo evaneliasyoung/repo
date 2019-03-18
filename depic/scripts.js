@@ -12,13 +12,13 @@ function parseSearch () {
 }
 
 function getFooter () {
-  let ctt = new Date()
-  let dct = new Date(ctt.getTime() + ctt.getTimezoneOffset() * 60 * 1000 - 5 * 60 * 60 * 1000)
-  let hr = dct.getHours()
-  let min = dct.getMinutes() < 10 ? '0' + dct.getMinutes() : dct.getMinutes()
-  let sec = dct.getSeconds() < 10 ? '0' + dct.getSeconds() : dct.getSeconds()
-  let timeSt = `${hr}:${min}:${sec}`
-  document.querySelector('footer').innerHTML = `Hosting ${window.pkgs} Packages<br>Currently: ${timeSt}<br>Copyright Evan Elias Young 2017-${ctt.getUTCFullYear()}`
+  let txt = [`Hosting ${window.pkgs} Packages`, `${window.d.name} iOS ${window.d.ver}`, 'Copyright Evan Elias Young 2017-2019']
+
+  if (window.d.name === 'Unknown') {
+    txt[1] = 'Device Unknown'
+  }
+
+  document.querySelector('footer').innerHTML = txt.join('<br>')
 }
 
 function checkCydia () {
@@ -82,7 +82,7 @@ function updateDepiction () {
 }
 
 function spawnBackButton () {
-  document.querySelector('header > div > a').innerHTML = window.body.dataset.purpose === 'main' ? "Evan's Repo" : window.depic.title
+  document.querySelector('header > div > a').innerHTML = window.body.dataset.purpose === 'main' ? 'Repo' : window.depic.title
   document.querySelector('header > div > a').href = window.body.dataset.purpose === 'main' ? '..' : `./${window.location.search}`
 }
 
@@ -90,10 +90,24 @@ function spawnScreenshots () {
   document.querySelector('main > ul').innerHTML += `<li><a href='screenshots.html${window.location.search}' role='button' class='cydia_blank'>View Screenshots</a></li>`
 }
 
-function load () {
+function mainLoad () {
+  window.d = new window.Device()
+  window.d.name = window.d.product_name()
+  window.d.ver = window.d.version()
   window.body = document.querySelector('body')
   window.params = parseSearch()
   window.pkgs = 16
+
+  getFooter()
+  setInterval(getFooter, 1000)
+}
+
+function rootLoad () {
+  mainLoad()
+}
+
+function load () {
+  mainLoad()
 
   if (!window.params.repo) {
     window.location.href = '..'
@@ -108,9 +122,6 @@ function load () {
       })
       .then(updateDepiction)
   }
-
-  getFooter()
-  setInterval(getFooter, 1000)
 
   checkCydia()
   correctCydia()
