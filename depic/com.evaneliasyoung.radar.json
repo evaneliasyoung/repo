@@ -1,11 +1,22 @@
 {
   "title": "radar",
-  "compat": "7-12",
-  "update": "2017-06-09",
+  "compat": "7.0-12.1.2",
   "desc": "<p>Control your device over ssh</p>",
   "screenshots": [],
-  "changelog": {
-    "0.1.1": "<li>Fixed the help message</li>",
-    "0.1": "<li>Initial Release</li>"
-  }
+  "changelog": [
+    {
+      "version": "0.1.1",
+      "changes": [
+        "Fixed the help message"
+      ],
+      "date": "2017-06-09"
+    },
+    {
+      "version": "0.1",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2017-06-09"
+    }
+  ]
 }

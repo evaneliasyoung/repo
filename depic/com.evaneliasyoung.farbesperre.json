@@ -1,15 +1,32 @@
 {
   "title": "Farbesperre",
-  "compat": "7-11",
-  "update": "2019-03-16",
+  "compat": "7.0-12.1.2",
   "desc": "<p>A Color Apple Watch style clock for LockHTML. It's a clone of the color watch face from the Apple Watch. It has a few customisable features; color, size, etc.</p>",
   "screenshots": [
     "com.evaneliasyoung.farbesperre/screen1.png",
     "com.evaneliasyoung.farbesperre/screen2.png"
   ],
-  "changelog": {
-    "1.0.2": "<li>Format updates</li>",
-    "1.0.1": "<li>Format updates</li>",
-    "1.0": "<li>Initial Release</li>"
-  }
+  "changelog": [
+    {
+      "version": "1.0.2",
+      "changes": [
+        "Format updates"
+      ],
+      "date": "2019-03-16"
+    },
+    {
+      "version": "1.0.1",
+      "changes": [
+        "Format updates"
+      ],
+      "date": "2019-03-16"
+    },
+    {
+      "version": "1.0",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2017-03-27"
+    }
+  ]
 }

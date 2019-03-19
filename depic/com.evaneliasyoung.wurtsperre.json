@@ -1,6 +1,6 @@
 {
   "title": "Wurtsperre",
-  "compat": "7-11",
+  "compat": "7.0-12.1.2",
   "update": "2019-03-17",
   "desc": "<p>Word style clock for LockHTML, it features an array of customisation features (including languages!).<br>It includes support for the following languages.</p><ul><li>English</li><li>Español</li><li>Deutsche</li></ul>",
   "screenshots": [
@@ -8,16 +8,78 @@
     "com.evaneliasyoung.wurtsperre/screen2.png",
     "com.evaneliasyoung.wurtsperre/screen3.png"
   ],
-  "changelog": {
-    "1.2.6": "<li>Format updates</li>",
-    "1.2.5": "<li>Format updates</li>",
-    "1.2.4": "<li>Precached fonts</li><li>Added proper language picker</li>",
-    "1.2.3": "<li>Fixed last line animation</li>",
-    "1.2.2": "<li>Fixed misspelling of oh (o')</li>",
-    "1.2.1": "<li>Fixed misspelling of forty (fourty)</li>",
-    "1.2": "<li>Added animations</li>",
-    "1.1.1": "<li>Fixed accents for German</li>",
-    "1.1": "<li>Added languages</li><ul><li>en - English</li><li>es - Español</li><li>du - Deutsche</li></ul>",
-    "1.0": "<li>Initial Release</li>"
-  }
+  "changelog": [
+    {
+      "version": "1.2.6",
+      "changes": [
+        "Format updates"
+      ],
+      "date": "2019-03-17"
+    },
+    {
+      "version": "1.2.5",
+      "changes": [
+        "Format updates"
+      ],
+      "date": ""
+    },
+    {
+      "version": "1.2.4",
+      "changes": [
+        "Precached fonts",
+        "Added proper language picker"
+      ],
+      "date": ""
+    },
+    {
+      "version": "1.2.3",
+      "changes": [
+        "Fixed last line animation"
+      ],
+      "date": ""
+    },
+    {
+      "version": "1.2.2",
+      "changes": [
+        "Fixed misspelling of oh (o')"
+      ],
+      "date": ""
+    },
+    {
+      "version": "1.2.1",
+      "changes": [
+        "Fixed misspelling of forty (fourty)"
+      ],
+      "date": ""
+    },
+    {
+      "version": "1.2",
+      "changes": [
+        "Added animations"
+      ],
+      "date": ""
+    },
+    {
+      "version": "1.1.1",
+      "changes": [
+        "Fixed accents for German"
+      ],
+      "date": ""
+    },
+    {
+      "version": "1.1",
+      "changes": [
+        "Added languages",
+        "<ul><li>en - English</li><li>es - Español</li><li>du - Deutsche</li></ul>"
+      ],
+      "date": ""
+    },
+    {
+      "version": "1.0",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": ""
+    }
+  ]
 }
