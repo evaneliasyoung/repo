@@ -1,12 +1,30 @@
 {
   "title": "MachStrate",
-  "compat": "10 (mach_portal)",
-  "update": "2017-03-31",
+  "compat": "10.0.1-10.1.1",
   "desc": "<p>Properly enables substrate and LaunchDaemons in mach_portal (with \"ems\" (execute machstrate)). Please only use this on devices using mach_portal (Yalu101), not Yalu102.</p>",
   "screenshots": [],
-  "changelog": {
-    "0.1.2": "<li>Authorised machstrate to run</li><li>Changed to printf statements (they're better than echo)</li>",
-    "0.1.1": "<li>Renamed execute to ems</li>",
-    "0.1": "<li>Initial Release</li>"
-  }
+  "changelog": [
+    {
+      "version": "0.1.2",
+      "changes": [
+        "Authorised machstrate to run",
+        "Changed to printf statements (they're better than echo)"
+      ],
+      "date": "2017-03-31"
+    },
+    {
+      "version": "0.1.1",
+      "changes": [
+        "Renamed execute to ems"
+      ],
+      "date": "2017-03-28"
+    },
+    {
+      "version": "0.1",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2017-03-23"
+    }
+  ]
 }

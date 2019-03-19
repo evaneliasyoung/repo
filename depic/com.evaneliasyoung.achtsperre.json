@@ -1,15 +1,38 @@
 {
   "title": "Achtsperre",
-  "compat": "7-11",
-  "update": "2019-03-16",
+  "compat": "7.0-12.1.2",
   "desc": "<p>Galaxy S8 style clock for LockHTML, it features an array of customisation features (including languages!).<br>It includes support for the following languages.</p><ul><li>English</li><li>Español</li><li>Deutsche</li></ul>",
   "screenshots": [
     "com.evaneliasyoung.achtsperre/screen1.png"
   ],
-  "changelog": {
-    "1.0.3": "<li>Format updates</li>",
-    "1.0.2": "<li>Format updates</li>",
-    "1.0.1": "<li>Fixed language setting</li>",
-    "1.0.0": "<li>Initial Release</li>"
-  }
+  "changelog": [
+    {
+      "version": "1.0.3",
+      "changes": [
+        "Format updates"
+      ],
+      "date": "2019-03-16"
+    },
+    {
+      "version": "1.0.2",
+      "changes": [
+        "Format updates"
+      ],
+      "date": "2017-05-01"
+    },
+    {
+      "version": "1.0.1",
+      "changes": [
+        "Fixed language setting"
+      ],
+      "date": "2017-04-30"
+    },
+    {
+      "version": "1.0.0",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2017-04-30"
+    }
+  ]
 }

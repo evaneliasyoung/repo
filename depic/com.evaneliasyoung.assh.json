@@ -1,16 +1,61 @@
 {
   "title": "Assh",
-  "compat": "7-10",
-  "update": "2017-04-23",
+  "compat": "7.0-12.1.2",
   "desc": "<p>An easier way to use ssh, instead of having to retype all of the connection information it fills it all in from a config file. The information is stored in /var/mobile/Library/Assh/settings.</p>",
   "screenshots": [],
-  "changelog": {
-    "0.2.1": "<li>Nano not needed since privileges are a pain</li>",
-    "0.2": "<li>THESE CHANGES ARE NECCESSARY IF YOU WANT TO USE ASSH WITHOUT ROOT PRIVALEGES</li><li>Settings <em>will be reset</em> upon updates</li><li>Settings can no longer be generated</li><li>Removing settings will <em>require a reinstall</em> of Assh</li>",
-    "0.1.4": "<li>Library isn't readonly, I just forget the directory portion of the filename</li>",
-    "0.1.3": "<li>Library is readonly, now in Documents folder</li>",
-    "0.1.2": "<li>Settings should now stay between versions</li><li>Now requires nano, so... there is an editor now!</li>",
-    "0.1.1": "<li>No good command-line text editors on iOS, so manual editing required (Filza)</li>",
-    "0.1": "<li>Initial Release</li>"
-  }
+  "changelog": [
+    {
+      "version": "0.2.1",
+      "changes": [
+        "Nano not needed since privileges are a pain"
+      ],
+      "date": "2017-04-23"
+    },
+    {
+      "version": "0.2",
+      "changes": [
+        "THESE CHANGES ARE NECCESSARY IF YOU WANT TO USE ASSH WITHOUT ROOT PRIVALEGES",
+        "Settings <em>will be reset</em> upon updates",
+        "Settings can no longer be generated",
+        "Removing settings will <em>require a reinstall</em> of Assh"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1.4",
+      "changes": [
+        "Library isn't readonly, I just forget the directory portion of the filename"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1.3",
+      "changes": [
+        "Library is readonly, now in Documents folder"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1.2",
+      "changes": [
+        "Settings should now stay between versions",
+        "Now requires nano, so... there is an editor now!"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1.1",
+      "changes": [
+        "No good command-line text editors on iOS, so manual editing required (Filza)"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2017-04-21"
+    }
+  ]
 }
