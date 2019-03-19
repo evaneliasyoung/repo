@@ -115,6 +115,19 @@ main > ul > li > [role=button]:after, main > ul > li > [role=link]:after, header
   display: block;
 }
 
+main > ul.tablelike {
+  position: relative;
+}
+
+main > ul.tablelike > li > span:first-child {
+  font-weight: 600;
+}
+
+main > ul.tablelike > li > span:last-child {
+  position: absolute;
+  right: 15px;
+}
+
 header > div > a:first-child::before {
   font-size: 28px;
 
@@ -145,6 +158,10 @@ main {
   padding-top: 21px;
 
   grid-row: 2 / span 1;
+}
+
+main > h2:first-child {
+  margin-top: 0px;
 }
 
 main > ul {
@@ -180,6 +197,10 @@ main > ul > li > [role=button], main > ul > li > [role=link], main > ul > li > p
 main > ul > li > [role=button], main > ul > li > [role=link], main > ul > li > p {
   margin: -11px -15px;
   padding: 11px 15px;
+}
+
+ul ul {
+  list-style-type: disc;
 }
 
 main > ul > li > [role=button], main > ul > li > [role=link] {
