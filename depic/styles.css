@@ -54,6 +54,10 @@ h1 {
   font-weight: 500;
 }
 
+ul {
+  padding-inline-start: 30px;
+}
+
 footer, body > p, h2 {
   font-size: 14px;
   font-weight: 400;
