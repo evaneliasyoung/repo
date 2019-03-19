@@ -36,10 +36,7 @@ function correctCydia () {
 }
 
 function verifyVersion () {
-  if (window.d.version === '') {
-    return
-  }
-  let doesMatch = window.d.VersionMatch(...window.depic.compat.split('-'))
+  document.querySelector('ul').innerHTML += `<li><strong>Compatible</strong><span class="fright">${window.depic.compatStr}</span></li>`
 }
 
 function getFooter () {
@@ -54,13 +51,13 @@ function getFooter () {
 function updateMainDepiction () {
   document.querySelector('[href="changelog.html"]').href = `changelog.html${window.location.search}`
 
+  verifyVersion()
   document.querySelectorAll('[data-depic]').forEach(e => {
     e.innerHTML = e.innerHTML + window.depic[e.dataset.depic]
   })
   if (window.depic.screenshots.length > 0) {
     spawnScreenshots()
   }
-  verifyVersion()
 }
 
 function updateChangeDepiction () {
@@ -129,6 +126,7 @@ function load () {
         window.depic.version = window.depic.changelog[0].version
         window.depic.date = window.depic.changelog[0].date
         window.depic.change = `<li>${window.depic.changelog[0].changes.join('</li><li>')}</li>`
+        window.depic.compatStr = window.d.version === '' ? 'Unknown' : window.d.VersionMatch(...window.depic.compat.split('-')) ? 'Yes' : 'No'
       })
       .then(updateDepiction)
   }
