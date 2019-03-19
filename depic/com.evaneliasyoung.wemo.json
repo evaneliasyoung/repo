@@ -1,11 +1,22 @@
 {
   "title": "Wemo",
-  "compat": "7-12",
-  "update": "2017-07-21",
+  "compat": "7-12.1.2",
   "desc": "<p>I hate the wemo app, so I made a command line tool for it.</p>",
   "screenshots": [],
-  "changelog": {
-    "0.2": "<li>Added a toggle command</li>",
-    "0.1": "<li>Initial Release</li>"
-  }
+  "changelog": [
+    {
+      "version": "0.2",
+      "changes": [
+        "Added a toggle command"
+      ],
+      "date": "2017-07-21"
+    },
+    {
+      "version": "0.1",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2017-05-02"
+    }
+  ]
 }
