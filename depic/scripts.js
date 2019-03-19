@@ -56,9 +56,13 @@ function updateMainDepiction () {
 }
 
 function updateChangeDepiction () {
-  for (let v in window.depic.changelog) {
-    document.querySelector('#list').innerHTML += `<li><p><strong>Changes in Version ${v}</strong></p><p></p><ul>${window.depic.changelog[v]}</ul></li>`
-  }
+  window.depic.changelog.forEach(e => {
+    document.querySelector('#list').innerHTML += `<li>
+      <p><strong>Changes in Version ${e.version}</strong><span class="fright">${e.date}</span></p>
+      <p></p>
+      <ul><li>${e.changes.join('</li><li>')}</li></ul>
+    </li>`
+  })
 }
 
 function updateScreenDepiction () {
@@ -116,8 +120,9 @@ function load () {
       .then(r => r.json())
       .then(r => {
         window.depic = r
-        window.depic.version = Object.keys(window.depic.changelog)[0]
-        window.depic.change = window.depic.changelog[window.depic.version]
+        window.depic.version = window.depic.changelog[0].version
+        window.depic.date = window.depic.changelog[0].date
+        window.depic.change = `<li>${window.depic.changelog[0].changes.join('</li><li>')}</li>`
       })
       .then(updateDepiction)
   }
