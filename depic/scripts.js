@@ -35,6 +35,13 @@ function correctCydia () {
   }
 }
 
+function verifyVersion () {
+  if (window.d.version === '') {
+    return
+  }
+  let doesMatch = window.d.VersionMatch(...window.depic.compat.split('-'))
+}
+
 function getFooter () {
   let txt = [`Hosting ${window.pkgs} Packages`, ``, 'Copyright Evan Elias Young 2017-2019']
 
@@ -53,6 +60,7 @@ function updateMainDepiction () {
   if (window.depic.screenshots.length > 0) {
     spawnScreenshots()
   }
+  verifyVersion()
 }
 
 function updateChangeDepiction () {
@@ -72,15 +80,13 @@ function updateScreenDepiction () {
 }
 
 function updateDepiction () {
+  spawnBackButton()
   if (window.body.dataset.purpose === 'main') {
     updateMainDepiction()
-    spawnBackButton()
   } else if (window.body.dataset.purpose === 'changelog') {
     updateChangeDepiction()
-    spawnBackButton()
   } else if (window.body.dataset.purpose === 'screenshots') {
     updateScreenDepiction()
-    spawnBackButton()
   }
 }
 
