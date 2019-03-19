@@ -1,33 +1,208 @@
 {
   "title": "Gravy",
-  "compat": "7-11",
-  "update": "2018-09-01",
+  "compat": "7.0-11.4.1",
   "desc": "<p>More icons for one of my favorite themes, <a href=\"http://cydia.saurik.com/package/com.macciti.biscuit/\" cydia=\"cydia_blank\">Biscuit</a> by ArkLotif. I am not associated with ArkLotif in any way, shape or form. These icons are made by me as they were not included in Biscuit. If you think I've left any out, please email me with info on it!</p>",
   "screenshots": [],
-  "changelog": {
-    "1.10": "<li>Three new icons</li><li>Redesigned the Reddit icon</li>",
-    "1.9.2": "<li>Fixed icon corruption</li>",
-    "1.9.1": "<li>Fixed icon corruption</li>",
-    "1.9": "<li>Added four new icons</li>",
-    "1.8": "<li>Added four new icons</li>",
-    "1.7.1": "<li>Added new Words With Friends</li>",
-    "1.7": "<li>Added four new icons</li>",
-    "1.6": "<li>Added three new icons</li><li>Fixed the Wolfram Alpha icon</li>",
-    "1.5.2": "<li>Added one new icon</li>",
-    "1.5.1": "<li>Fixed the SpanishDict icon</li>",
-    "1.5": "<li>Added three new icons</li>",
-    "1.4.2": "<li>Fixed the fidget spinner icon</li>",
-    "1.4.1": "<li>Added two new icons</li>",
-    "1.4": "<li>Added four new icons</li>",
-    "1.3.1": "<li>Added one new icon</li><li>Fixed the Ext3nder icon</li>",
-    "1.3": "<li>Added four new icons</li>",
-    "1.2.4": "<li>You NEED Anemone</li>",
-    "1.2.3": "<li>Fixed icon naming-scheme</li>",
-    "1.2.2": "<li>Fixed icon corruption</li>",
-    "1.2.1": "<li>Fixed icon corruption</li>",
-    "1.2": "<li>Added even more icons</li><li>Fixed the sudoku icon</li>",
-    "1.1.1": "<li>Fixed icon corruption</li>",
-    "1.1": "<li>Added two new icons</li>",
-    "1.0": "<li>Initial Release</li>"
-  }
+  "changelog": [
+    {
+      "version": "1.10",
+      "changes": [
+        "Three new icons",
+        "Redesigned the Reddit icon"
+      ],
+      "date": "2018-09-01"
+    },
+    {
+      "version": "1.9.2",
+      "changes": [
+        "Fixed icon corruption"
+      ],
+      "date": "2018-03-01"
+    },
+    {
+      "version": "1.9.1",
+      "changes": [
+        "Fixed icon corruption"
+      ],
+      "date": "2018-02-28"
+    },
+    {
+      "version": "1.9",
+      "changes": [
+        "Added four new icons"
+      ],
+      "date": "2018-02-21"
+    },
+    {
+      "version": "1.8",
+      "changes": [
+        "Added four new icons"
+      ],
+      "date": "2017-12-29"
+    },
+    {
+      "version": "1.7.1",
+      "changes": [
+        "Added new Words With Friends"
+      ],
+      "date": "2017-11-24"
+    },
+    {
+      "version": "1.7",
+      "changes": [
+        "Added four new icons"
+      ],
+      "date": "2017-08-24"
+    },
+    {
+      "version": "1.7",
+      "changes": [
+        "Added four new icons"
+      ],
+      "date": "2017-08-24"
+    },
+    {
+      "version": "1.7",
+      "changes": [
+        "Added four new icons"
+      ],
+      "date": "2017-08-24"
+    },
+    {
+      "version": "1.7",
+      "changes": [
+        "Added four new icons"
+      ],
+      "date": "2017-08-24"
+    },
+    {
+      "version": "1.6",
+      "changes": [
+        "Added three new icons",
+        "Fixed the Wolfram Alpha icon"
+      ],
+      "date": "2017-06-26"
+    },
+    {
+      "version": "1.5.2",
+      "changes": [
+        "Added one new icon"
+      ],
+      "date": "2017-06-17"
+    },
+    {
+      "version": "1.5.1",
+      "changes": [
+        "Fixed the SpanishDict icon"
+      ],
+      "date": "2017-06-09"
+    },
+    {
+      "version": "1.5",
+      "changes": [
+        "Added three new icons"
+      ],
+      "date": "2017-06-07"
+    },
+    {
+      "version": "1.4.2",
+      "changes": [
+        "Fixed the fidget spinner icon"
+      ],
+      "date": "2017-05-25"
+    },
+    {
+      "version": "1.4.1",
+      "changes": [
+        "Added two new icons"
+      ],
+      "date": "2017-05-25"
+    },
+    {
+      "version": "1.4",
+      "changes": [
+        "Added four new icons"
+      ],
+      "date": "2017-05-19"
+    },
+    {
+      "version": "1.3.1",
+      "changes": [
+        "Added one new icon",
+        "Fixed the Ext3nder icon"
+      ],
+      "date": "2017-05-04"
+    },
+    {
+      "version": "1.3",
+      "changes": [
+        "Added four new icons"
+      ],
+      "date": "2017-04-28"
+    },
+    {
+      "version": "1.2.4",
+      "changes": [
+        "You NEED Anemone"
+      ],
+      "date": "2017-03-25"
+    },
+    {
+      "version": "1.2.3",
+      "changes": [
+        "Fixed icon naming-scheme"
+      ],
+      "date": "2017-03-25"
+    },
+    {
+      "version": "1.2.2",
+      "changes": [
+        "Fixed icon corruption"
+      ],
+      "date": "2017-03-24"
+    },
+    {
+      "version": "1.2.1",
+      "changes": [
+        "Fixed icon corruption"
+      ],
+      "date": "2017-03-24"
+    },
+    {
+      "version": "1.2",
+      "changes": [
+        "Added even more icons",
+        "Fixed the sudoku icon"
+      ],
+      "date": "2017-03-23"
+    },
+    {
+      "version": "1.1.1",
+      "changes": [
+        "Fixed icon corruption"
+      ],
+      "date": "2017-03-18"
+    },
+    {
+      "version": "1.1",
+      "changes": [
+        "Added two new icons"
+      ],
+      "date": "2017-03-18"
+    },
+    {
+      "version": "1.0.1",
+      "changes": [
+        "Fixed depiction"
+      ],
+      "date": "2017-03-17"
+    },
+    {
+      "version": "1.0",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2017-03-17"
+    }
+  ]
 }
