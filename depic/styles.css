@@ -2,7 +2,6 @@
   font-family: "San Fran Symbols";
   font-weight: normal;
   font-style: normal;
-
   src: url("sanfransymbols.woff2") format("woff2"),
   url("sanfransymbols.woff") format("woff");
 }
@@ -15,9 +14,7 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
-
   background: #EFEFF4;
-
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -36,11 +33,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3em;
-
   display: grid;
-
   margin: 0px 0px 0px 0px;
-
   grid-template-rows: 44px auto auto;
 }
 
@@ -69,9 +63,7 @@ ul {
 footer, body > p, h2 {
   font-size: 14px;
   font-weight: 400;
-
   margin: 15px;
-
   color: #6D6D72;
 }
 
@@ -82,13 +74,10 @@ article, aside, footer, header, nav, section {
 header {
   position: fixed;
   z-index: 10;
-
   width: 100%;
   height: 44px;
-
   border-bottom: 1px solid rgba(0,0,0,0.1);
   background: rgba(249,249,249,0.85);
-
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   grid-row: 1 / span 1;
@@ -100,30 +89,24 @@ header, header * {
 
 header > div {
   display: grid;
-
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 header > div * {
   font-size: 18px;
   line-height: 44px;
-
   margin: 0px;
 }
 
 header > div > a {
   position: relative;
-
   padding-left: 24px;
-
   text-align: left;
 }
 
 main > ul > li > [role=button]:after, main > ul > li > [role=link]:after, header > div > a:first-child::before {
   font-family: "San Fran Symbols";
-
   position: absolute;
-
   display: block;
 }
 
@@ -142,46 +125,37 @@ main > ul.tablelike > li > span:last-child {
 
 header > div > a:first-child::before {
   font-size: 28px;
-
   left: 0px;
-
   width: 15px;
   height: 21px;
   margin-top: 1px;
-
   content: "\E92A";
 }
 
 header > div > h1 {
   text-align: center;
-
   grid-column: 2 / span 1;
 }
 
 h2 {
   margin-bottom: 5px;
-
   text-transform: uppercase;
 }
 
 main {
   display: block;
-
   padding-top: 21px;
-
   grid-row: 2 / span 1;
 }
 
-main > h2:first-child {
+html:not(.cydia) main > h2:first-child {
   margin-top: 0px;
 }
 
 main > ul {
   margin: 5px 0px 35px 0px;
   padding: 0px;
-
   list-style: none;
-
   background: #FFFFFF;
 }
 
@@ -192,7 +166,6 @@ main > ul > li:last-child {
 main > ul > li {
   margin-left: 15px;
   padding: 11px 15px 11px 0px;
-
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -218,36 +191,28 @@ ul ul {
 main > ul > li > [role=button], main > ul > li > [role=link] {
   position: relative;
   z-index: 2;
-
   display: block;
-
   padding-right: 30px;
-
   color: #007AFF;
 }
 
 a, button {
   text-decoration: none;
-
   color: #007AFF;
 }
 
 a {
   background-color: transparent;
-
   -webkit-text-decoration-skip: objects;
 }
 
 main > ul > li > [role=button]:after, main > ul > li > [role=link]:after {
   top: 50%;
   right: 15px;
-
   width: 10px;
   height: 13px;
   margin-top: -10px;
-
   content: "\E929";
-
   color: #C7C7CC;
 }
 
@@ -257,17 +222,14 @@ main > ul:last-child {
 
 footer {
   text-align: center;
-
   grid-row: 3 / span 1;
 }
 
 img.screenshot-image {
   display: block;
-
   width: 100%;
   max-width: 375px;
   margin: 0px auto;
-
   border-style: none;
 }
 
