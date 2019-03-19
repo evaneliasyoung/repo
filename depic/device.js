@@ -3,7 +3,7 @@ var Device = function () {}
 Device.prototype.VersionMatch = function (min, max) {
   let minAr = min.split('.').map(e => parseInt(e))
   let maxAr = max.split('.').map(e => parseInt(e))
-  let verAr = this.ver.split('.').map(e => parseInt(e))
+  let verAr = this.version.split('.').map(e => parseInt(e))
 
   minAr.push(0)
   minAr.push(0)

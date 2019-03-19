@@ -35,6 +35,10 @@ function correctCydia () {
   }
 }
 
+function verifyVersion () {
+  document.querySelector('ul').innerHTML += `<li><strong>Compatible</strong><span class="fright">${window.depic.compatStr}</span></li>`
+}
+
 function getFooter () {
   let txt = [`Hosting ${window.pkgs} Packages`, ``, 'Copyright Evan Elias Young 2017-2019']
 
@@ -47,6 +51,7 @@ function getFooter () {
 function updateMainDepiction () {
   document.querySelector('[href="changelog.html"]').href = `changelog.html${window.location.search}`
 
+  verifyVersion()
   document.querySelectorAll('[data-depic]').forEach(e => {
     e.innerHTML = e.innerHTML + window.depic[e.dataset.depic]
   })
@@ -72,15 +77,13 @@ function updateScreenDepiction () {
 }
 
 function updateDepiction () {
+  spawnBackButton()
   if (window.body.dataset.purpose === 'main') {
     updateMainDepiction()
-    spawnBackButton()
   } else if (window.body.dataset.purpose === 'changelog') {
     updateChangeDepiction()
-    spawnBackButton()
   } else if (window.body.dataset.purpose === 'screenshots') {
     updateScreenDepiction()
-    spawnBackButton()
   }
 }
 
@@ -123,6 +126,7 @@ function load () {
         window.depic.version = window.depic.changelog[0].version
         window.depic.date = window.depic.changelog[0].date
         window.depic.change = `<li>${window.depic.changelog[0].changes.join('</li><li>')}</li>`
+        window.depic.compatStr = window.d.version === '' ? 'Unknown' : window.d.VersionMatch(...window.depic.compat.split('-')) ? 'Yes' : 'No'
       })
       .then(updateDepiction)
   }
