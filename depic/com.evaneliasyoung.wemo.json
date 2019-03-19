@@ -1,6 +1,6 @@
 {
   "title": "Wemo",
-  "compat": "7-12.1.2",
+  "compat": "7.0-12.1.2",
   "desc": "<p>I hate the wemo app, so I made a command line tool for it.</p>",
   "screenshots": [],
   "changelog": [
