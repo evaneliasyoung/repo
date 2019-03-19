@@ -3,10 +3,7 @@
   "compat": "7-12",
   "update": "2017-04-27",
   "desc": "<p>Easily get your ip address (ip)</p>",
-  "screenshots": [
-    "com.evaneliasyoung.flachsperre/screen1.png",
-    "com.evaneliasyoung.flachsperre/screen2.png"
-  ],
+  "screenshots": [],
   "changelog": {
     "0.1": "<li>Initial Release</li>"
   }
