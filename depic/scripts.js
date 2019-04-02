@@ -105,7 +105,6 @@ function mainLoad () {
   window.pkgs = 16
 
   getFooter()
-  setInterval(getFooter, 1000)
 }
 
 function rootLoad () {
