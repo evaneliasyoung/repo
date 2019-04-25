@@ -1,14 +1,17 @@
-/* global Device */
-
 class Device {
-  constructor () {
+  name: string
+  version: Version
+
+  constructor() {
     this.name = this.getName()
     this.version = this.getVersion()
   }
 
-  getName () {
-    let canvas = document.createElement('canvas')
-    let hwRatio = window.screen.height / window.screen.width
+  private getName(): string {
+    let canvas: HTMLCanvasElement = document.createElement('canvas')
+    let hwRatio: number = window.screen.height / window.screen.width
+    let dpr: number = window.devicePixelRatio
+
     if (canvas) {
       let context = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
       if (context) {
@@ -19,8 +22,8 @@ class Device {
       }
     }
 
-    if (navigator.userAgent.includes('iPad')) {
-      if (hwRatio === 1366 / 1024 && window.devicePixelRatio === 2) {
+    if (navigator.userAgent.indexOf('iPad') !== -1) {
+      if (hwRatio === 1366 / 1024 && dpr === 2) {
         switch (renderer) {
           case 'Apple A12 GPU':
             // iPad Pro 12.9 (2018)
@@ -34,13 +37,13 @@ class Device {
           default:
             return 'iPad Pro 12.9'
         }
-      } else if (hwRatio === 1194 / 834 && window.devicePixelRatio === 2) {
+      } else if (hwRatio === 1194 / 834 && dpr === 2) {
         // iPad Pro 11
         return 'iPad8,1'
-      } else if (window.screen.height === 1112 && window.screen.width === 834 && window.devicePixelRatio === 2) {
+      } else if (window.screen.height === 1112 && window.screen.width === 834 && dpr === 2) {
         // iPad Pro 10.5 (2017)
         return 'iPad7,3'
-      } else if (hwRatio === 1024 / 768 && window.devicePixelRatio === 2) {
+      } else if (hwRatio === 1024 / 768 && dpr === 2) {
         switch (renderer) {
           case 'Apple A10 GPU':
             // iPad 9.7 (2018)
@@ -64,7 +67,7 @@ class Device {
             // iPad 3, 4, Air, or Air 2
             return 'iPad 3, 4, Air, Air 2, or 9.7'
         }
-      } else if (hwRatio === 1024 / 768 && window.devicePixelRatio === 1) {
+      } else if (hwRatio === 1024 / 768 && dpr === 1) {
         switch (renderer) {
           case 'PowerVR SGX543MP2':
             // iPad 2
@@ -81,14 +84,14 @@ class Device {
       }
     }
 
-    if (navigator.userAgent.includes('iPhone')) {
-      if (hwRatio === 896 / 414 && window.devicePixelRatio === 3) {
+    if (navigator.userAgent.indexOf('iPhone') !== -1) {
+      if (hwRatio === 896 / 414 && dpr === 3) {
         // iPhone XS Max
         return 'iPhone11,4'
-      } else if (hwRatio === 896 / 414 && window.devicePixelRatio === 2) {
+      } else if (hwRatio === 896 / 414 && dpr === 2) {
         // iPhone XR
         return 'iPhone11,8'
-      } else if (hwRatio === 812 / 375 && window.devicePixelRatio === 3) {
+      } else if (hwRatio === 812 / 375 && dpr === 3) {
         // iPhone X/XS
         switch (renderer) {
           case 'Apple A12 GPU':
@@ -199,28 +202,22 @@ class Device {
     return 'Unknown'
   }
 
-  getVersion () {
-    let ua = navigator.userAgent
-    let ver = ua.substr(ua.indexOf(' OS ') + 4, ua.indexOf(' like') - ua.indexOf(' OS ') - 4).replace(/_/g, '.')
+  private getVersion(): Version {
+    let ua: string = navigator.userAgent
+    let ver: string = ua.substr(ua.indexOf(' OS ') + 4, ua.indexOf(' like') - ua.indexOf(' OS ') - 4).replace(/_/g, '.')
 
-    return ver !== undefined && ver !== null && ver !== '' ? ver : 'Unknown'
+    if (ua.indexOf(' OS ') !== -1 && ua.indexOf(' like') !== -1 && ver !== undefined && ver !== null && ver !== '') {
+      return new Version(ver)
+    }
+    return new Version('')
   }
 
-  matchVersion (min, max) {
-    let minAr = min.split('.').map(e => parseInt(e))
-    let maxAr = max.split('.').map(e => parseInt(e))
-    let verAr = this.version.split('.').map(e => parseInt(e))
-
-    minAr.push(0)
-    minAr.push(0)
-    maxAr.push(0)
-    maxAr.push(0)
+  matchVersion(min: string, max: string): boolean {
+    let minVer = new Version(min)
+    let maxVer = new Version(max)
 
     for (let i = 0; i < 3; ++i) {
-      if (verAr[i] > maxAr[i]) {
-        return false
-      }
-      if (verAr[i] < minAr[i]) {
+      if (this.version.list[i] > maxVer.list[i] || this.version.list[i] < minVer.list[i]) {
         return false
       }
     }
