@@ -58,13 +58,38 @@ gulp.task('assets', () => {
 
 gulp.task('root', () => {
   return new Promise((resolve, reject) => {
-    pump([gulp.src([`${srcDir}/Release`, `${srcDir}/apple-touch-icon.png`, `${srcDir}/CydiaIcon.png`]), gulp.dest(`${bldDir}/`)])
+    pump([gulp.src([`${srcDir}/apple-touch-icon.png`, `${srcDir}/CydiaIcon.png`]), gulp.dest(`${bldDir}/`)])
       .then(resolve)
       .catch(reject)
   })
 })
 
-gulp.task('static', gulp.parallel('assets', 'root'))
+gulp.task('deb', () => {
+  return new Promise((resolve, reject) => {
+    pump([gulp.src('deb/**/*'), gulp.dest(`${bldDir}/deb/`)])
+      .then(resolve)
+      .catch(reject)
+  })
+})
+
+gulp.task('packages', () => {
+  return new Promise((resolve, reject) => {
+    pump([gulp.src('Packages*'), gulp.dest(`${bldDir}/`)])
+      .then(resolve)
+      .catch(reject)
+  })
+})
+
+gulp.task('release', () => {
+  return new Promise((resolve, reject) => {
+    pump([gulp.src('Release'), gulp.dest(`${bldDir}/`)])
+      .then(resolve)
+      .catch(reject)
+  })
+})
+
+gulp.task('repo', gulp.parallel('deb', 'packages', 'release'))
+gulp.task('static', gulp.parallel('assets', 'root', 'repo'))
 // #endreion
 
 gulp.task('all', gulp.parallel('code', 'static'))
