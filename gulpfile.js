@@ -56,7 +56,15 @@ gulp.task('assets', () => {
   })
 })
 
-gulp.task('static', gulp.parallel('assets'))
+gulp.task('root', () => {
+  return new Promise((resolve, reject) => {
+    pump([gulp.src([`${srcDir}/Release`, `${srcDir}/apple-touch-icon.png`, `${srcDir}/CydiaIcon.png`]), gulp.dest(`${bldDir}/`)])
+      .then(resolve)
+      .catch(reject)
+  })
+})
+
+gulp.task('static', gulp.parallel('assets', 'root'))
 // #endreion
 
 gulp.task('all', gulp.parallel('code', 'static'))
