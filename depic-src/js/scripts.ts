@@ -109,6 +109,8 @@ function mainLoad(): void {
   window.body = document.querySelector('body')
   window.root = document.documentElement
 
+  if (isStandalone()) { window.body.style.marginBottom = '1rem' }
+
   defaultCookie('theme', 'classic')
   window.theme = getCookie('theme') || 'classic'
   window.root.classList.add(window.theme)
