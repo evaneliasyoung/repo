@@ -38,7 +38,7 @@ gulp.task('html', () => {
 
 gulp.task('ts', () => {
   return new Promise((resolve, reject) => {
-    pump([gulp.src(`${srcDir}/**/*.ts`), $.newer(bldDir), $.typescript({ declaration: false }), $.concat('scripts.js'), $.uglify(), gulp.dest(bldDir)])
+    pump([gulp.src(`${srcDir}/**/*.ts`), $.newer(bldDir), $.typescript({ lib: ['dom', 'esnext'], declaration: false }), $.concat('scripts.js'), $.uglify(), gulp.dest(bldDir)])
       .then(resolve)
       .catch(reject)
   })

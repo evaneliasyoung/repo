@@ -10,19 +10,22 @@ interface Window {
 }
 
 // #region Cydia
-function correctCydia(): void {
-  if (window.cydia) {
-    let base: HTMLElement = document.createElement('base')
-    let cydiaBlankLinks: HTMLCollectionOf<Element> = document.getElementsByClassName('cydia_blank')
+function correctCydia(): Promise<void> {
+  return new Promise((resolve) => {
+    if (window.cydia) {
+      let base: HTMLElement = document.createElement('base')
+      let cydiaBlankLinks: HTMLCollectionOf<Element> = document.getElementsByClassName('cydia_blank')
 
-    window.root.classList.add('cydia')
+      window.root.classList.add('cydia')
 
-    base.setAttribute('target', '_open')
-    document.head.appendChild(base)
-    for (let i = 0; i < cydiaBlankLinks.length; ++i) {
-      cydiaBlankLinks[i].setAttribute('target', '_blank')
+      base.setAttribute('target', '_open')
+      document.head.appendChild(base)
+      for (let i = 0; i < cydiaBlankLinks.length; ++i) {
+        cydiaBlankLinks[i].setAttribute('target', '_blank')
+      }
     }
-  }
+    resolve()
+  })
 }
 // #endregion
 
@@ -83,6 +86,21 @@ function spawnScreenshots(): void {
   document.querySelector('main > ul').innerHTML += `<li><a href='screenshots.html${window.location.search}' role='button' class='cydia_blank'>View Screenshots</a></li>`
 }
 
+function getPackage(): Promise<any> {
+  return new Promise((resolve, reject) => {
+    if (!window.params.repo) {
+      window.location.href = '/'
+      reject()
+    } else {
+      fetch(`/assets/data/${window.params.repo}.json`)
+        .then(r => r.json())
+        .then(r => { window.pkg = new Package(r) })
+        .then(r => resolve(window.pkg))
+        .catch(r => reject(r))
+    }
+  })
+}
+
 function mainLoad(): void {
   window.cydia = navigator.userAgent.indexOf('Cydia') !== -1
   window.d = new Device()
@@ -104,18 +122,6 @@ function rootLoad(): void {
 
 function load(): void {
   mainLoad()
-
-  if (!window.params.repo) {
-    window.location.href = '/'
-  } else {
-    window
-      .fetch(`/assets/data/${window.params.repo}.json`)
-      .then(r => r.json())
-      .then(r => {
-        window.pkg = new Package(r)
-      })
-      .then(updateDepiction)
-  }
-
+  getPackage().then(updateDepiction)
   correctCydia()
 }
