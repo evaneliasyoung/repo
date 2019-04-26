@@ -31,7 +31,7 @@ class Version {
       return 0
     }
 
-    for (let i = 2; i > 0; --i) {
+    for (let i = 0; i < 3; ++i) {
       if (this.list[i] > ver.list[i]) {
         return 1
       }
