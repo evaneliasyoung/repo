@@ -3,25 +3,19 @@ interface Window {
   pkg: Package
   pkgs: number
   params: { [index: string]: string }
+  cydia: boolean
   body: HTMLBodyElement
+  root: HTMLElement
+  theme: string
 }
 
 // #region Cydia
-function checkCydia(): void {
-  if (navigator.userAgent.indexOf('Cydia') !== -1) {
-    if (document.title.indexOf(' \u00b7 ') !== -1) {
-      document.title = document.title.split(' \u00b7 ')[0]
-    }
-    document.documentElement.classList.add('cydia')
-  } else {
-    document.documentElement.classList.remove('cydia', 'depiction')
-  }
-}
-
 function correctCydia(): void {
-  if (document.documentElement.classList.contains('cydia')) {
+  if (window.cydia) {
     let base: HTMLElement = document.createElement('base')
     let cydiaBlankLinks: HTMLCollectionOf<Element> = document.getElementsByClassName('cydia_blank')
+
+    window.root.classList.add('cydia')
 
     base.setAttribute('target', '_open')
     document.head.appendChild(base)
@@ -90,12 +84,16 @@ function spawnScreenshots(): void {
 }
 
 function mainLoad(): void {
+  window.cydia = navigator.userAgent.indexOf('Cydia') !== -1
   window.d = new Device()
-  window.body = document.querySelector('body')
   window.params = parseSearch()
   window.pkgs = 16
+  window.body = document.querySelector('body')
+  window.root = document.documentElement
 
   defaultCookie('theme', 'classic')
+  window.theme = getCookie('theme') || 'classic'
+  window.root.classList.add(window.theme)
 
   getFooter()
 }
@@ -119,6 +117,5 @@ function load(): void {
       .then(updateDepiction)
   }
 
-  checkCydia()
   correctCydia()
 }
