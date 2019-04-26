@@ -1,6 +1,7 @@
 {
   "title": "Bley",
-  "compat": "7.0-11.4.1",
+  "minVer": "7.0.0",
+  "maxVer": "11.4.1",
   "desc": "<p>An amalgamation of Blue and Grey, a bluish-greyish theme for Anemone.</p>",
   "screenshots": [],
   "changelog": [

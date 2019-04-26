@@ -1,6 +1,7 @@
 {
   "title": "ip",
-  "compat": "7.0-12.1.2",
+  "minVer": "7.0.0",
+  "maxVer": "12.2.0",
   "desc": "<p>Easily get your ip address (ip)</p>",
   "screenshots": [],
   "changelog": [

@@ -1,6 +1,7 @@
 {
   "title": "MachSpring",
-  "compat": "10.0.1-10.1.1",
+  "minVer": "10.0.1",
+  "maxVer": "10.1.1",
   "desc": "<p>A simulated, and functional, respring performed from a terminal app (machspring). Please only use this on devices using mach_portal (Yalu101), not Yalu102.</p>",
   "screenshots": [],
   "changelog": [

@@ -209,19 +209,13 @@ class Device {
     if (ua.indexOf(' OS ') !== -1 && ua.indexOf(' like') !== -1 && ver !== undefined && ver !== null && ver !== '') {
       return new Version(ver)
     }
-    return new Version('')
+    return new Version('0.0.0')
   }
 
   matchVersion(min: string, max: string): boolean {
     let minVer = new Version(min)
     let maxVer = new Version(max)
 
-    for (let i = 0; i < 3; ++i) {
-      if (this.version.list[i] > maxVer.list[i] || this.version.list[i] < minVer.list[i]) {
-        return false
-      }
-    }
-
-    return true
+    return this.version >= minVer && this.version <= maxVer
   }
 }

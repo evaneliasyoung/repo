@@ -6,6 +6,7 @@ interface Window {
   body: HTMLBodyElement
 }
 
+// #region Cydia
 function checkCydia(): void {
   if (navigator.userAgent.indexOf('Cydia') !== -1) {
     if (document.title.indexOf(' \u00b7 ') !== -1) {
@@ -29,6 +30,7 @@ function correctCydia(): void {
     }
   }
 }
+// #endregion
 
 function verifyVersion(): void {
   let ul: HTMLUListElement = document.querySelector('ul')
@@ -54,31 +56,17 @@ function updateMainDepiction(): void {
 
   verifyVersion()
 
-  document.querySelectorAll('[data-depic="title"]').forEach(e => { e.innerHTML = e.innerHTML + window.pkg.title })
-  document.querySelectorAll('[data-depic="desc"]').forEach(e => { e.innerHTML = e.innerHTML + window.pkg.desc })
-  document.querySelectorAll('[data-depic="version"]').forEach(e => { e.innerHTML = e.innerHTML + window.pkg.version })
-  document.querySelectorAll('[data-depic="date"]').forEach(e => { e.innerHTML = e.innerHTML + window.pkg.date.toLocaleDateString() })
-  document.querySelectorAll('[data-depic="compat"]').forEach(e => { e.innerHTML = e.innerHTML + window.pkg.compat })
-  document.querySelectorAll('[data-depic="compatStr"]').forEach(e => { e.innerHTML = e.innerHTML + window.pkg.getCompatString() })
-  document.querySelectorAll('[data-depic="change"]').forEach(e => { e.innerHTML = e.innerHTML + window.pkg.getChangeString() })
+  document.querySelectorAll('[data-depic="title"]').forEach(e => { e.innerHTML = `${e.innerHTML}${window.pkg.title}` })
+  document.querySelectorAll('[data-depic="desc"]').forEach(e => { e.innerHTML = `${e.innerHTML}${window.pkg.desc}` })
+  document.querySelectorAll('[data-depic="version"]').forEach(e => { e.innerHTML = `${e.innerHTML}${window.pkg.version}` })
+  document.querySelectorAll('[data-depic="date"]').forEach(e => { e.innerHTML = `${e.innerHTML}${window.pkg.date.toLocaleDateString()}` })
+  document.querySelectorAll('[data-depic="compat"]').forEach(e => { e.innerHTML = `${e.innerHTML}${window.pkg.minVer.str}-${window.pkg.maxVer.str}` })
+  document.querySelectorAll('[data-depic="compatStr"]').forEach(e => { e.innerHTML = `${e.innerHTML}${window.pkg.getCompatString()}` })
+  document.querySelectorAll('[data-depic="change"]').forEach(e => { e.innerHTML = `${e.innerHTML}${window.pkg.getChangeList()}` })
 
   if (window.pkg.screenshots.length > 0) {
     spawnScreenshots()
   }
-}
-
-function updateChangeDepiction(): void {
-  window.pkg.changelog.forEach(e => {
-    document.querySelector('#list').innerHTML += `<li>
-      <p><strong>Changes in Version ${e.version}</strong><span class="fright">${e.date}</span></p>
-      <p></p>
-      <ul><li>${e.changes.join('</li><li>')}</li></ul>
-    </li>`
-  })
-}
-
-function updateScreenDepiction(): void {
-  document.querySelector('#list').innerHTML = window.pkg.getScreenshotList()
 }
 
 function updateDepiction(): void {
@@ -86,9 +74,9 @@ function updateDepiction(): void {
   if (window.body.dataset.purpose === 'main') {
     updateMainDepiction()
   } else if (window.body.dataset.purpose === 'changelog') {
-    updateChangeDepiction()
+    document.querySelector('#list').innerHTML += window.pkg.getChangelog()
   } else if (window.body.dataset.purpose === 'screenshots') {
-    updateScreenDepiction()
+    document.querySelector('#list').innerHTML = window.pkg.getScreenshotList()
   }
 }
 
@@ -123,7 +111,7 @@ function load(): void {
     window.location.href = '/'
   } else {
     window
-      .fetch(`/data/${window.params.repo}.json`)
+      .fetch(`/assets/data/${window.params.repo}.json`)
       .then(r => r.json())
       .then(r => {
         window.pkg = new Package(r)

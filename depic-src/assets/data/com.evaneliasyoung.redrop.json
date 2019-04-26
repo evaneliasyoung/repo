@@ -1,6 +1,7 @@
 {
   "title": "ReDrop",
-  "compat": "10.0.1-10.1.1",
+  "minVer": "10.0.1",
+  "maxVer": "10.1.1",
   "desc": "<p>An easier way to restart dropbear (redrop). Please only use this on devices using mach_portal (Yalu101), not Yalu102.</p>",
   "screenshots": [],
   "changelog": [

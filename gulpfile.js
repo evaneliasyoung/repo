@@ -38,7 +38,7 @@ gulp.task('html', () => {
 
 gulp.task('ts', () => {
   return new Promise((resolve, reject) => {
-    pump([gulp.src(`${srcDir}/**/*.ts`), $.newer(bldDir), $.typescript({ declaration: true }), gulp.dest(bldDir)])
+    pump([gulp.src(`${srcDir}/**/*.ts`), $.newer(bldDir), $.typescript({ declaration: false }), gulp.dest(bldDir)])
       .then(resolve)
       .catch(reject)
   })
@@ -48,31 +48,15 @@ gulp.task('code', gulp.parallel('css', 'html', 'ts'))
 // #endregion
 
 // #region Static
-gulp.task('fonts', () => {
+gulp.task('assets', () => {
   return new Promise((resolve, reject) => {
-    pump([gulp.src(`${srcDir}/fonts/*`), gulp.dest(`${bldDir}/fonts/`)])
+    pump([gulp.src(`${srcDir}/assets/**/*`), gulp.dest(`${bldDir}/assets/`)])
       .then(resolve)
       .catch(reject)
   })
 })
 
-gulp.task('data', () => {
-  return new Promise((resolve, reject) => {
-    pump([gulp.src(`${srcDir}/data/*`), gulp.dest(`${bldDir}/data/`)])
-      .then(resolve)
-      .catch(reject)
-  })
-})
-
-gulp.task('tweaks', () => {
-  return new Promise((resolve, reject) => {
-    pump([gulp.src(`${srcDir}/tweaks/**/*`), gulp.dest(`${bldDir}/tweaks/`)])
-      .then(resolve)
-      .catch(reject)
-  })
-})
-
-gulp.task('static', gulp.parallel('fonts', 'data', 'tweaks'))
+gulp.task('static', gulp.parallel('assets'))
 // #endreion
 
 gulp.task('all', gulp.parallel('code', 'static'))

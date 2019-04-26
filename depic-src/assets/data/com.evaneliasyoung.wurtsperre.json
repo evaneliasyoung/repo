@@ -1,7 +1,7 @@
 {
   "title": "Wurtsperre",
-  "compat": "7.0-12.1.2",
-  "update": "2019-03-17",
+  "minVer": "7.0.0",
+  "maxVer": "12.2.0",
   "desc": "<p>Word style clock for LockHTML, it features an array of customization features (including languages!).<br>It includes support for the following languages.</p><ul><li>English</li><li>Español</li><li>Deutsche</li></ul>",
   "screenshots": [
     "com.evaneliasyoung.wurtsperre/screen1.png",
