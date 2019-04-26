@@ -1,0 +1,62 @@
+{
+  "title": "Assh",
+  "minVer": "7.0.0",
+  "maxVer": "12.2.0",
+  "desc": "<p>An easier way to use ssh, instead of having to retype all of the connection information it fills it all in from a config file. The information is stored in /var/mobile/Library/Assh/settings.</p>",
+  "screenshots": [],
+  "changelog": [
+    {
+      "version": "0.2.1",
+      "changes": [
+        "Nano not needed since privileges are a pain"
+      ],
+      "date": "2017-04-23"
+    },
+    {
+      "version": "0.2",
+      "changes": [
+        "THESE CHANGES ARE NECCESSARY IF YOU WANT TO USE ASSH WITHOUT ROOT PRIVALEGES",
+        "Settings <em>will be reset</em> upon updates",
+        "Settings can no longer be generated",
+        "Removing settings will <em>require a reinstall</em> of Assh"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1.4",
+      "changes": [
+        "Library isn't readonly, I just forget the directory portion of the filename"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1.3",
+      "changes": [
+        "Library is readonly, now in Documents folder"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1.2",
+      "changes": [
+        "Settings should now stay between versions",
+        "Now requires nano, so... there is an editor now!"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1.1",
+      "changes": [
+        "No good command-line text editors on iOS, so manual editing required (Filza)"
+      ],
+      "date": "2017-04-22"
+    },
+    {
+      "version": "0.1",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2017-04-21"
+    }
+  ]
+}

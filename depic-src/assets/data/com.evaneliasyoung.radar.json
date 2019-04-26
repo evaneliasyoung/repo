@@ -1,0 +1,23 @@
+{
+  "title": "radar",
+  "minVer": "7.0.0",
+  "maxVer": "12.2.0",
+  "desc": "<p>Control your device over ssh</p>",
+  "screenshots": [],
+  "changelog": [
+    {
+      "version": "0.1.1",
+      "changes": [
+        "Fixed the help message"
+      ],
+      "date": "2017-06-09"
+    },
+    {
+      "version": "0.1",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2017-06-09"
+    }
+  ]
+}

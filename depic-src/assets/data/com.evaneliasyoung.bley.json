@@ -1,0 +1,17 @@
+{
+  "title": "Bley",
+  "minVer": "7.0.0",
+  "maxVer": "11.4.1",
+  "desc": "<p>An amalgamation of Blue and Grey, a bluish-greyish theme for Anemone.</p>",
+  "screenshots": [],
+  "changelog": [
+    {
+      "version": "1.0a",
+      "changes": [
+        "<strong>A IS FOR ALPHA</strong>",
+        "Wallpapers added"
+      ],
+      "date": "2017-03-07"
+    }
+  ]
+}
