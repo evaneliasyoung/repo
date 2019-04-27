@@ -18,3 +18,5 @@
 *.woff binary
 *.woff2 binary
 *.deb binary
+*bz2 binary
+*gz binary
