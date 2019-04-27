@@ -1,0 +1,234 @@
+Package: com.evaneliasyoung.achtsperre
+Version: 1.0.3
+Section: Widgets
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: com.bushe.lockhtml4
+Architecture: iphoneos-arm
+Size: 6524
+MD5sum: 4bdac6e36cd1e723a8c42d1c2e8c8f21
+SHA1: 524a1efa8361747641bdab506d20f2d0c0eb8c7e
+SHA256: 4ff4a6def028b88d71be5fb3a0cf3c39570e1e92a7796a2a2fd96dc42e37d390
+Description: Galaxy S8 style clock for LockHTML
+Name: Achtsperre
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.achtsperre
+
+Package: com.evaneliasyoung.assh
+Version: 0.2.1
+Section: Development
+Maintainer: Evan <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Size: 1106
+MD5sum: f072fef78edec8c18de1e70376b0991a
+SHA1: ab2c5331e546b3d42d9a533146600e7feb3d7a7c
+SHA256: 5b14342ec699d7f527e330ea66af09f46fbebc5dae89987b3192e78a2eeb3f05
+Description: An easier way to ssh into things, instead of having to retype the info this will do it for you.
+Name: Assh
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.assh
+
+Package: com.evaneliasyoung.bley
+Version: 1.0a
+Section: Themes
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: com.anemonetheming.anemone
+Architecture: iphoneos-arm
+Size: 4517556
+MD5sum: 16bd01cef680db2a377eb2baeb844631
+SHA1: 664d183fc9d9b9101e444c3c3307f1df4502441b
+SHA256: 69661895726cdcdc61956aea5ab63066fb1782ea26a9e9d74303e3f618d443bd
+Description: Blue-Grey theme for anemone
+Name: Bley
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.bley
+
+Package: com.evaneliasyoung.dassperre
+Version: 1.0.4
+Section: Widgets
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: com.bushe.lockhtml4
+Architecture: iphoneos-arm
+Size: 30474
+MD5sum: 3a95f6d992e88564b5f30361a1218c01
+SHA1: 6818e8f128815f02a0539cfb4101377454a5d130
+SHA256: 51037f4be9642a614773dc1b4575c2386b252230b2db465cace994e372e6dfb9
+Description: A remake of my favorite GroovyLock theme.
+Name: Daßperre
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.dassperre
+
+Package: com.evaneliasyoung.farbesperre
+Version: 1.0.2
+Section: Widgets
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: com.bushe.lockhtml4
+Architecture: iphoneos-arm
+Size: 2482
+MD5sum: a3254d39a725aece277e0b7ca222ebbf
+SHA1: 8bf625ec6d24cec65665d2236ba233ad70b0bc14
+SHA256: e4eb07d1e1915a2a2fa4c460e0507e694bcdf81d4bdbc679aad5514bb0bbac52
+Description: Color Apple Watch style clock for LockHTML
+Name: Farbesperre
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.farbesperre
+
+Package: com.evaneliasyoung.flachsperre
+Version: 1.0.4
+Section: Widgets
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: com.bushe.lockhtml4
+Architecture: iphoneos-arm
+Size: 153166
+MD5sum: be515b5a4f73ae3efc107bc3d5f56cfe
+SHA1: da708cda517fee1a89bb1b9006234fda71c443ae
+SHA256: 6950252f68d6e60d79bc11ba634f89fc873e218c8f2be15099049e195b7844da
+Description: Flat design for LockHTML
+Name: Flachsperre
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.flachsperre
+
+Package: com.evaneliasyoung.gravy
+Version: 1.10.1
+Section: Themes
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: com.anemonetheming.anemone
+Architecture: iphoneos-arm
+Size: 2277084
+MD5sum: 4686703f3557e3a3668982cab0ea07de
+SHA1: df6a6fad65e51273c6205c50d7843890fbc63d5b
+SHA256: 3862debe568b0f43ea3aed5f5abcddf86d6bc22948ff67908c2ee104fb7e60b6
+Description: More icons for ArkLotif's Biscuit
+Name: Gravy
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.gravy
+
+Package: com.evaneliasyoung.ip
+Version: 0.1
+Section: Development
+Maintainer: Evan <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Size: 680
+MD5sum: e4ff363a0fc42dcff08aa3dea22c5554
+SHA1: 61f9885154fcf3fa82157c11b15377dbf920c764
+SHA256: aac1c5841fe905876e455b96b70a0950748219008464a9cb1e7832faed373cd2
+Description: Easily get your ip address.
+Name: ip
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.ip
+
+Package: com.evaneliasyoung.kreissperre
+Version: 1.1.2
+Section: Widgets
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: com.bushe.lockhtml4
+Architecture: iphoneos-arm
+Size: 309364
+MD5sum: e6e7118649a11c47b8bd59b02769dd71
+SHA1: 2723eb80a93e1c8b55e725ca67cc849446b57157
+SHA256: e7c01121437763adeba073be83452f6a0b08f613dccd439b071469a4e341b1f7
+Description: Round Apple Watch style clock for LockHTML
+Name: Kreissperre
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.kreissperre
+
+Package: com.evaneliasyoung.machspring
+Version: 0.1.3
+Section: Development
+Maintainer: Evan <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Size: 718
+MD5sum: 59b896ef4bfa21d7cb73587de1fc29d0
+SHA1: 3ebfa534e294b9f3e169fab46548095938f54d2e
+SHA256: a1a580f4e6a2caebdd4dabeebccbd5ca6e2e062878ec80d2dcfba249ed957695
+Description: An alternative way to respring with mach_portal
+Name: MachSpring
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.machspring
+
+Package: com.evaneliasyoung.machstrate
+Version: 0.1.3
+Section: Development
+Maintainer: Evan <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Size: 1262
+MD5sum: 1958d9e2c22d13823ddda3df75ce34c8
+SHA1: 94e8c5a7e68b50bf602c35b60911b903258cd1e7
+SHA256: 2b8d92dbe66da7933fe6e219134ddb4a972db9495e7e90968151f143b22ec1d3
+Description: The correct way to enable substrate for mach_portal.
+Name: MachStrate
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.machstrate
+
+Package: com.evaneliasyoung.radar
+Version: 0.1.1
+Section: Development
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: libactivator
+Architecture: iphoneos-arm
+Size: 1468
+MD5sum: 8c3c2cf789a8140d4ccd241bf65fde1c
+SHA1: fa4d44c1e14836f69738d0a7b9738751bb2f6397
+SHA256: 4445b7178b7fab87fd6697193a33be5426fcb0dd934356973b5d7f150f602483
+Description: Control your iOS device over ssh.
+Name: radar
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.radar
+
+Package: com.evaneliasyoung.redrop
+Version: 0.1.5
+Section: Development
+Maintainer: Evan <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Size: 740
+MD5sum: f86620e114a3b0cdb0e7125d6aee8544
+SHA1: c4b55f08e7140aca17f0c8b87ee2d26c9a9e0bc6
+SHA256: 48961f48cabf9a492eb70785ef1097cf82797d1a5913ee1a3f697c1f145aac25
+Description: An easier way to restart dropbear
+Name: ReDrop
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.redrop
+
+Package: com.evaneliasyoung.wemo
+Version: 0.2
+Section: Development
+Maintainer: Evan <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Size: 1452
+MD5sum: 95787f31a8c55c681fc751137ead6ec4
+SHA1: b51c4a2c534ac9b2673cab0c2a49b56906429f31
+SHA256: cf1876225b1e0c8423b413ace7f9e8ecf2a969353dd7ce0cabd30e0c6534e52f
+Description: I hate the wemo app, so I made a command line tool for it.
+Name: Wemo
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.wemo
+
+Package: com.evaneliasyoung.wurtsperre
+Version: 1.2.6
+Section: Widgets
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: com.bushe.lockhtml4
+Architecture: iphoneos-arm
+Size: 153806
+MD5sum: 83540991e2832ae78f620936a5efc44a
+SHA1: 55c5627278e17ee28f34139b6c3a56624c037a30
+SHA256: e0f18b559761b6cb6b39eefe638bab6873cb6ee7c06c015fad4c3c18332c3248
+Description: Word style clock for LockHTML
+Name: Wurtsperre
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.wurtsperre
+
+Package: com.evaneliasyoung.zeppelinguitars
+Version: 1.1.1
+Section: Addons (Zeppelin)
+Maintainer: Evan <evanyoung762@gmail.com>
+Depends: com.alexzielenski.zeppelin
+Architecture: iphoneos-arm
+Size: 126316
+MD5sum: f7536c6ce11b800b96f552a2fadaa117
+SHA1: c798abca54e201a5c9d2cdf7eeec19480e85338e
+SHA256: 7ef0eb13df0c46d27c78096592f66342fa0b92e14a869328b3ce59eff592846d
+Description: Popular guitar brands for Zeppelin
+Name: Zeppelin - Guitar Brands
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.zeppelinguitars
+
