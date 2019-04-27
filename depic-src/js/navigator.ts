@@ -39,3 +39,7 @@ function parseSearch(): { [index: string]: string } {
 
   return params
 }
+
+function isStandalone() {
+  return (window.navigator as any).standalone === true
+}

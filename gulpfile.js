@@ -9,9 +9,9 @@ let srcDir = 'depic-src'
 let bldDir = 'depic-build'
 
 // #region Code
-gulp.task('css', () => {
+gulp.task('scss', () => {
   return new Promise((resolve, reject) => {
-    pump([gulp.src(`${srcDir}/**/*.scss`), $.newer(bldDir), $.sass.sync({ outputStyle: 'compressed' }).on('error', $.sass.logError), gulp.dest(bldDir)])
+    pump([gulp.src(`${srcDir}/**/*.scss`), $.newer(bldDir), $.sass.sync({ outputStyle: 'compressed' }).on('error', $.sass.logError), $.concat('styles.css'), gulp.dest(bldDir)])
       .then(resolve)
       .catch(reject)
   })
@@ -38,13 +38,13 @@ gulp.task('html', () => {
 
 gulp.task('ts', () => {
   return new Promise((resolve, reject) => {
-    pump([gulp.src(`${srcDir}/**/*.ts`), $.newer(bldDir), $.typescript({ declaration: false }), gulp.dest(bldDir)])
+    pump([gulp.src(`${srcDir}/**/*.ts`), $.newer(bldDir), $.typescript({ lib: ['dom', 'esnext'], declaration: false }), $.concat('scripts.js'), $.uglify(), gulp.dest(bldDir)])
       .then(resolve)
       .catch(reject)
   })
 })
 
-gulp.task('code', gulp.parallel('css', 'html', 'ts'))
+gulp.task('code', gulp.parallel('scss', 'html', 'ts'))
 // #endregion
 
 // #region Static
@@ -56,7 +56,40 @@ gulp.task('assets', () => {
   })
 })
 
-gulp.task('static', gulp.parallel('assets'))
+gulp.task('root', () => {
+  return new Promise((resolve, reject) => {
+    pump([gulp.src([`${srcDir}/apple-touch-icon.png`, `${srcDir}/CydiaIcon.png`]), gulp.dest(`${bldDir}/`)])
+      .then(resolve)
+      .catch(reject)
+  })
+})
+
+gulp.task('deb', () => {
+  return new Promise((resolve, reject) => {
+    pump([gulp.src('deb/**/*'), gulp.dest(`${bldDir}/deb/`)])
+      .then(resolve)
+      .catch(reject)
+  })
+})
+
+gulp.task('packages', () => {
+  return new Promise((resolve, reject) => {
+    pump([gulp.src('Packages*'), gulp.dest(`${bldDir}/`)])
+      .then(resolve)
+      .catch(reject)
+  })
+})
+
+gulp.task('release', () => {
+  return new Promise((resolve, reject) => {
+    pump([gulp.src('Release'), gulp.dest(`${bldDir}/`)])
+      .then(resolve)
+      .catch(reject)
+  })
+})
+
+gulp.task('repo', gulp.parallel('deb', 'packages', 'release'))
+gulp.task('static', gulp.parallel('assets', 'root', 'repo'))
 // #endreion
 
 gulp.task('all', gulp.parallel('code', 'static'))

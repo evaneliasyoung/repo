@@ -3,32 +3,29 @@ interface Window {
   pkg: Package
   pkgs: number
   params: { [index: string]: string }
+  cydia: boolean
   body: HTMLBodyElement
+  root: HTMLElement
+  theme: string
 }
 
 // #region Cydia
-function checkCydia(): void {
-  if (navigator.userAgent.indexOf('Cydia') !== -1) {
-    if (document.title.indexOf(' \u00b7 ') !== -1) {
-      document.title = document.title.split(' \u00b7 ')[0]
-    }
-    document.documentElement.classList.add('cydia')
-  } else {
-    document.documentElement.classList.remove('cydia', 'depiction')
-  }
-}
+function correctCydia(): Promise<void> {
+  return new Promise((resolve) => {
+    if (window.cydia) {
+      let base: HTMLElement = document.createElement('base')
+      let cydiaBlankLinks: HTMLCollectionOf<Element> = document.getElementsByClassName('cydia_blank')
 
-function correctCydia(): void {
-  if (document.documentElement.classList.contains('cydia')) {
-    let base: HTMLElement = document.createElement('base')
-    let cydiaBlankLinks: HTMLCollectionOf<Element> = document.getElementsByClassName('cydia_blank')
+      window.root.classList.add('cydia')
 
-    base.setAttribute('target', '_open')
-    document.head.appendChild(base)
-    for (let i = 0; i < cydiaBlankLinks.length; ++i) {
-      cydiaBlankLinks[i].setAttribute('target', '_blank')
+      base.setAttribute('target', '_open')
+      document.head.appendChild(base)
+      for (let i = 0; i < cydiaBlankLinks.length; ++i) {
+        cydiaBlankLinks[i].setAttribute('target', '_blank')
+      }
     }
-  }
+    resolve()
+  })
 }
 // #endregion
 
@@ -89,13 +86,34 @@ function spawnScreenshots(): void {
   document.querySelector('main > ul').innerHTML += `<li><a href='screenshots.html${window.location.search}' role='button' class='cydia_blank'>View Screenshots</a></li>`
 }
 
+function getPackage(): Promise<any> {
+  return new Promise((resolve, reject) => {
+    if (!window.params.repo) {
+      window.location.href = '/'
+      reject()
+    } else {
+      fetch(`/assets/data/${window.params.repo}.json`)
+        .then(r => r.json())
+        .then(r => { window.pkg = new Package(r) })
+        .then(r => resolve(window.pkg))
+        .catch(r => reject(r))
+    }
+  })
+}
+
 function mainLoad(): void {
+  window.cydia = navigator.userAgent.indexOf('Cydia') !== -1
   window.d = new Device()
-  window.body = document.querySelector('body')
   window.params = parseSearch()
   window.pkgs = 16
+  window.body = document.querySelector('body')
+  window.root = document.documentElement
+
+  if (isStandalone()) { window.body.style.marginBottom = '1rem' }
 
   defaultCookie('theme', 'classic')
+  window.theme = getCookie('theme') || 'classic'
+  window.root.classList.add(window.theme)
 
   getFooter()
 }
@@ -106,19 +124,6 @@ function rootLoad(): void {
 
 function load(): void {
   mainLoad()
-
-  if (!window.params.repo) {
-    window.location.href = '/'
-  } else {
-    window
-      .fetch(`/assets/data/${window.params.repo}.json`)
-      .then(r => r.json())
-      .then(r => {
-        window.pkg = new Package(r)
-      })
-      .then(updateDepiction)
-  }
-
-  checkCydia()
+  getPackage().then(updateDepiction)
   correctCydia()
 }

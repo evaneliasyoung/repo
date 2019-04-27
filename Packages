@@ -4,10 +4,10 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Size: 6538
-MD5sum: 4e7999a75b927727ee268712ea27dd9b
-SHA1: 8566ebbb7cf64c1c99a16a4d5484c6aed87399a0
-SHA256: 1bfa57ea88c0b38730056e34b6aabba77427b2c01f36d7a001346fb21ebe0e92
+Size: 6524
+MD5sum: 4bdac6e36cd1e723a8c42d1c2e8c8f21
+SHA1: 524a1efa8361747641bdab506d20f2d0c0eb8c7e
+SHA256: 4ff4a6def028b88d71be5fb3a0cf3c39570e1e92a7796a2a2fd96dc42e37d390
 Description: Galaxy S8 style clock for LockHTML
 Name: Achtsperre
 Author: Evan <evanyoung762@gmail.com>
@@ -18,10 +18,10 @@ Version: 0.2.1
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Size: 1108
-MD5sum: cf61d0561ae45c03324ebf16be6c967c
-SHA1: a72397191a6e3aa419c3c92536bd8c6d237e8f65
-SHA256: 9be1aa68bdd62c27b397aedd1241316cbf59f6b7d69d95e33c2aec1ebe9ce917
+Size: 1106
+MD5sum: f072fef78edec8c18de1e70376b0991a
+SHA1: ab2c5331e546b3d42d9a533146600e7feb3d7a7c
+SHA256: 5b14342ec699d7f527e330ea66af09f46fbebc5dae89987b3192e78a2eeb3f05
 Description: An easier way to ssh into things, instead of having to retype the info this will do it for you.
 Name: Assh
 Author: Evan <evanyoung762@gmail.com>
@@ -33,10 +33,10 @@ Section: Themes
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.anemonetheming.anemone
 Architecture: iphoneos-arm
-Size: 4517554
-MD5sum: 7e64360d1ffbac3641689188d93f8288
-SHA1: 68d430eeab35eb532f8b0dceb96cddffd910e5fc
-SHA256: adb80dbf6b956deff3ae832df559c99e8efc8999a50628e72a8482a8df568cc9
+Size: 4517556
+MD5sum: 16bd01cef680db2a377eb2baeb844631
+SHA1: 664d183fc9d9b9101e444c3c3307f1df4502441b
+SHA256: 69661895726cdcdc61956aea5ab63066fb1782ea26a9e9d74303e3f618d443bd
 Description: Blue-Grey theme for anemone
 Name: Bley
 Author: Evan <evanyoung762@gmail.com>
@@ -48,10 +48,10 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Size: 30494
-MD5sum: b23a62268ad08144bcc10fe73ce89146
-SHA1: c054a87376ad431b04b6b10a4647289d2ebe4d3c
-SHA256: 244d30887202e95d4a18a0d9025325f7c64412755c5c1c45e7839e0545d7063a
+Size: 30474
+MD5sum: 3a95f6d992e88564b5f30361a1218c01
+SHA1: 6818e8f128815f02a0539cfb4101377454a5d130
+SHA256: 51037f4be9642a614773dc1b4575c2386b252230b2db465cace994e372e6dfb9
 Description: A remake of my favorite GroovyLock theme.
 Name: Daßperre
 Author: Evan <evanyoung762@gmail.com>
@@ -63,10 +63,10 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Size: 2498
-MD5sum: e94a708db1bbecd451515538b9871b46
-SHA1: cef5092eb23388350161cd8a188b412ba940f740
-SHA256: 563d8be2f1b7794463201a56b6e627a3f6d3cdb0895defea2844bfa2f265715f
+Size: 2482
+MD5sum: a3254d39a725aece277e0b7ca222ebbf
+SHA1: 8bf625ec6d24cec65665d2236ba233ad70b0bc14
+SHA256: e4eb07d1e1915a2a2fa4c460e0507e694bcdf81d4bdbc679aad5514bb0bbac52
 Description: Color Apple Watch style clock for LockHTML
 Name: Farbesperre
 Author: Evan <evanyoung762@gmail.com>
@@ -78,10 +78,10 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Size: 153176
-MD5sum: 0016ae0ddda6a9654fd3ab4d75f86ef6
-SHA1: 782dd40e6d3d468eb2d1a015886dd49d782fe990
-SHA256: de0ade381fbdd5cea82c3609a5d26ed7c9aa2647192955ac67da987c50d05ec0
+Size: 153166
+MD5sum: be515b5a4f73ae3efc107bc3d5f56cfe
+SHA1: da708cda517fee1a89bb1b9006234fda71c443ae
+SHA256: 6950252f68d6e60d79bc11ba634f89fc873e218c8f2be15099049e195b7844da
 Description: Flat design for LockHTML
 Name: Flachsperre
 Author: Evan <evanyoung762@gmail.com>
@@ -93,10 +93,10 @@ Section: Themes
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.anemonetheming.anemone
 Architecture: iphoneos-arm
-Size: 2277076
-MD5sum: 7f391ac94e0f3ad7c8b808bf0df1449f
-SHA1: e978d99ff6678f0f6350cb79b57b0847dc35aee9
-SHA256: e631e45c732ca6c0d14a2b7c4d440f20511c5c405c75ce38b87e492a48e37c58
+Size: 2277084
+MD5sum: 4686703f3557e3a3668982cab0ea07de
+SHA1: df6a6fad65e51273c6205c50d7843890fbc63d5b
+SHA256: 3862debe568b0f43ea3aed5f5abcddf86d6bc22948ff67908c2ee104fb7e60b6
 Description: More icons for ArkLotif's Biscuit
 Name: Gravy
 Author: Evan <evanyoung762@gmail.com>
@@ -108,9 +108,9 @@ Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Size: 680
-MD5sum: c8d4a646bb1ef5ffe74fcec359732fc2
-SHA1: 21cf80f3e9e9c31c573b38f4ebaceee4d360b649
-SHA256: 1f4abc7e4d18bc47695362520529f188e0649ecc46245c33ff1a1d96c4f9fe2b
+MD5sum: e4ff363a0fc42dcff08aa3dea22c5554
+SHA1: 61f9885154fcf3fa82157c11b15377dbf920c764
+SHA256: aac1c5841fe905876e455b96b70a0950748219008464a9cb1e7832faed373cd2
 Description: Easily get your ip address.
 Name: ip
 Author: Evan <evanyoung762@gmail.com>
@@ -122,10 +122,10 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Size: 309374
-MD5sum: 9d83e48c3775d1a56f8eef392bf5a6cd
-SHA1: 134001d36d9a702d8339cc8d3b951a43780f2d7d
-SHA256: 02bb2681f0ddf2ce360ae54d007b47369523ca033db4f9e946419520ae5160a9
+Size: 309364
+MD5sum: e6e7118649a11c47b8bd59b02769dd71
+SHA1: 2723eb80a93e1c8b55e725ca67cc849446b57157
+SHA256: e7c01121437763adeba073be83452f6a0b08f613dccd439b071469a4e341b1f7
 Description: Round Apple Watch style clock for LockHTML
 Name: Kreissperre
 Author: Evan <evanyoung762@gmail.com>
@@ -136,10 +136,10 @@ Version: 0.1.3
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Size: 716
-MD5sum: a39260560528d9150c1b73567dc04b13
-SHA1: 1a71547b40c3b1dd63a6d0955b4d22ec4f2bf898
-SHA256: ac6ae8169a89defef0465aefa5bd662c612e62d8ee9a9c5d145b6aa0bddf40c9
+Size: 718
+MD5sum: 59b896ef4bfa21d7cb73587de1fc29d0
+SHA1: 3ebfa534e294b9f3e169fab46548095938f54d2e
+SHA256: a1a580f4e6a2caebdd4dabeebccbd5ca6e2e062878ec80d2dcfba249ed957695
 Description: An alternative way to respring with mach_portal
 Name: MachSpring
 Author: Evan <evanyoung762@gmail.com>
@@ -150,10 +150,10 @@ Version: 0.1.3
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Size: 1260
-MD5sum: 428874eabf5cbf538dcc5cdc263390a8
-SHA1: 4704157254f00c6ac0c7dbdd1df09f4e5d945875
-SHA256: 06aea1df6b5a66f76a97b56c5b20b2f4aecb1886a5bc8ab3d30650aa62fee23d
+Size: 1262
+MD5sum: 1958d9e2c22d13823ddda3df75ce34c8
+SHA1: 94e8c5a7e68b50bf602c35b60911b903258cd1e7
+SHA256: 2b8d92dbe66da7933fe6e219134ddb4a972db9495e7e90968151f143b22ec1d3
 Description: The correct way to enable substrate for mach_portal.
 Name: MachStrate
 Author: Evan <evanyoung762@gmail.com>
@@ -165,10 +165,10 @@ Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: libactivator
 Architecture: iphoneos-arm
-Size: 1472
-MD5sum: a121080d56b5435042b1b8043c0951f1
-SHA1: f2845198feb0b0f6f8c3759943d6d97a038d7180
-SHA256: 5ca1feb4bfd60dfeb682991fd17da44d081551dde083a49a1707e2fb664deed1
+Size: 1468
+MD5sum: 8c3c2cf789a8140d4ccd241bf65fde1c
+SHA1: fa4d44c1e14836f69738d0a7b9738751bb2f6397
+SHA256: 4445b7178b7fab87fd6697193a33be5426fcb0dd934356973b5d7f150f602483
 Description: Control your iOS device over ssh.
 Name: radar
 Author: Evan <evanyoung762@gmail.com>
@@ -179,10 +179,10 @@ Version: 0.1.5
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Size: 742
-MD5sum: f53d388e739435e5255d468c48e0c270
-SHA1: f958fd33e9f14e1f4f93a3cc040abc380875f93d
-SHA256: 5dcf45c8f46882bb8bbaaaee63c91e6131591b4ea5c3095917423cc7e62970c8
+Size: 740
+MD5sum: f86620e114a3b0cdb0e7125d6aee8544
+SHA1: c4b55f08e7140aca17f0c8b87ee2d26c9a9e0bc6
+SHA256: 48961f48cabf9a492eb70785ef1097cf82797d1a5913ee1a3f697c1f145aac25
 Description: An easier way to restart dropbear
 Name: ReDrop
 Author: Evan <evanyoung762@gmail.com>
@@ -193,10 +193,10 @@ Version: 0.2
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Size: 1454
-MD5sum: 84dbc75b1afd2e18d83eab862631d1ae
-SHA1: 0fa2ef8894892cb97aeaa7306de8df17efc9c547
-SHA256: aede439010d8d59c0af6f52b036452addb52c6d1847e0375a3735f84136cd17f
+Size: 1452
+MD5sum: 95787f31a8c55c681fc751137ead6ec4
+SHA1: b51c4a2c534ac9b2673cab0c2a49b56906429f31
+SHA256: cf1876225b1e0c8423b413ace7f9e8ecf2a969353dd7ce0cabd30e0c6534e52f
 Description: I hate the wemo app, so I made a command line tool for it.
 Name: Wemo
 Author: Evan <evanyoung762@gmail.com>
@@ -208,10 +208,10 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Size: 153818
-MD5sum: 8481c08b264e110e5485e279c5818f6f
-SHA1: 80d85543ef2c8be76b70d657217bd1cbf52f1491
-SHA256: 39b5d9e26cdcb70dddcd84a59358f6db025294912d966b8a76b5779977e48295
+Size: 153806
+MD5sum: 83540991e2832ae78f620936a5efc44a
+SHA1: 55c5627278e17ee28f34139b6c3a56624c037a30
+SHA256: e0f18b559761b6cb6b39eefe638bab6873cb6ee7c06c015fad4c3c18332c3248
 Description: Word style clock for LockHTML
 Name: Wurtsperre
 Author: Evan <evanyoung762@gmail.com>
@@ -223,10 +223,10 @@ Section: Addons (Zeppelin)
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.alexzielenski.zeppelin
 Architecture: iphoneos-arm
-Size: 126320
-MD5sum: deae7c162843024b2e0dbd4485a53f62
-SHA1: 456ef567bde4976d72498bd019c6fe7e87f86a68
-SHA256: 888e39c4ce2e45d6cb332652a111c1cfe3f88080a0dec6c0395bb45a3380db94
+Size: 126316
+MD5sum: f7536c6ce11b800b96f552a2fadaa117
+SHA1: c798abca54e201a5c9d2cdf7eeec19480e85338e
+SHA256: 7ef0eb13df0c46d27c78096592f66342fa0b92e14a869328b3ce59eff592846d
 Description: Popular guitar brands for Zeppelin
 Name: Zeppelin - Guitar Brands
 Author: Evan <evanyoung762@gmail.com>
