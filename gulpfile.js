@@ -36,6 +36,14 @@ gulp.task('html', () => {
   })
 })
 
+gulp.task('php', () => {
+  return new Promise((resolve, reject) => {
+    pump([gulp.src(`${srcDir}/**/*.php`), $.newer(bldDir), gulp.dest(bldDir)])
+      .then(resolve)
+      .catch(reject)
+  })
+})
+
 gulp.task('ts', () => {
   return new Promise((resolve, reject) => {
     pump([gulp.src(`${srcDir}/**/*.ts`), $.newer(bldDir), $.typescript({ lib: ['dom', 'esnext'], declaration: false }), $.concat('scripts.js'), $.uglify(), gulp.dest(bldDir)])
@@ -44,7 +52,7 @@ gulp.task('ts', () => {
   })
 })
 
-gulp.task('code', gulp.parallel('scss', 'html', 'ts'))
+gulp.task('code', gulp.parallel('scss', 'html', 'php', 'ts'))
 // #endregion
 
 // #region Static

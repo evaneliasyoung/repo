@@ -6,5 +6,6 @@ Depends: com.anemonetheming.anemone
 Description: Blue-Grey theme for anemone
 Author: Evan <evanyoung762@gmail.com>
 Maintainer: Evan <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/?repo=com.evaneliasyoung.bley
+Depiction: https://repo.evaneliasyoung.com/depic.html?repo=com.evaneliasyoung.bley
+SileoDepiction: https://repo.evaneliasyoung.com/sileo.php?repo=com.evaneliasyoung.bley
 Section: Themes
