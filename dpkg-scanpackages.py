@@ -65,6 +65,8 @@ def getWrite(deb):
             t = getHash(deb, f)
         elif (f == 'Size'):
             t = os.path.getsize(deb)
+        elif (f == 'Filename'):
+            t = f'deb/{deb[6:]}'
         else:
             t = runCommand(['dpkg-deb', '-f', deb, f]).strip()
         if t != '':
