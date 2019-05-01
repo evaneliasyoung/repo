@@ -111,7 +111,7 @@ foreach ($data['changelog'] as $change) {
         'class' => 'DepictionMarkdownView'
     ));
     array_push($out['tabs'][1]['views'], array(
-        'markdown' => '<small style=\"color: #999; margin-top: -8px;\">' . $change['date'] . '</small>',
+        'markdown' => '<small style="color: #999; margin-top: -8px;">' . $change['date'] . '</small>',
         'useSpacing' => true,
         'class' => 'DepictionMarkdownView'
     ));
@@ -119,6 +119,6 @@ foreach ($data['changelog'] as $change) {
 
 header('Content-type: application/json');
 http_response_code(200);
-die(json_encode($out));
+die(json_encode($out, JSON_UNESCAPED_SLASHES));
 
 ?>
