@@ -1,3 +1,19 @@
+Package: com.arklotif.biscuit
+Version: 1.0
+Section: Themes
+Maintainer: Evan <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Filename: deb/com.arklotif.biscuit_1.0_iphoneos-arm.deb
+Size: 92977122
+MD5sum: e763b34599b275a79d520911258f0633
+SHA1: 3bbeba279f88a865f782bef2a55f02d164927af5
+SHA256: 60a40fa6686832fb67f79e21d228fac45e4ac2b5c0beffedf7eddf3664104318
+Description: Biscuit theme by ArkLotif
+Name: Biscuit
+Author: Evan <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/depic.html?repo=com.arklotif.biscuit
+SileoDepiction: https://repo.evaneliasyoung.com/sileo.php?repo=com.arklotif.biscuit
+
 Package: com.evaneliasyoung.achtsperre
 Version: 1.0.3
 Section: Widgets
