@@ -2,6 +2,7 @@
 import os
 import shutil
 import subprocess
+import glob
 
 
 def deleteDS():
@@ -9,10 +10,6 @@ def deleteDS():
         for f in files:
             if f.endswith(".DS_Store"):
                 os.remove(os.path.join(root, f))
-
-
-def deleteDB():
-    os.system(f'rm -rf {os.path.join(".", "deb", "*")}')
 
 
 def runCommand(cmd):
@@ -37,14 +34,23 @@ def loopPackage(pkg):
     newDeb = '_'.join([ctrl['package'], ctrl['version'],
                        ctrl['architecture']]) + '.deb'
     newDebRoot = os.path.join('.', 'deb', newDeb)
+    oldDebMatch = [m for m in glob.glob(
+        f'{os.path.join(".", "deb", pkg)}*') if m != newDebRoot]
+
+    if(os.path.isfile(newDebRoot)):
+        print(f'[-] {pkg} already compiled')
+        return
+    if(oldDebMatch):
+        for e in range(len(oldDebMatch)):
+            os.remove(oldDebMatch[e])
+        return
 
     runCommand(['dpkg-deb', '-bZgzip', pkgRoot])
     shutil.move(oldDebRoot, newDebRoot)
-    print(f'{pkg} => {newDeb}')
+    print(f'[+] {pkg} => {newDeb}')
 
 
 deleteDS()
-deleteDB()
 for f in os.listdir(os.path.join('.', 'src')):
     if (os.path.isfile(f)):
         continue
