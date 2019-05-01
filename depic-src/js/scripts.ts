@@ -6,7 +6,6 @@ interface Window {
   cydia: boolean
   body: HTMLBodyElement
   root: HTMLElement
-  theme: string
 }
 
 // #region Cydia
@@ -110,10 +109,6 @@ function mainLoad(): void {
   window.root = document.documentElement
 
   if (isStandalone()) { window.body.style.marginBottom = '1rem' }
-
-  defaultCookie('theme', 'classic')
-  window.theme = getCookie('theme') || 'classic'
-  window.root.classList.add(window.theme)
 
   getFooter()
 }
