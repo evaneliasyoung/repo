@@ -35,6 +35,7 @@ fields = [
     'Homepage',
     'Website',
     'Depiction',
+    'SileoDepiction',
     'Icon'
 ]
 
