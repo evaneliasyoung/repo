@@ -1,0 +1,16 @@
+{
+  "title": "Biscuit",
+  "minVer": "7.0.0",
+  "maxVer": "12.2.0",
+  "desc": "<p>Biscuit theme by ArkLotif</p>",
+  "screenshots": [],
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2019-05-01"
+    }
+  ]
+}

@@ -104,7 +104,7 @@ function mainLoad(): void {
   window.cydia = navigator.userAgent.indexOf('Cydia') !== -1
   window.d = new Device()
   window.params = parseSearch()
-  window.pkgs = 16
+  window.pkgs = 17
   window.body = document.querySelector('body')
   window.root = document.documentElement
 
