@@ -1,3 +1,8 @@
+<?php
+include_once(getcwd() . '/include.php');
+dataPathDie();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -14,8 +19,7 @@
   <meta name="html-valid" content="HTML5, ARIA, SVG1.1, MathML 2.0">
   <meta name="css-valid" content="CSSL 3">
   <meta name="lighthouse" content="281; A+">
-  <link rel="stylesheet" type="text/css" href="/styles.css">
-  <script src="/scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="/styles.css">  <script src="/scripts.js" charset="utf-8"></script>
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -32,70 +36,29 @@
   <meta name="navto" content="home">
 </head>
 
-<body onload="load()" ontouchstart="" data-purpose="main">
+<body ontouchstart="">
   <header>
     <div>
-      <a></a>
-      <h1 data-depic="title"></h1>
+      <a href="/cydia/<?= $_GET['repo']; ?>"><?= $data['title'] ?></a>
+      <h1>Full Changelog</h1>
     </div>
   </header>
 
   <main>
-    <h2>Description</h2>
-    <ul>
-      <li data-depic="desc"></li>
-    </ul>
-
-    <h2>Information</h2>
-    <ul class="tablelike">
-      <li>
-        <span>Version</span>
-        <span data-depic="version"></span>
-      </li>
-      <li>
-        <span>Updated</span>
-        <span data-depic="date"></span>
-      </li>
-      <li>
-        <span>License</span>
-        <span>Free Package</span>
-      </li>
-      <li>
-        <span>Supported iOS Versions</span>
-        <span data-depic="compat"></span>
-      </li>
-      <li>
-        <span>Compatible</span>
-        <span data-depic="compatStr"></span>
-      </li>
-    </ul>
-
-    <h2>Changelog</h2>
-    <ul>
-      <li>
-        <p>
-          <strong data-depic="version">Changes in Version </strong>
-          <span class="fright" data-depic="date"></span>
-        </p>
-        <p>
-          <ul data-depic="change"></ul>
-        </p>
-      </li>
-      <li>
-        <a href="changelog.html" role="button" class="cydia_blank">Full Changelog</a>
-      </li>
-    </ul>
-
-    <h2>Social Media</h2>
-    <ul>
-      <li><a href="https://paypal.me/DocCodes" role="button">Donate to Further Development</a></li>
-      <li><a href="https://eey.pw/@" role="button">Follow on Twitter</a></li>
-      <li><a href="https://eey.pw/\<\>" role="button">View on GitHub</a></li>
-      <li><a href="https://eey.pw/^_^" role="button">View on Reddit</a></li>
+    <ul style="list-style: none;">
+    <?php
+    foreach ($data['changelog'] as $chg) {
+      echo '<li>' .
+      '<p><strong>Changes in Version ' . $chg['version'] . '</strong><span class="fright">' . $chg['date'] . '</span></p>' .
+      '<p></p>' .
+      '<ul><li>' . implode('</li><li>', $chg['changes']) . '</li></ul>' .
+      '</li>';
+    }
+    ?>
     </ul>
   </main>
 
-  <footer></footer>
+  <footer><?= getFooter(); ?></footer>
 </body>
 
 </html>

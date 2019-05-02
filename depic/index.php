@@ -1,3 +1,7 @@
+<?php
+include_once(getcwd() . '/include.php');
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -14,8 +18,7 @@
   <meta name="html-valid" content="HTML5, ARIA, SVG1.1, MathML 2.0">
   <meta name="css-valid" content="CSSL 3">
   <meta name="lighthouse" content="281; A+">
-  <link rel="stylesheet" type="text/css" href="/styles.css">
-  <script src="/scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="/styles.css">  <script src="/scripts.js" charset="utf-8"></script>
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -73,35 +76,20 @@
 
     <h2>Tweaks</h2>
     <ul>
-      <li><a href="depic.html?repo=com.evaneliasyoung.achtsperre" role="button" cydia="cydia_blank">Achtsperre</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.assh" role="button" cydia="cydia_blank">assh</a></li>
-      <li><a href="depic.html?repo=com.arklotif.biscuit" role="button" cydia="cydia_blank">Biscuit</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.bley" role="button" cydia="cydia_blank">Bley</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.dassperre" role="button" cydia="cydia_blank">Daßperre</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.farbesperre" role="button" cydia="cydia_blank">Farbesperre</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.flachsperre" role="button" cydia="cydia_blank">Flachsperre</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.gravy" role="button" cydia="cydia_blank">Gravy</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.ip" role="button" cydia="cydia_blank">ip</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.kreissperre" role="button" cydia="cydia_blank">Kreissperre</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.machspring" role="button" cydia="cydia_blank">MachSpring</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.machstrate" role="button" cydia="cydia_blank">MachStrate</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.radar" role="button" cydia="cydia_blank">radar</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.redrop" role="button" cydia="cydia_blank">ReDrop</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.wemo" role="button" cydia="cydia_blank">wemo</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.wurtsperre" role="button" cydia="cydia_blank">Wurtsperre</a></li>
-      <li><a href="depic.html?repo=com.evaneliasyoung.zeppelinguitars" role="button" cydia="cydia_blank">Zeppelin - Guitars</a></li>
+      <?php
+        foreach ($allTweaks as $bundle => $title) {
+            echo '<li><a href="/cydia/' . $bundle . '" role="button" cydia="cydia_blank">' . $title . '</a></li>';
+        }
+        ?>
     </ul>
 
     <h2>Social Media</h2>
     <ul>
-      <li><a href="https://paypal.me/DocCodes" role="button">Donate to Further Development</a></li>
-      <li><a href="https://eey.pw/@" role="button">Follow on Twitter</a></li>
-      <li><a href="https://eey.pw/\<\>" role="button">View on GitHub</a></li>
-      <li><a href="https://eey.pw/^_^" role="button">View on Reddit</a></li>
+      <?= getSocials(); ?>
     </ul>
   </main>
 
-  <footer>Copyright Evan Elias Young 2017-2019</footer>
+  <footer><?= getFooter(); ?></footer>
 </body>
 
 </html>

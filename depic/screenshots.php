@@ -1,3 +1,8 @@
+<?php
+include_once(getcwd() . '/include.php');
+dataPathDie();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -14,8 +19,7 @@
   <meta name="html-valid" content="HTML5, ARIA, SVG1.1, MathML 2.0">
   <meta name="css-valid" content="CSSL 3">
   <meta name="lighthouse" content="281; A+">
-  <link rel="stylesheet" type="text/css" href="/styles.css">
-  <script src="/scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="/styles.css">  <script src="/scripts.js" charset="utf-8"></script>
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -32,19 +36,25 @@
   <meta name="navto" content="home">
 </head>
 
-<body onload="load()" ontouchstart="" data-purpose="screenshots">
+<body ontouchstart="">
   <header>
     <div>
-      <a></a>
+      <a href="/cydia/<?= $_GET['repo']; ?>"><?= $data['title'] ?></a>
       <h1>Screenshots</h1>
     </div>
   </header>
 
   <main>
-    <ul id="list" style="list-style: none;"></ul>
+    <ul style="list-style: none;">
+    <?php
+    foreach ($data['screenshots'] as $url) {
+      echo '<li><img src="/assets/tweaks/' . $url . '" class="screenshot-image"></li>';
+    }
+    ?>
+    </ul>
   </main>
 
-  <footer></footer>
+  <footer><?= getFooter(); ?></footer>
 </body>
 
 </html>
