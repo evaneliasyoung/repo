@@ -13,11 +13,13 @@ if (!file_exists($path)) {
 
 $data = json_decode(file_get_contents($path), true);
 $out = array(
+    'class' => 'DepictionTabView',
     'minVersion' => '0.1',
-    'headerImage' => '',
+    'headerImage' => 'https://repo.evaneliasyoung.com/assets/banner.png',
     'tintColor' => '#003366',
     'tabs' => array(
         array(
+            'class' => 'DepictionStackView',
             'tabname' => 'Details',
             'views' => array(
                 array(
@@ -87,15 +89,14 @@ $out = array(
                     'spacing' => 20,
                     'class' => 'DepictionSpacerView'
                 )
-            ),
-            'class' => 'DepictionStackView'
+            )
         ),
         array(
+            'class' => 'DepictionStackView',
             'tabname' => 'Changelog',
             'views' => array()
         )
-    ),
-    'class' => 'DepictionTabView'
+    )
 );
 
 foreach ($data['changelog'] as $change) {
@@ -116,6 +117,25 @@ foreach ($data['changelog'] as $change) {
         'class' => 'DepictionMarkdownView'
     ));
 }
+
+$ouat = array(
+    'class' => 'DepictionTabView',
+    'minVersion' => '0.1',
+    'headerImage' => '',
+    'tintColor' => '#003366',
+    'tabs' => array(
+        array(
+            'class' => 'DepictionStackView',
+            'tabname' => 'Details',
+            'views' => array(
+                array(
+                    'class' => 'DepictionHeaderView',
+                    'title' => 'Test'
+                )
+            )
+        )
+    )
+);
 
 header('Content-type: application/json');
 http_response_code(200);
