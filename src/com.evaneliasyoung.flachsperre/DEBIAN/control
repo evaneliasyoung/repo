@@ -6,6 +6,6 @@ Depends: com.bushe.lockhtml4
 Description: Flat design for LockHTML
 Author: Evan <evanyoung762@gmail.com>
 Maintainer: Evan <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/depic.html?repo=com.evaneliasyoung.flachsperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo.php?repo=com.evaneliasyoung.flachsperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.flachsperre
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.flachsperre
 Section: Widgets
