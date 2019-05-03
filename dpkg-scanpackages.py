@@ -77,6 +77,7 @@ def getWrite(deb):
 
 def loopDeb(deb):
     packages.writelines(getWrite(deb))
+    print(deb)
 
 
 runCommand(['rm', '-rf', 'Packages*'])

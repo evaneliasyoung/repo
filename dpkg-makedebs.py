@@ -37,12 +37,12 @@ def loopPackage(pkg):
     oldDebMatch = [m for m in glob.glob(
         f'{os.path.join(".", "deb", pkg)}*') if m != newDebRoot]
 
-    if(os.path.isfile(newDebRoot)):
-        print(f'[-] {pkg} already compiled')
-        return
     if(oldDebMatch):
         for e in range(len(oldDebMatch)):
             os.remove(oldDebMatch[e])
+        return
+    if(os.path.isfile(newDebRoot)):
+        print(f'[-] {pkg} already compiled')
         return
 
     runCommand(['dpkg-deb', '-bZgzip', pkgRoot])
