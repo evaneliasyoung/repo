@@ -65,18 +65,22 @@ foreach ($data['changelog'] as $change) {
   array_push($out['tabs'][1]['views'], array(
     'title' => $change['version'],
     'useBoldText' => true,
-    'useBottomMargin' => true,
+    'useBottomMargin' => false,
     'class' => 'DepictionSubheaderView'
   ));
   array_push($out['tabs'][1]['views'], array(
-    'markdown' => '<ul><li>' . implode('</li><li>', $change['changes']) . '</li></ul>',
-    'useSpacing' => false,
+    'markdown' => '<ul><li style="text-indent: -0.25rem; margin-left: -0.25rem">' . implode('</li><li style="text-indent: -0.25rem; margin-left: -0.25rem;">', $change['changes']) . '</li></ul>',
+    'useSpacing' => true,
+    'useRawFormat' => true,
     'class' => 'DepictionMarkdownView'
   ));
-  array_push($out['tabs'][1]['views'], array(
+  /*array_push($out['tabs'][1]['views'], array(
     'markdown' => '<small style="color: #999; margin-top: -8px;">' . $change['date'] . '</small>',
     'useSpacing' => true,
     'class' => 'DepictionMarkdownView'
+  ));*/
+  array_push($out['tabs'][1]['views'], array(
+    'class' => 'DepictionSeparatorView'
   ));
 }
 

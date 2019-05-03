@@ -95,7 +95,7 @@ dataPathDie();
         </p>
       </li>
       <li>
-        <a href="changelog.html" role="button" class="cydia_blank">Full Changelog</a>
+        <a href="/changelog/<?= $_GET['repo'] ?>" role="button" class="cydia_blank">Full Changelog</a>
       </li>
     </ul>
 
