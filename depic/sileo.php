@@ -13,6 +13,15 @@ $out = array(
       'tabname' => 'Details',
       'views' => array(
         array(
+          'class' => 'DepictionScreenshotsView',
+          'itemCornerRadius' => 8,
+          'itemSize' => '{160, 284}',
+          'screenshots' => array()
+        ),
+        array(
+          'class' => 'DepictionSeparatorView'
+        ),
+        array(
           'markdown' => $data['desc'],
           'useSpacing' => true,
           'class' => 'DepictionMarkdownView'
@@ -61,6 +70,34 @@ $out = array(
   )
 );
 
+if (count($data['screenshots']) > 0) {
+  foreach ($data['screenshots'] as $url) {
+    array_push($out['tabs'][0]['views'][0]['screenshots'], array(
+      'accessibilityText' => 'Screenshot',
+      'url' => 'https://repo.eey.pw/assets/tweaks/' . $url
+    ));
+  }
+} else {
+  array_splice($out['tabs'][0]['views'], 0, 2);
+}
+
+foreach ($socials as $name => $url) {
+  array_push($out['tabs'][0]['views'], array(
+    'title' => $name,
+    'action' => $url,
+    'class' => 'DepictionTableButtonView'
+  ));
+}
+
+array_push($out['tabs'][0]['views'], array(
+  'spacing' => 16,
+  'class' => 'DepictionSpacerView'
+));
+array_push($out['tabs'][0]['views'], array(
+  'spacing' => 20,
+  'class' => 'DepictionSpacerView'
+));
+
 foreach ($data['changelog'] as $change) {
   array_push($out['tabs'][1]['views'], array(
     'title' => $change['version'],
@@ -83,24 +120,6 @@ foreach ($data['changelog'] as $change) {
     'class' => 'DepictionSeparatorView'
   ));
 }
-
-$socialArray = array();
-foreach ($socials as $name => $url) {
-  array_push($out['tabs'][0]['views'], array(
-    'title' => $name,
-    'action' => $url,
-    'class' => 'DepictionTableButtonView'
-  ));
-}
-
-array_push($out['tabs'][0]['views'], array(
-  'spacing' => 16,
-  'class' => 'DepictionSpacerView'
-));
-array_push($out['tabs'][0]['views'], array(
-  'spacing' => 20,
-  'class' => 'DepictionSpacerView'
-));
 
 header('Content-type: application/json');
 http_response_code(200);
