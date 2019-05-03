@@ -24,7 +24,7 @@
         </dict>
         <dict>
             <key>default</key>
-            <string>FFCC00</string>
+            <string>FFFFFF</string>
             <key>label</key>
             <string>Hour Color</string>
             <key>name</key>

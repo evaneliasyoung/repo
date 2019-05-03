@@ -10,6 +10,13 @@
   ],
   "changelog": [
     {
+      "version": "1.2.7",
+      "changes": [
+        "XenHTML support"
+      ],
+      "date": "2019-05-03"
+    },
+    {
       "version": "1.2.6",
       "changes": [
         "Format updates"

@@ -10,7 +10,7 @@ function drawLine () {
   let ctx = c.getContext('2d')
 
   ctx.beginPath()
-  ctx.strokeStyle = '#' + window['clockLineColor']
+  ctx.strokeStyle = `#${window['clockLineColor']}`
   ctx.lineWidth = 2
   ctx.lineCap = 'round'
   ctx.moveTo(1, 3)

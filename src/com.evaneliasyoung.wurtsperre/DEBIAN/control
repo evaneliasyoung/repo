@@ -1,6 +1,6 @@
 Package: com.evaneliasyoung.wurtsperre
 Name: Wurtsperre
-Version: 1.2.6
+Version: 1.2.7
 Architecture: iphoneos-arm
 Depends: com.bushe.lockhtml4
 Description: Word style clock for LockHTML

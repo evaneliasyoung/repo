@@ -1,7 +1,7 @@
 window['clockFontSize'] = window['clockFontSize'] || 260
 window['clockHour'] = window['clockHour'] || false
-window['hourColor'] = window['hourColor'] || 'FFCC00'
-window['minColor'] = window['minColor'] || 'FFCC00'
+window['hourColor'] = window['hourColor'] || 'FFFFFF'
+window['minColor'] = window['minColor'] || 'FFFFFF'
 window['dateColor'] = window['dateColor'] || 'FFFFFF'
 window['clockOpacity'] = window['clockOpacity'] || 0.8
 window['clockLang'] = window['clockLang'] || 'en'
@@ -22,12 +22,12 @@ var deList = {
 
 function updateConfig () {
   document.getElementById('clock').style.opacity = window['clockOpacity']
-  document.getElementById('clock').style.fontSize = window['clockFontSize'] + 'px'
-  document.getElementById('date').style.fontSize = window['clockFontSize'] / 9 + 'px'
-  document.getElementById('date').style.top = window['clockFontSize'] / -100
-  document.getElementById('hour').style.color = '#' + window['hourColor']
-  document.getElementById('min').style.color = '#' + window['minColor']
-  document.getElementById('date').style.color = '#' + window['dateColor']
+  document.getElementById('clock').style.fontSize = `${window['clockFontSize']}px`
+  document.getElementById('date').style.fontSize = `${window['clockFontSize'] / 9}px`
+  document.getElementById('date').style.top = `${window['clockFontSize'] / -100}`
+  document.getElementById('hour').style.color = `#${window['hourColor']}`
+  document.getElementById('min').style.color = `#${window['minColor']}`
+  document.getElementById('date').style.color = `#${window['dateColor']}`
   if (window['clockShadow']) {
     document.getElementById('clock').style['text-shadow'] = '0 5px 10px rgba(0,0,0,0.2)'
   }
@@ -73,8 +73,8 @@ function updateClock () {
     if (currentHours === 0) {
       currentHours = 12
     }
-    currentHours = currentHours.toString().padStart(2, '0')
   }
+  currentHours = currentHours.toString().padStart(2, '0')
 
   let currentDay = window['langList']['day'][currentTime.getDay()]
   let currentMonth = window['langList']['month'][currentTime.getMonth()]

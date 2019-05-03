@@ -1,5 +1,5 @@
 window['clockOpacity'] = window['clockOpacity'] || 0.8
-window['clockLang'] = window['clockLang'] || 'de'
+window['clockLang'] = window['clockLang'] || 'en'
 window['clockHour'] = window['clockHour'] || false
 window['clockShadow'] = window['clockShadow'] || false
 
@@ -46,8 +46,8 @@ function updateClock () {
     if (currentHours === 0) {
       currentHours = 12
     }
-    currentHours = currentHours.toString().padStart(2, '0')
   }
+  currentHours = currentHours.toString().padStart(2, '0')
 
   document.getElementById('hour').innerHTML = currentHours
   document.getElementById('min').innerHTML = currentMinutes

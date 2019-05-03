@@ -19,7 +19,7 @@ function drawFace (ctx, color, radius) {
 
 function drawCenter (ctx, color, radius) {
   drawCircle(ctx, color, radius * 0.03, [0, 0])
-  drawCircle(ctx, '#' + window['knotColor'], radius * 0.01, [0, 0])
+  drawCircle(ctx, `#${window['knotColor']}`, radius * 0.01, [0, 0])
 }
 
 function drawHours (ctx, color, radius) {
