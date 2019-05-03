@@ -77,21 +77,20 @@ def getWrite(deb):
 
 def loopDeb(deb):
     packages.writelines(getWrite(deb))
-    print(deb)
 
 
-runCommand(['rm', '-rf', 'Packages*'])
+runCommand(['rm', '-rf', os.path.join('.', 'depic', 'Packages*')])
 
-listdir = [f for f in os.listdir(os.path.join('.', 'deb'))]
-listdir = [f for f in listdir if (f.endswith('.deb'))]
+listdir = [f for f in os.listdir(os.path.join('.', 'depic', 'deb')) if (f.endswith('.deb'))]
 listdir.sort()
 
-packages = open('Packages', 'w')
+packages = open(os.path.join('.', 'depic', 'Packages'), 'w')
 
 for f in listdir:
-    loopDeb(os.path.join('.', 'deb', f))
+    loopDeb(os.path.join('.', 'depic', 'deb', f))
+    print(f)
 
 packages.close()
 
-bz2.BZ2File('Packages.bz2', 'wb').write(open('Packages', 'rb').read())
-gzip.GzipFile('Packages.gz', 'wb').write(open('Packages', 'rb').read())
+bz2.BZ2File(os.path.join('.', 'depic', 'Packages.bz2'), 'wb').write(open(os.path.join('.', 'depic', 'Packages'), 'rb').read())
+gzip.GzipFile(os.path.join('.', 'depic', 'Packages.gz'), 'wb').write(open(os.path.join('.', 'depic', 'Packages'), 'rb').read())

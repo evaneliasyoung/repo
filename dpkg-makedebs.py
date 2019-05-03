@@ -8,7 +8,7 @@ import glob
 def deleteDS():
     for root, dirs, files in os.walk('.'):
         for f in files:
-            if f.endswith(".DS_Store"):
+            if f.endswith('.DS_Store'):
                 os.remove(os.path.join(root, f))
 
 
@@ -33,9 +33,8 @@ def loopPackage(pkg):
     oldDebRoot = os.path.join('.', 'src', oldDeb)
     newDeb = '_'.join([ctrl['package'], ctrl['version'],
                        ctrl['architecture']]) + '.deb'
-    newDebRoot = os.path.join('.', 'deb', newDeb)
-    oldDebMatch = [m for m in glob.glob(
-        f'{os.path.join(".", "deb", pkg)}*') if m != newDebRoot]
+    newDebRoot = os.path.join('.', 'depic', 'deb', newDeb)
+    oldDebMatch = [m for m in glob.glob(f'{os.path.join(".", "depic", "deb", pkg)}*') if m != newDebRoot]
 
     if(oldDebMatch):
         for e in range(len(oldDebMatch)):
