@@ -3,7 +3,7 @@ Version: 1.0
 Section: Themes
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.arklotif.biscuit_1.0_iphoneos-arm.deb
+Filename: /deb/com.arklotif.biscuit_1.0_iphoneos-arm.deb
 Size: 92977122
 MD5sum: e763b34599b275a79d520911258f0633
 SHA1: 3bbeba279f88a865f782bef2a55f02d164927af5
@@ -20,7 +20,7 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.achtsperre_1.0.4_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.achtsperre_1.0.4_iphoneos-arm.deb
 Size: 6644
 MD5sum: d39d67bb417b97665780685ada9e0cad
 SHA1: ed9ddf85641c14ce7f4915641d4e3f53292775bd
@@ -36,7 +36,7 @@ Version: 0.2.1
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.assh_0.2.1_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.assh_0.2.1_iphoneos-arm.deb
 Size: 1128
 MD5sum: 5a8323d3070f9b3ce6cf9bf63d8dc3cd
 SHA1: 5f13b600b6002855630bda16ae408a25791e4d08
@@ -53,7 +53,7 @@ Section: Themes
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.anemonetheming.anemone
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.bley_1.0a_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.bley_1.0a_iphoneos-arm.deb
 Size: 4517574
 MD5sum: 8cb5c50a70120de1f278242790137061
 SHA1: 8ca2db4c8d1b45d1ddbfc13cf9f0de659a4f2cd8
@@ -70,7 +70,7 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.dassperre_1.0.5_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.dassperre_1.0.5_iphoneos-arm.deb
 Size: 30586
 MD5sum: 6564ed5a57aadd8935d5706b82bd3130
 SHA1: e194f66cd325389a6be184a3e3610e13441f291e
@@ -87,7 +87,7 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.farbesperre_1.0.3_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.farbesperre_1.0.3_iphoneos-arm.deb
 Size: 2628
 MD5sum: 8f915e8787a77c4f61907fb4affb4574
 SHA1: 7aae1e3ca18173e91ad4b45f9921ba2373dbe658
@@ -104,7 +104,7 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.flachsperre_1.0.5_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.flachsperre_1.0.5_iphoneos-arm.deb
 Size: 153324
 MD5sum: a8272a653836136ce36b8553bbd0470e
 SHA1: a1dd6a5051f26f6132a6e1dfd00febeaa689b385
@@ -121,7 +121,7 @@ Section: Themes
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.anemonetheming.anemone
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.gravy_1.11_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.gravy_1.11_iphoneos-arm.deb
 Size: 2723682
 MD5sum: ac7d96b4fdaf89cd0becb5e7e9a6e446
 SHA1: edb06b8dd92f1f5b6f15d676bc14e1ed4768f28d
@@ -137,7 +137,7 @@ Version: 0.1
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.ip_0.1_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.ip_0.1_iphoneos-arm.deb
 Size: 698
 MD5sum: 7ce85ef1511ec09a57182727c7bfd673
 SHA1: 4ca579394d21f1132cf998e85d44feefce0411f4
@@ -154,7 +154,7 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.kreissperre_1.1.3_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.kreissperre_1.1.3_iphoneos-arm.deb
 Size: 309528
 MD5sum: eed96c665431dc69af18a47c6f19f66d
 SHA1: dd44b726152e99f5cbba9bbe4946ed1d53a8f16f
@@ -170,7 +170,7 @@ Version: 0.1.3
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.machspring_0.1.3_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.machspring_0.1.3_iphoneos-arm.deb
 Size: 736
 MD5sum: 284c96963b682186022c673dbc1ddd41
 SHA1: d10d7bcd55758b734c6053a07430395542a34371
@@ -186,7 +186,7 @@ Version: 0.1.3
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.machstrate_0.1.3_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.machstrate_0.1.3_iphoneos-arm.deb
 Size: 1280
 MD5sum: 41b99f6120b08c4c1faa3feb61f8631f
 SHA1: e3745dc5069666ddbf4a3ac0babf1ff6f6d3874f
@@ -203,7 +203,7 @@ Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: libactivator
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.radar_0.1.1_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.radar_0.1.1_iphoneos-arm.deb
 Size: 1488
 MD5sum: 15602e6c073083ccfa9036ce70f68137
 SHA1: cea6b58514a08f28627aa0ebf0a112e31ff0b2e7
@@ -219,7 +219,7 @@ Version: 0.1.5
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.redrop_0.1.5_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.redrop_0.1.5_iphoneos-arm.deb
 Size: 758
 MD5sum: 5bba125d4179d24e7558e421ecada4d4
 SHA1: 3644bccb5dc626d9f9760ecf5e75ae7d08fb949f
@@ -235,7 +235,7 @@ Version: 0.2
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.wemo_0.2_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.wemo_0.2_iphoneos-arm.deb
 Size: 1472
 MD5sum: a14cf582d42fd0d45a208c94219961e1
 SHA1: 38568a1352ce0c8ee96bf898582b64c928dbe430
@@ -252,7 +252,7 @@ Section: Widgets
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.wurtsperre_1.2.7_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.wurtsperre_1.2.7_iphoneos-arm.deb
 Size: 153936
 MD5sum: dcc84c995dba98bc7d8c573920dec250
 SHA1: 21406611f4eacb85916028543a47ef00cea28502
@@ -269,7 +269,7 @@ Section: Addons (Zeppelin)
 Maintainer: Evan <evanyoung762@gmail.com>
 Depends: com.alexzielenski.zeppelin
 Architecture: iphoneos-arm
-Filename: deb/c/deb/com.evaneliasyoung.zeppelinguitars_1.1.1_iphoneos-arm.deb
+Filename: /deb/com.evaneliasyoung.zeppelinguitars_1.1.1_iphoneos-arm.deb
 Size: 126336
 MD5sum: d06c7d9e823c316d76374156976dfe9f
 SHA1: dfe91a2c2aca13cbb2c17bcf4a718e87091c6409
