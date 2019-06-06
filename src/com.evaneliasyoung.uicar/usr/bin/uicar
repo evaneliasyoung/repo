@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -f "/usr/bin/uicache" ]; then
+	uicache -ar
+else
+	exit 1
+fi

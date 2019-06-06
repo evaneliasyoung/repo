@@ -1,0 +1,16 @@
+{
+  "title": "sbr",
+  "minVer": "11.0.0",
+  "maxVer": "12.2.0",
+  "desc": "<p>A quicker way to run sbreload.</p>",
+  "screenshots": [],
+  "changelog": [
+    {
+      "version": "0.1",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2019-06-06"
+    }
+  ]
+}
