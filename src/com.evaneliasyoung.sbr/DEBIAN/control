@@ -1,6 +1,6 @@
 Package: com.evaneliasyoung.sbr
 Name: sbr
-Version: 0.1.0
+Version: 0.1.1
 Architecture: iphoneos-arm
 Description: A quicker way to run sbreload.
 Author: Evan <evanyoung762@gmail.com>

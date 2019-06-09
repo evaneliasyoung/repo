@@ -1,6 +1,6 @@
 Package: com.evaneliasyoung.uicar
 Name: uicar
-Version: 0.1.0
+Version: 0.1.1
 Architecture: iphoneos-arm
 Description: A quicker way to run uicache and respring the device on completion.
 Author: Evan <evanyoung762@gmail.com>
