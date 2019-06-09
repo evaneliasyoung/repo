@@ -231,15 +231,15 @@ Depiction: https://repo.evaneliasyoung.com/depic.html?repo=com.evaneliasyoung.re
 SileoDepiction: https://repo.evaneliasyoung.com/sileo.php?repo=com.evaneliasyoung.redrop
 
 Package: com.evaneliasyoung.sbr
-Version: 0.1.0
+Version: 0.1.1
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Filename: /deb/com.evaneliasyoung.sbr_0.1.0_iphoneos-arm.deb
-Size: 732
-MD5sum: 96cf97248de24bca539c4ff6d2a327f0
-SHA1: 1001a9e3ae343c12c5ae9cca3064a5e0182faddf
-SHA256: 8a59dfd9d16e07eef6df0f3c6792379cdf9b29159c3ce9fbf95333dfc46bc2e1
+Filename: /deb/com.evaneliasyoung.sbr_0.1.1_iphoneos-arm.deb
+Size: 728
+MD5sum: 72c0a9b7579d03337bf28aa1745ef87b
+SHA1: f5224b3a2e629eb4b3910b139f56bb317a3f144e
+SHA256: 8ce3dce6fdf722e578753f4a1b2b81b8e86d328f46828a8efbc493a12c56803f
 Description: A quicker way to run sbreload.
 Name: sbr
 Author: Evan <evanyoung762@gmail.com>
@@ -247,15 +247,15 @@ Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.sbr
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.sbr
 
 Package: com.evaneliasyoung.uicar
-Version: 0.1.0
+Version: 0.1.1
 Section: Development
 Maintainer: Evan <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
-Filename: /deb/com.evaneliasyoung.uicar_0.1.0_iphoneos-arm.deb
-Size: 762
-MD5sum: 356884dea157810aa7c784fbea9972b5
-SHA1: 67da13afd59e7b0342b1de5b03f2a23a9889ef71
-SHA256: d5306975fe09ea3d9a710f64fbe998b2a46d97cfd3861578664f39528de0c0e2
+Filename: /deb/com.evaneliasyoung.uicar_0.1.1_iphoneos-arm.deb
+Size: 758
+MD5sum: cdc145a32a90a03fb16c02836f293788
+SHA1: 951d05641013a58f1b0a7e0dd67cd941e35efe7b
+SHA256: 4a497f2e64b4360bcfe30fc0cdbb6d12daaadd7453bd3432f112b3912e1cc26f
 Description: A quicker way to run uicache and respring the device on completion.
 Name: uicar
 Author: Evan <evanyoung762@gmail.com>
