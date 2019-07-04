@@ -1,6 +1,6 @@
 Package: com.evaneliasyoung.gravy
 Name: Gravy
-Version: 1.12
+Version: 1.13
 Architecture: iphoneos-arm
 Depends: com.anemonetheming.anemone
 Description: More icons for ArkLotif's Biscuit
