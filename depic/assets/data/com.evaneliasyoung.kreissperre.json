@@ -1,7 +1,7 @@
 {
   "title": "Kreißperre",
   "minVer": "7.0.0",
-  "maxVer": "12.2.0",
+  "maxVer": "12.4.0",
   "desc": "<p>An Apple Watch style clock for LockHTML. It's a clone of the utility watch face from the Apple Watch. It has a few customizable features; color, size, etc.</p>",
   "screenshots": [
     "com.evaneliasyoung.kreissperre/screen1.png",

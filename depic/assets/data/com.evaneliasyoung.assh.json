@@ -1,7 +1,7 @@
 {
   "title": "Assh",
   "minVer": "7.0.0",
-  "maxVer": "12.2.0",
+  "maxVer": "12.4.0",
   "desc": "<p>An easier way to use ssh, instead of having to retype all of the connection information it fills it all in from a config file. The information is stored in /var/mobile/Library/Assh/settings.</p>",
   "screenshots": [],
   "changelog": [

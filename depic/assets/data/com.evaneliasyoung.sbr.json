@@ -1,7 +1,7 @@
 {
   "title": "sbr",
   "minVer": "11.0.0",
-  "maxVer": "12.2.0",
+  "maxVer": "12.4.0",
   "desc": "<p>A quicker way to run sbreload.</p>",
   "screenshots": [],
   "changelog": [

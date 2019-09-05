@@ -1,7 +1,7 @@
 {
   "title": "Daßperre",
   "minVer": "7.0.0",
-  "maxVer": "12.2.0",
+  "maxVer": "12.4.0",
   "desc": "<p>A LockHTML remake for one of my favorite GroovyLock themes. The original theme is TheStudent's GRAND LS, this is optimised for LockHTML with various settings.</p>",
   "screenshots": [
     "com.evaneliasyoung.dassperre/screen1.png",

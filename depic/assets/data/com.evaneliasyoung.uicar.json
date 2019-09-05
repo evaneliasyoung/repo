@@ -1,7 +1,7 @@
 {
   "title": "uicar",
   "minVer": "4.0.0",
-  "maxVer": "12.2.0",
+  "maxVer": "12.4.0",
   "desc": "<p>A quicker way to run uicache and respring the device on completion.</p>",
   "screenshots": [],
   "changelog": [
