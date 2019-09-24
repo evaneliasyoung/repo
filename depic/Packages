@@ -21,15 +21,15 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.achtsperre_1.0.4_iphoneos-arm.deb
-Size: 6650
-MD5sum: 8623626a85ff0658e57ac72997204eff
-SHA1: a784769171c141313781e43fe7b3b2202582acbd
-SHA256: 8e7480f1dffbdb322098a21ca8a26e8c2aa1d1ca3d0340b9efad527340c7ef49
+Size: 6642
+MD5sum: 13f7ffd2aa5c8686e79a3dda229a1205
+SHA1: 5453807c30011ca2f6f970db8a2cee524d07ffca
+SHA256: 1cf8192bb9ae38c6c614f400a358b727e04ae525ab17ad74deb003d3afbc84e1
 Description: Galaxy S8 style clock for LockHTML
 Name: Achtsperre
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.achtsperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.achtsperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.achtsperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.achtsperre/
 
 Package: com.evaneliasyoung.assh
 Version: 0.2.1
@@ -37,15 +37,15 @@ Section: Development
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.assh_0.2.1_iphoneos-arm.deb
-Size: 1162
-MD5sum: 86bed06df7bf0ab358542bedf2da3981
-SHA1: c5eddd8c5ebe3d0f382792c85fb438cb68e58612
-SHA256: 5c234971641caf60cc0cb775d7319ca95b8d59c80717fa773b7f62199411fc02
+Size: 1152
+MD5sum: a68faedc254c0db95dcbd32cfb5d9b5d
+SHA1: 2f1a8c2e543a843049d915856893f89257086fb7
+SHA256: 476ac0cb7ea5bd540a27dc58b70b8a53547f9e8feac580b8c9a2b09a705c0a3c
 Description: An easier way to ssh into things, instead of having to retype the info this will do it for you.
 Name: Assh
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.assh
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.assh
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.assh/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.assh/
 
 Package: com.evaneliasyoung.bley
 Version: 1.0a
@@ -54,15 +54,15 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.anemonetheming.anemone
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.bley_1.0a_iphoneos-arm.deb
-Size: 4517636
-MD5sum: 15883f5bb3788cc01cefcb99212415e8
-SHA1: ce6debc2d540b30d2d29443d55aa7b14d517cb79
-SHA256: 1021a69c8f289e7500413f325c434dae5eca6be858e8b7cafd13e8c5bbd0a57d
+Size: 4517616
+MD5sum: 0f2d1e071ab15f251f98b7e53da1ed04
+SHA1: 5f22f4284268601e693566eaeab1279c4df3ff2a
+SHA256: 7591a38b33aa1fde5ad9d550234cf73ef4d34a748d4a6f8fb5b1ac850d16ac53
 Description: Blue-Grey theme for anemone
 Name: Bley
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.bley
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.bley
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.bley/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.bley/
 
 Package: com.evaneliasyoung.dassperre
 Version: 1.0.5
@@ -71,15 +71,15 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.dassperre_1.0.5_iphoneos-arm.deb
-Size: 30602
-MD5sum: 0cc2ff1003492a34ee989a655d49ae01
-SHA1: 63ced070222e24bdd2d010076eafab9d82b168e7
-SHA256: cbc873376860ddfbe4ec1c45e1a3e15aeaa94b5756c2ed975f87b4f3df4cd0bc
+Size: 30586
+MD5sum: 1f3ff5842b9fb097c60b589e2b1bdc7e
+SHA1: a2f9deb8cf41f9517448c9a41c7a3c2261ef78b8
+SHA256: 5bdd111f97ea3d340d2388f39b5e57583ecd83a114fa8751b1275ee41264bdb0
 Description: A remake of my favorite GroovyLock theme.
 Name: Daßperre
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.dassperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.dassperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.dassperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.dassperre/
 
 Package: com.evaneliasyoung.farbesperre
 Version: 1.0.3
@@ -88,15 +88,15 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.farbesperre_1.0.3_iphoneos-arm.deb
-Size: 2654
-MD5sum: cff09eb3852c5df84111098b90fccde9
-SHA1: 7a7080052ebd44ccae96176b7744e550cf058bea
-SHA256: 3df334a7c86cd088cd90c10b434546fbfa142573dbcf4076827468221cbc1699
+Size: 2642
+MD5sum: 6e41901820faeadacfdc58ce70653020
+SHA1: bc47870731f652a0943874258586b3c2ff641d4f
+SHA256: d424a7b3e543474a72fbf82ef4d97783a1fbd30d4def75346391f05ef6a4efd1
 Description: Color Apple Watch style clock for LockHTML
 Name: Farbesperre
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.farbesperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.farbesperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.farbesperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.farbesperre/
 
 Package: com.evaneliasyoung.flachsperre
 Version: 1.0.5
@@ -105,15 +105,15 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.flachsperre_1.0.5_iphoneos-arm.deb
-Size: 153336
-MD5sum: 1757cbc67f6ab376ad25f3b6beb20ec0
-SHA1: ed047c57e994d75a95b66ca594fb77c54beccd79
-SHA256: 2e7fafc7aa26e41891a0ad9401d715c3c54a39703ea00db18dc12008b0365f06
+Size: 153314
+MD5sum: 67714871de03a7367c94c2bacb16c50a
+SHA1: 650874d531ab60cd5e95b90b9e9655af3040fa6a
+SHA256: dac4ea03fcb37ec373c463f0de9d0f7d2fe9d88558abbe1567aa696a262f0bbd
 Description: Flat design for LockHTML
 Name: Flachsperre
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.flachsperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.flachsperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.flachsperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.flachsperre/
 
 Package: com.evaneliasyoung.gravy
 Version: 1.15
@@ -122,31 +122,31 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.anemonetheming.anemone
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.gravy_1.15_iphoneos-arm.deb
-Size: 3369914
-MD5sum: fb753997d4e06847e6be487baa88082e
-SHA1: 576ea6e0c23ce6d9f81630c2f402606763331308
-SHA256: 2fd9df81a808d0ed2ca38f5d0bb2d7f50fd879cd4d849811ff894e389c8675b2
+Size: 3369568
+MD5sum: 629a14129b52230515133f83a505367f
+SHA1: 18af33bf60364f39d2b9fa49beaa1c1597781584
+SHA256: c995fc1eca39e2e2860ee1f6e6eb5d68eabd405d77b2f6d5957173a708c81203
 Description: More icons for ArkLotif's Biscuit
 Name: Gravy
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.gravy
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.gravy
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.gravy/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.gravy/
 
 Package: com.evaneliasyoung.interrobangbootlogo
 Version: 1.0.0
-Section: Bootlogos
+Section: Addons (BootLogo)
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.interrobangbootlogo_1.0.0_iphoneos-arm.deb
-Size: 20798
-MD5sum: c80a5847df578f27eb2e407b834b064d
-SHA1: dec87f605436a966f07da2892c9b82f49571b83d
-SHA256: 3ea5b6c53536eecdbdc4183b865824228d4836a32f67dce76f5d6cbc2e9e9b22
+Size: 20848
+MD5sum: abd0a85ab3082761d5979255aa406fa9
+SHA1: 44560d81ec027364cb8b10a7d21341b183b7c673
+SHA256: 9c71ef6bb494def37aee13ebb094008ac25722b37ec32c4234fcc9bbe320f684
 Description: Interrobang Bootlogo
 Name: Interrobang Bootlogo
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.interrobangbootlogo
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.interrobangbootlogo
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.interrobangbootlogo/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.interrobangbootlogo/
 
 Package: com.evaneliasyoung.ip
 Version: 0.1
@@ -154,15 +154,15 @@ Section: Development
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.ip_0.1_iphoneos-arm.deb
-Size: 734
-MD5sum: 8184dfe89f6f63711a3dc0f90ad00fe6
-SHA1: 6bdcc31ce637d5c3689e6aab902f1c9b21a0de6b
-SHA256: 26a21fb52e33bac8f1b23fcd005691faf50459ca66499330706f704689d94146
+Size: 728
+MD5sum: ea836b1545cdc9dd11bf4b12b81ebb5b
+SHA1: c5f27b351cf2153f2ce6738b3de9c0c8c6f1e052
+SHA256: 20d403c4bd8edd7c8a4fda904c08c6bbbbe2c43da01390239277828aec92e533
 Description: Easily get your ip address.
 Name: ip
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.ip
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.ip
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.ip/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.ip/
 
 Package: com.evaneliasyoung.kreissperre
 Version: 1.1.3
@@ -171,15 +171,15 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.kreissperre_1.1.3_iphoneos-arm.deb
-Size: 309516
-MD5sum: 996ad038c8f78d9d9aedea2b8c178c25
-SHA1: e89ec0d7a8576ccd7064fa8c2464237c6b0f5aad
-SHA256: 317a7019a3b53e98c17baa638632d158f209f52a2f713e77449b7cf2404b30a6
+Size: 309500
+MD5sum: 49e735c657aff446f2a615885ddd3b74
+SHA1: 444182b07fa7435efb2acf08484e0d54337c589b
+SHA256: 7b091d279d09996bdd18ab93d85b304085adc7616e7892b3d3fa0e31d94d56f6
 Description: Round Apple Watch style clock for LockHTML
 Name: Kreissperre
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.kreissperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.kreissperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.kreissperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.kreissperre/
 
 Package: com.evaneliasyoung.machspring
 Version: 0.1.3
@@ -187,15 +187,15 @@ Section: Development
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.machspring_0.1.3_iphoneos-arm.deb
-Size: 774
-MD5sum: ef5d3f0104bfc9110c0e1842912aa4ca
-SHA1: 84811a087940894774d3f61cfda28b312c35521a
-SHA256: c5b2e81761244e8a4c47031473dadaae3f4cc3216fd6d7a281b5c963d3c6dad7
+Size: 762
+MD5sum: b6e5a61ec865cbd65881760b2b554569
+SHA1: 14dfa1f2804439479ece9717a59f9e675f1bda0c
+SHA256: a87d69c3eb44ca0db7f36f7586df92926b4fc11854dcaae2fa42011edbd1cfcd
 Description: An alternative way to respring with mach_portal
 Name: MachSpring
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.machspring
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.machspring
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.machspring/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.machspring/
 
 Package: com.evaneliasyoung.machstrate
 Version: 0.1.3
@@ -203,31 +203,31 @@ Section: Development
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.machstrate_0.1.3_iphoneos-arm.deb
-Size: 1308
-MD5sum: fbd864ea6744b713ad450a9e567f8426
-SHA1: 5c61e905b914f9a801bf0b483661893137cbbeab
-SHA256: 6f7bd5632e7c272e90565e4abf1af3f62244ecb7bc8efe235c2df546a791292a
+Size: 1302
+MD5sum: 9cc3a44f762ba97856a5732d6dc839db
+SHA1: 6adfc466a0e381a7854145c21ab500d80d65118d
+SHA256: bc874997170b7e53cb8b5f4664a1aeee886042a17e2a0882b9e3bab881e3f828
 Description: The correct way to enable substrate for mach_portal.
 Name: MachStrate
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.machstrate
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.machstrate
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.machstrate/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.machstrate/
 
 Package: com.evaneliasyoung.originalbootlogo
 Version: 1.0.0
-Section: Bootlogos
+Section: Addons (BootLogo)
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.originalbootlogo_1.0.0_iphoneos-arm.deb
-Size: 16606
-MD5sum: f1a758151266511e30bd985a5e6a390f
-SHA1: 82a788bf970f7a2f564fae2a1bbc9830c8b23f74
-SHA256: d9d01d0278fd528d42c9f5798f626f2f589cb37d2950cf03ec1c318070d1ddbc
+Size: 16658
+MD5sum: 4a659eeef9f4713c1f27c965d511b56c
+SHA1: 191667232fd7ab148df423e086a0c72406feac1e
+SHA256: 748e1e28308f8b10e1f1fd1e04a6661d5be3bdd791bfeaf7e6e6ed927667d21d
 Description: Original Bootlogo
 Name: Original Bootlogo
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.originalbootlogo
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.originalbootlogo
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.originalbootlogo/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.originalbootlogo/
 
 Package: com.evaneliasyoung.radar
 Version: 0.1.1
@@ -236,15 +236,15 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: libactivator
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.radar_0.1.1_iphoneos-arm.deb
-Size: 1526
-MD5sum: 84aa6aa1d4930e5b9da25e50ff0e64ef
-SHA1: 8f9f9288a16e7283379708a4e4b4a61163e2d454
-SHA256: 04956ddbdb04fdba23645c80d00e77e91c3daf40213ab80de7250119ea47c989
+Size: 1516
+MD5sum: 652b755f3e1f399d42d54c4346286e6e
+SHA1: 01bfa1757007f7dbe57a193bb098a1b8d9747525
+SHA256: c1e85ef974cac1b53413f61d89675a78a51b281160ed8324b70556c9aaa9f99c
 Description: Control your iOS device over ssh.
 Name: radar
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.radar
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.radar
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.radar/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.radar/
 
 Package: com.evaneliasyoung.redrop
 Version: 0.1.5
@@ -252,15 +252,15 @@ Section: Development
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.redrop_0.1.5_iphoneos-arm.deb
-Size: 794
-MD5sum: 33a41e303f2ad00ef3d5b9d49ec00ba0
-SHA1: 544c6a117fc4837cbed87a24a09e0d7b3efeadd0
-SHA256: 8def0fbbf15abf129048d21a4b0850889e6a09a2f9d587cccd0b3ba8a5b267be
+Size: 782
+MD5sum: f8eb8a085df24a3e3629fc58e8f70950
+SHA1: 619105740b1deb8aa3ce42a21b83d49e99cd1463
+SHA256: 891aea4aa8ca35c560ae4645c2f45c5a0c7136e3dfed21a0542922906eb4ae75
 Description: An easier way to restart dropbear
 Name: ReDrop
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.redrop
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.redrop
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.redrop/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.redrop/
 
 Package: com.evaneliasyoung.sbr
 Version: 0.1.1
@@ -268,15 +268,15 @@ Section: Development
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.sbr_0.1.1_iphoneos-arm.deb
-Size: 776
-MD5sum: d0f48488f6e7d71771045812ce43f033
-SHA1: 5ca53aaadd2d5164806e089051258777f7fc48fa
-SHA256: 6194394b815f2ffe4fca31a1e13406f41f43b7ee2e75bc2a7145817bf996a0df
+Size: 772
+MD5sum: 99718e003de28db885062b1124017643
+SHA1: ebda8f897653c5f5a194b93555a82bb49be2e63e
+SHA256: fbb628e5022b4005c827424e1caa09506eba5a274883f5d3001722d1f5c00b8b
 Description: A quicker way to run sbreload.
 Name: sbr
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.sbr
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.sbr
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.sbr/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.sbr/
 
 Package: com.evaneliasyoung.uicar
 Version: 0.1.1
@@ -284,31 +284,31 @@ Section: Development
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.uicar_0.1.1_iphoneos-arm.deb
-Size: 804
-MD5sum: 9e676b890ecbda62a6dec3337ab71fdb
-SHA1: 14a8a663be09c4eb3ace80555a51ebfec2eb9ba2
-SHA256: 42acaee9639b7616cc2c07fef02cef42e70884cd16455fe8edae1cd4d30e0ed5
+Size: 798
+MD5sum: bba8c0fce840fc11fb82b6546a250159
+SHA1: b7203bfc218bbaa1bef96877524ed59418ae136d
+SHA256: 261d3ff8e0f45b3f5a153344d1c06478b68fad1e2000edb77cf5529cfec1f7ee
 Description: A quicker way to run uicache and respring the device on completion.
 Name: uicar
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.uicar
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.uicar
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.uicar/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.uicar/
 
 Package: com.evaneliasyoung.unc0verbootlogo
 Version: 1.0.0
-Section: Bootlogos
+Section: Addons (BootLogo)
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.unc0verbootlogo_1.0.0_iphoneos-arm.deb
-Size: 356472
-MD5sum: 25b3edbd9142efbaf5361fea977a1c10
-SHA1: 2da97ad1a868a9dc2a2c9de7a6f399cfbcf9d542
-SHA256: 5a1cdb8fdfe58f98fb7dcc9657ce6682f5d44e64029f9e65c77540eafbd6d208
+Size: 356512
+MD5sum: e4364afe51920c9aac8169885a76a172
+SHA1: d9aad5ea0250b70fc1cdefc04f61c1f1b97e6ee3
+SHA256: f958fbba0d47453a1557d404a4db36bab1919e5340f8e9e2d820d34f310d9fa6
 Description: unc0ver Bootlogo
 Name: unc0ver Bootlogo
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.unc0verbootlogo
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.unc0verbootlogo
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.unc0verbootlogo/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.unc0verbootlogo/
 
 Package: com.evaneliasyoung.wemo
 Version: 0.2
@@ -316,15 +316,15 @@ Section: Development
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.wemo_0.2_iphoneos-arm.deb
-Size: 1514
-MD5sum: c51ea340b2c418488cdbf0251370fdcc
-SHA1: f75ae5f8dc17102bd7e5177af9ab614522ad8ffd
-SHA256: c10c9455483b33303ca08fc3769aff2c7848845d80f5e1f8211c803ac82748cb
+Size: 1504
+MD5sum: d6a4dd94f3ebaf14ec9240de00964f84
+SHA1: 48366d6861e3139930f2837346d943210830cb9f
+SHA256: 13c1a35d404e6e69a7925567b0e5a1f6b93f3c39d629069551c49fbbd4b2b487
 Description: I hate the wemo app, so I made a command line tool for it.
 Name: Wemo
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://r0epo.evaneliasyoung.com/cydia/com.evaneliasyoung.wemo
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.wemo
+Depiction: https://r0epo.evaneliasyoung.com/cydia/com.evaneliasyoung.wemo/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.wemo/
 
 Package: com.evaneliasyoung.wurtsperre
 Version: 1.2.7
@@ -333,15 +333,15 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.bushe.lockhtml4
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.wurtsperre_1.2.7_iphoneos-arm.deb
-Size: 153934
-MD5sum: 07627f592bfe3d93f14804fcdd9587f2
-SHA1: e236851e36e1d15c2911da61985df991af6379df
-SHA256: 31c704c5575632848bd2c23caf5ddcb3134673bc02412be04ee11492fb1e2455
+Size: 153922
+MD5sum: 563a78fac359ec14bf45c0528b9eb6b6
+SHA1: f019affa55b1fab2e5a9fdc7dc0e6f3506c1b995
+SHA256: d276d6c8326b2e57a475fb13c6b6f5636f2a87547a873b63a94d7f7bd68b1d58
 Description: Word style clock for LockHTML
 Name: Wurtsperre
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.wurtsperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.wurtsperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.wurtsperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.wurtsperre/
 
 Package: com.evaneliasyoung.zeppelinguitars
 Version: 1.1.1
@@ -350,13 +350,13 @@ Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.alexzielenski.zeppelin
 Architecture: iphoneos-arm
 Filename: /deb/com.evaneliasyoung.zeppelinguitars_1.1.1_iphoneos-arm.deb
-Size: 126442
-MD5sum: ae4d3446c83aec9ef245663566babde6
-SHA1: 8b78a97cc926d8f504bcd80602c8874c2aef1da7
-SHA256: 5e2af508343b29d1b35206406f10d6b83d446effbcda86906bc4ccda99919408
+Size: 126410
+MD5sum: ed932623ecb39403dbe84eb1a0e5e5ff
+SHA1: cfab5d94352f2c019cefa72cd735c2c9aacfe207
+SHA256: 7e670c236c885912bcec1be1e079b3e3ee9922562a0c118714574586a27f5659
 Description: Popular guitar brands for Zeppelin
 Name: Zeppelin - Guitar Brands
 Author: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.zeppelinguitars
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.zeppelinguitars
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.zeppelinguitars/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.zeppelinguitars/
 

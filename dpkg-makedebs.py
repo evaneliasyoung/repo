@@ -50,6 +50,7 @@ def loopPackage(pkg):
 
 
 deleteDS()
+os.system('find /var/www/repo -type d -exec chmod 755 {} \\;')
 for f in os.listdir(os.path.join('.', 'src')):
     if (os.path.isfile(f)):
         continue
