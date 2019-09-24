@@ -1,0 +1,16 @@
+{
+  "title": "Original Bootlogo",
+  "minVer": "12.0.0",
+  "maxVer": "12.4.0",
+  "desc": "<p>Original Bootlogo.</p>",
+  "screenshots": [],
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2019-09-24"
+    }
+  ]
+}

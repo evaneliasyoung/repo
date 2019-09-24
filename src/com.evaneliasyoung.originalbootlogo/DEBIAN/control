@@ -1,0 +1,10 @@
+Package: com.evaneliasyoung.originalbootlogo
+Name: Original Bootlogo
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Original Bootlogo
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.originalbootlogo
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.originalbootlogo
+Section: Bootlogos
