@@ -6,6 +6,6 @@ Depends: libactivator
 Description: Control your iOS device over ssh.
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.radar
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.radar
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.radar/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.radar/
 Section: Development

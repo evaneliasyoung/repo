@@ -6,6 +6,6 @@ Depends: com.bushe.lockhtml4
 Description: A remake of my favorite GroovyLock theme.
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.dassperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.dassperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.dassperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.dassperre/
 Section: Widgets

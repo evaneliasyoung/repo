@@ -5,6 +5,6 @@ Architecture: iphoneos-arm
 Description: A quicker way to run sbreload.
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.sbr
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.sbr
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.sbr/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.sbr/
 Section: Development

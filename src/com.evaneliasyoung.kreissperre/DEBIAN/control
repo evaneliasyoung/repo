@@ -6,6 +6,6 @@ Depends: com.bushe.lockhtml4
 Description: Round Apple Watch style clock for LockHTML
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.kreissperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.kreissperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.kreissperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.kreissperre/
 Section: Widgets

@@ -6,6 +6,6 @@ Depends: com.alexzielenski.zeppelin
 Description: Popular guitar brands for Zeppelin
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.zeppelinguitars
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.zeppelinguitars
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.zeppelinguitars/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.zeppelinguitars/
 Section: Addons (Zeppelin)

@@ -6,6 +6,6 @@ Depends: com.bushe.lockhtml4
 Description: Color Apple Watch style clock for LockHTML
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.farbesperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.farbesperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.farbesperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.farbesperre/
 Section: Widgets

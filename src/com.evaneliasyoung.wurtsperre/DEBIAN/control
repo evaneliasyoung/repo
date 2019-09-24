@@ -6,6 +6,6 @@ Depends: com.bushe.lockhtml4
 Description: Word style clock for LockHTML
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.wurtsperre
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.wurtsperre
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.wurtsperre/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.wurtsperre/
 Section: Widgets
