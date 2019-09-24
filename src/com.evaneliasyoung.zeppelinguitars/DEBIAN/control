@@ -4,8 +4,8 @@ Version: 1.1.1
 Architecture: iphoneos-arm
 Depends: com.alexzielenski.zeppelin
 Description: Popular guitar brands for Zeppelin
-Author: Evan <evanyoung762@gmail.com>
-Maintainer: Evan <evanyoung762@gmail.com>
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.zeppelinguitars
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.zeppelinguitars
 Section: Addons (Zeppelin)

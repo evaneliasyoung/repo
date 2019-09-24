@@ -6,6 +6,13 @@
   "screenshots": [],
   "changelog": [
     {
+      "version": "1.15",
+      "changes": [
+        "Many new icons"
+      ],
+      "date": "2019-09-24"
+    },
+    {
       "version": "1.14",
       "changes": [
         "Many new icons"

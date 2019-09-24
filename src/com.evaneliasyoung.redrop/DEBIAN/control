@@ -3,8 +3,8 @@ Name: ReDrop
 Version: 0.1.5
 Architecture: iphoneos-arm
 Description: An easier way to restart dropbear
-Author: Evan <evanyoung762@gmail.com>
-Maintainer: Evan <evanyoung762@gmail.com>
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.redrop
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.redrop
 Section: Development

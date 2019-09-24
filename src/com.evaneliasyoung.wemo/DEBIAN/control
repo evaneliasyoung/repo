@@ -3,8 +3,8 @@ Name: Wemo
 Version: 0.2
 Architecture: iphoneos-arm
 Description: I hate the wemo app, so I made a command line tool for it.
-Author: Evan <evanyoung762@gmail.com>
-Maintainer: Evan <evanyoung762@gmail.com>
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://r0epo.evaneliasyoung.com/cydia/com.evaneliasyoung.wemo
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.wemo
 Section: Development

@@ -3,8 +3,8 @@ Name: MachSpring
 Version: 0.1.3
 Architecture: iphoneos-arm
 Description: An alternative way to respring with mach_portal
-Author: Evan <evanyoung762@gmail.com>
-Maintainer: Evan <evanyoung762@gmail.com>
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.machspring
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.machspring
 Section: Development

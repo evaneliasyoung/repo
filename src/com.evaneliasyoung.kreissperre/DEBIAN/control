@@ -4,8 +4,8 @@ Version: 1.1.3
 Architecture: iphoneos-arm
 Depends: com.bushe.lockhtml4
 Description: Round Apple Watch style clock for LockHTML
-Author: Evan <evanyoung762@gmail.com>
-Maintainer: Evan <evanyoung762@gmail.com>
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.kreissperre
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.kreissperre
 Section: Widgets

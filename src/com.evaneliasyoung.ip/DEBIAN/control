@@ -3,8 +3,8 @@ Name: ip
 Version: 0.1
 Architecture: iphoneos-arm
 Description: Easily get your ip address.
-Author: Evan <evanyoung762@gmail.com>
-Maintainer: Evan <evanyoung762@gmail.com>
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.ip
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.ip
 Section: Development
