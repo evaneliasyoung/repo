@@ -132,6 +132,22 @@ Author: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.gravy
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.gravy
 
+Package: com.evaneliasyoung.interrobangbootlogo
+Version: 1.0.0
+Section: Bootlogos
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Filename: /deb/com.evaneliasyoung.interrobangbootlogo_1.0.0_iphoneos-arm.deb
+Size: 20798
+MD5sum: c80a5847df578f27eb2e407b834b064d
+SHA1: dec87f605436a966f07da2892c9b82f49571b83d
+SHA256: 3ea5b6c53536eecdbdc4183b865824228d4836a32f67dce76f5d6cbc2e9e9b22
+Description: Interrobang Bootlogo
+Name: Interrobang Bootlogo
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.interrobangbootlogo
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.interrobangbootlogo
+
 Package: com.evaneliasyoung.ip
 Version: 0.1
 Section: Development
@@ -197,6 +213,22 @@ Author: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.machstrate
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.machstrate
 
+Package: com.evaneliasyoung.originalbootlogo
+Version: 1.0.0
+Section: Bootlogos
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Filename: /deb/com.evaneliasyoung.originalbootlogo_1.0.0_iphoneos-arm.deb
+Size: 16606
+MD5sum: f1a758151266511e30bd985a5e6a390f
+SHA1: 82a788bf970f7a2f564fae2a1bbc9830c8b23f74
+SHA256: d9d01d0278fd528d42c9f5798f626f2f589cb37d2950cf03ec1c318070d1ddbc
+Description: Original Bootlogo
+Name: Original Bootlogo
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.originalbootlogo
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.originalbootlogo
+
 Package: com.evaneliasyoung.radar
 Version: 0.1.1
 Section: Development
@@ -261,6 +293,22 @@ Name: uicar
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.uicar
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.uicar
+
+Package: com.evaneliasyoung.unc0verbootlogo
+Version: 1.0.0
+Section: Bootlogos
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
+Architecture: iphoneos-arm
+Filename: /deb/com.evaneliasyoung.unc0verbootlogo_1.0.0_iphoneos-arm.deb
+Size: 356472
+MD5sum: 25b3edbd9142efbaf5361fea977a1c10
+SHA1: 2da97ad1a868a9dc2a2c9de7a6f399cfbcf9d542
+SHA256: 5a1cdb8fdfe58f98fb7dcc9657ce6682f5d44e64029f9e65c77540eafbd6d208
+Description: unc0ver Bootlogo
+Name: unc0ver Bootlogo
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.unc0verbootlogo
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.unc0verbootlogo
 
 Package: com.evaneliasyoung.wemo
 Version: 0.2
