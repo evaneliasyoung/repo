@@ -18,7 +18,7 @@ include_once(getcwd() . '/include.php');
   <meta name="html-valid" content="HTML5, ARIA, SVG1.1, MathML 2.0">
   <meta name="css-valid" content="CSSL 3">
   <meta name="lighthouse" content="281; A+">
-  <link rel="stylesheet" type="text/css" href="/styles.css">  <script src="/scripts.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -35,7 +35,7 @@ include_once(getcwd() . '/include.php');
   <meta name="navto" content="home">
 </head>
 
-<body onload="rootLoad()" ontouchstart="">
+<body ontouchstart="">
   <header>
     <div>
       <h1>Evan's Repo</h1>
