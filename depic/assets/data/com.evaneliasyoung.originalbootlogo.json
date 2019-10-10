@@ -6,6 +6,13 @@
   "screenshots": [],
   "changelog": [
     {
+      "version": "1.0.1",
+      "changes": [
+        "Updated dependencies"
+      ],
+      "date": "2019-10-10"
+    },
+    {
       "version": "1.0.0",
       "changes": [
         "Initial Release"

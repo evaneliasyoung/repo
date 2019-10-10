@@ -1,7 +1,8 @@
 Package: com.evaneliasyoung.interrobangbootlogo
 Name: Interrobang Bootlogo
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
+Depends: com.wizages.bae
 Description: Interrobang Bootlogo
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
