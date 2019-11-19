@@ -6,6 +6,6 @@ Depends: com.wizages.bae
 Description: checkra1n Bootlogo
 Author: Evan Elias Young <evanyoung762@gmail.com>
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
-Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.interrobangbootlogo/
-SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.interrobangbootlogo/
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.checkra1nbootlogo/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.checkra1nbootlogo/
 Section: Addons (BootLogo)
