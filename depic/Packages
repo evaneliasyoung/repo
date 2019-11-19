@@ -64,6 +64,23 @@ Author: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.bley/
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.bley/
 
+Package: com.evaneliasyoung.checkra1nbootlogo
+Version: 1.0.0
+Section: Addons (BootLogo)
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
+Depends: com.wizages.bae
+Architecture: iphoneos-arm
+Filename: /deb/com.evaneliasyoung.checkra1nbootlogo_1.0.0_iphoneos-arm.deb
+Size: 7962
+MD5sum: 082dbf2940a839267e3261f40d294f58
+SHA1: 593cc7732aa944318754bcebe0f8f8200ed75732
+SHA256: 7a8bf44d114580da6461e95683bb5cfd0c61eb15282d43f5378047667709566a
+Description: checkra1n Bootlogo
+Name: checkra1n Bootlogo
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.checkra1nbootlogo/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.checkra1nbootlogo/
+
 Package: com.evaneliasyoung.dassperre
 Version: 1.0.5
 Section: Widgets
