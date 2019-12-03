@@ -1,0 +1,18 @@
+{
+  "title": "cydia Bootlogo",
+  "minVer": "12.0.0",
+  "maxVer": "12.4.0",
+  "desc": "<p>cydia Bootlogo.</p>",
+  "screenshots": [
+    "com.evaneliasyoung.cydiabootlogo/screen1.png"
+  ],
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "Initial Release"
+      ],
+      "date": "2019-12-03"
+    }
+  ]
+}

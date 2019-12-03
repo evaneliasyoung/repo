@@ -1,0 +1,11 @@
+Package: com.evaneliasyoung.cydiabootlogo
+Name: Cydia Bootlogo
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: com.wizages.bae
+Description: Cydia Bootlogo
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.cydiabootlogo/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.cydiabootlogo/
+Section: Addons (BootLogo)
