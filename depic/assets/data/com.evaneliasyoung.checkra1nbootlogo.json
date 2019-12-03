@@ -3,7 +3,9 @@
   "minVer": "12.0.0",
   "maxVer": "12.4.0",
   "desc": "<p>checkra1n Bootlogo.</p>",
-  "screenshots": [],
+  "screenshots": [
+    "com.evaneliasyoung.checkra1nbootlogo/screen1.png"
+  ],
   "changelog": [
     {
       "version": "1.0.0",

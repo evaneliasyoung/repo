@@ -3,7 +3,9 @@
   "minVer": "12.0.0",
   "maxVer": "12.4.0",
   "desc": "<p>Interrobang Bootlogo.</p>",
-  "screenshots": [],
+  "screenshots": [
+    "com.evaneliasyoung.interrobangbootlogo/screen1.png"
+  ],
   "changelog": [
     {
       "version": "1.0.1",

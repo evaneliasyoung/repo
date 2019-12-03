@@ -3,7 +3,9 @@
   "minVer": "12.0.0",
   "maxVer": "12.4.0",
   "desc": "<p>unc0ver Bootlogo.</p>",
-  "screenshots": [],
+  "screenshots": [
+    "com.evaneliasyoung.unc0verbootlogo/screen1.png"
+  ],
   "changelog": [
     {
       "version": "1.0.1",
