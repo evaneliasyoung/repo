@@ -81,6 +81,23 @@ Author: Evan Elias Young <evanyoung762@gmail.com>
 Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.checkra1nbootlogo/
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.checkra1nbootlogo/
 
+Package: com.evaneliasyoung.cydiabootlogo
+Version: 1.0.0
+Section: Addons (BootLogo)
+Maintainer: Evan Elias Young <evanyoung762@gmail.com>
+Depends: com.wizages.bae
+Architecture: iphoneos-arm
+Filename: /deb/com.evaneliasyoung.cydiabootlogo_1.0.0_iphoneos-arm.deb
+Size: 90342
+MD5sum: 5d00581145bc3340aee4074db047086c
+SHA1: 6792fdfde7f628efee9bb3c33d0c1102104801ca
+SHA256: 2ced7b184da40f0d5c28be04f4e33a1df7dc0dfbff1425b99306b13bb9cf9adf
+Description: Cydia Bootlogo
+Name: Cydia Bootlogo
+Author: Evan Elias Young <evanyoung762@gmail.com>
+Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.cydiabootlogo/
+SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.cydiabootlogo/
+
 Package: com.evaneliasyoung.dassperre
 Version: 1.0.5
 Section: Widgets
