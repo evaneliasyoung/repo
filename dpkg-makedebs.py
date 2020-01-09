@@ -1,40 +1,47 @@
 #!/usr/bin/env python3
+"""
+Author   : Evan Elias Young
+Date     : 2019-03-13
+Revision : 2020-01-09
+"""
+
+
 import os
 import shutil
 import subprocess
 import glob
+from typing import List, Dict
 
 
-def deleteDS():
+def deleteDS() -> None:
     for root, dirs, files in os.walk('.'):
         for f in files:
             if f.endswith('.DS_Store'):
                 os.remove(os.path.join(root, f))
 
 
-def runCommand(cmd):
-    out = subprocess.run(cmd, stdout=subprocess.PIPE)
-    out = out.stdout.decode('utf-8')
-    return out
+def runCommand(cmd: List[str]) -> str:
+    return subprocess.run(cmd, stdout=subprocess.PIPE).stdout.decode('utf-8')
 
 
-def parseControl(root):
-    ret = {}
+def parseControl(root) -> Dict[str, str]:
+    ret: Dict[str, str] = {}
     ctrl = open(os.path.join(root, 'DEBIAN', 'control'), 'r').read().strip()
     for l in ctrl.split('\n'):
         ret[l.split(': ')[0].lower()] = ''.join(l.split(': ')[1:])
     return ret
 
 
-def loopPackage(pkg):
-    ctrl = parseControl(os.path.join('.', 'src', pkg))
-    pkgRoot = os.path.join('.', 'src', pkg)
-    oldDeb = f'{pkg}.deb'
-    oldDebRoot = os.path.join('.', 'src', oldDeb)
-    newDeb = '_'.join([ctrl['package'], ctrl['version'],
-                       ctrl['architecture']]) + '.deb'
-    newDebRoot = os.path.join('.', 'depic', 'deb', newDeb)
-    oldDebMatch = [m for m in glob.glob(f'{os.path.join(".", "depic", "deb", pkg)}*') if m != newDebRoot]
+def loopPackage(pkg: str) -> None:
+    ctrl: Dict[str, str] = parseControl(os.path.join('.', 'src', pkg))
+    pkgRoot: str = os.path.join('.', 'src', pkg)
+    oldDeb: str = f'{pkg}.deb'
+    oldDebRoot: str = os.path.join('.', 'src', oldDeb)
+    newDeb: str = '_'.join([ctrl['package'], ctrl['version'],
+                            ctrl['architecture']]) + '.deb'
+    newDebRoot: str = os.path.join('.', 'depic', 'deb', newDeb)
+    oldDebMatch: List[str] = [m for m in glob.glob(
+        f'{os.path.join(".", "depic", "deb", pkg)}*') if m != newDebRoot]
 
     if(oldDebMatch):
         for e in range(len(oldDebMatch)):
