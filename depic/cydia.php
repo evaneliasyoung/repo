@@ -4,22 +4,27 @@ dataPathDie();
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Evan's Repo</title>
+  <!--
+    Author      : Evan Elias Young
+    Date        : 2019-03-12
+    Revision    : 2020-01-09
+    Description : Where I host my Cydia tweaks.
+  -->
 
-  <meta name="author" content="Evan Elias Young">
-  <meta name="description" content="Where I host my Cydia tweaks">
-  <meta name="keywords" content="jailbreak, Evan, code, cydia">
-  <meta name="copyright" content="&copy; 2017-2019 Evan Young">
+  <title>Evan's Repo</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+
   <meta charset="utf-8">
+  <meta name="author" content="Evan Elias Young">
+  <meta name="copyright" content="<?= $COPYRIGHT ?>">
+  <meta name="keywords" content="jailbreak, Evan, code, cydia">
+  <meta name="date" content="2020-01-09">
+  <meta name="description" content="Where I host my Cydia tweaks.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
   <meta name="robots" content="index, nofollow">
-  <meta name="html-valid" content="HTML5, ARIA, SVG1.1, MathML 2.0">
-  <meta name="css-valid" content="CSSL 3">
-  <meta name="lighthouse" content="281; A+">
-  <link rel="stylesheet" type="text/css" href="/styles.css">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -36,7 +41,7 @@ dataPathDie();
   <meta name="navto" content="home">
 </head>
 
-<body ontouchstart="">
+<body ontouchstart="" class="<?= getDisplayMode(); ?>">
   <header>
     <div>
       <a href="/">Repo</a>

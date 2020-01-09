@@ -1,4 +1,7 @@
 <?php
+
+$COPYRIGHT = '&copy; Evan Elias Young 2017-' . date('Y');
+
 function loadAllTweaks() {
   global $allTweaks;
   $allTweaks = json_decode(file_get_contents(getcwd() . '/assets/data/all.json'), true);
@@ -18,6 +21,26 @@ function loadVersion() {
   if (strpos($ua, ' OS ') !== false && strpos($ua, ' like') !== false) {
     $version = str_replace('_', '.', substr($ua, strpos($ua, ' OS ') + 4, strpos($ua, ' like') - strpos($ua, ' OS ') - 4));
   }
+}
+
+function isCydia() {
+  return !!strpos($_SERVER['HTTP_USER_AGENT'], 'Cydia/');
+}
+
+function isZebra() {
+  return !!strpos($_SERVER['HTTP_USER_AGENT'], 'Zebra (Cydia)');
+}
+
+function getDisplayMode() {
+  if (isZebra()) {
+    if (strpos($_SERVER['HTTP_USER_AGENT'], 'Zebra (Cydia) Dark Oled')) {
+      return 'oled';
+    }
+    if (strpos($_SERVER['HTTP_USER_AGENT'], 'Zebra (Cydia) Dark')) {
+      return 'dark';
+    }
+  }
+  return 'light';
 }
 
 function dataPathDie() {
@@ -45,7 +68,7 @@ function getFooter() {
   '<br>' .
   'iOS ' . $version .
   '<br>' .
-  'Copyright Evan Elias Young 2017-' . date('Y');
+  $COPYRIGHT;
 }
 
 function compareVersion($a, $b) {
