@@ -63,9 +63,9 @@ function loadDisplayMode() {
   global $manager, $display;
 
   if ($manager === 'zebra') {
-    if (isset($_SERVER['HTTP_OLED'])) {
+    if (isset($_SERVER['HTTP_OLED']) && $_SERVER['HTTP_OLED'] === 'YES') {
       $display = 'oled';
-    } elseif (isset($_SERVER['HTTP_DARK'])) {
+    } elseif (isset($_SERVER['HTTP_DARK'])  && $_SERVER['HTTP_DARK'] === 'YES') {
       $display = 'dark';
     } else {
       $display = 'light';

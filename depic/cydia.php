@@ -73,17 +73,6 @@ dataPathDie();
       </li>
     </ul>
 
-    <h2>HEADERS</h2>
-    <ul>
-      <?php
-
-        foreach (getallheaders() as $key => $value) {
-          echo '<li><p>' . '<strong>' . $key . '</strong>' . '<span class="fright">' . $value . '</span>' . '</p></li>';
-        }
-
-      ?>
-    </ul>
-
     <h2>Social Media</h2>
     <ul>
       <?= getSocials(); ?>
