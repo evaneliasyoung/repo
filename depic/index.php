@@ -3,44 +3,13 @@ include_once(getcwd() . '/include.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="<?= $GLOBALS['display'] ?> <?= $GLOBALS['manager']; ?>">
 
 <head>
-  <!--
-    Author      : Evan Elias Young
-    Date        : 2019-03-12
-    Revision    : 2020-01-09
-    Description : Where I host my Cydia tweaks.
-  -->
-
-  <title>Evan's Repo</title>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
-
-  <meta charset="utf-8">
-  <meta name="author" content="Evan Elias Young">
-  <meta name="copyright" content="<?= $COPYRIGHT ?>">
-  <meta name="keywords" content="jailbreak, Evan, code, cydia">
-  <meta name="date" content="2020-01-09">
-  <meta name="description" content="Where I host my Cydia tweaks.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-  <meta name="robots" content="index, nofollow">
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Evan's Repo">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5BBAD5">
-  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#2B5797">
-  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
-  <meta name="navto" content="home">
+  <?php include_once(getcwd() . '/head.php'); ?>
 </head>
 
-<body ontouchstart="" class="<?= getDisplayMode(); ?>">
+<body ontouchstart="">
   <header>
     <div>
       <h1>Evan's Repo</h1>
@@ -50,12 +19,12 @@ include_once(getcwd() . '/include.php');
   <main>
     <h2>Automatic Setup</h2>
     <ul>
-      <li><a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://repo.evaneliasyoung.com/" role="button" class="cydia_blank">Add to Cydia</a></li>
-      <li><a href="zbra://sources/add/https://repo.evaneliasyoung.com/" role="button" class="cydia_blank">Add to Zebra</a></li>
-      <li><a href="sileo://source/https://repo.evaneliasyoung.com/" role="button" class="cydia_blank">Add to Sileo</a></li>
+      <li><a href="cydia://url/https://cydia.saurik.com/api/share#?source=<?= $GLOBALS['URL'] ?>" role="button" class="cydia_blank">Add to Cydia</a></li>
+      <li><a href="zbra://sources/add/<?= $GLOBALS['URL'] ?>" role="button" class="cydia_blank">Add to Zebra</a></li>
+      <li><a href="sileo://source/<?= $GLOBALS['URL'] ?>" role="button" class="cydia_blank">Add to Sileo</a></li>
     </ul>
 
-    <h2>Manual Setup</h2>
+    <h2>Cydia Setup</h2>
     <ul>
       <li>
         <p>1. Open Cydia</p>
@@ -77,6 +46,50 @@ include_once(getcwd() . '/include.php');
       </li>
       <li>
         <p>7. Profit!</p>
+      </li>
+    </ul>
+
+    <h2>Zebra Steup</h2>
+    <ul>
+      <li>
+        <p>1. Open Zebra</p>
+      </li>
+      <li>
+        <p>2. Tap the <em>Sources</em> tab</p>
+      </li>
+      <li>
+        <p>3. Tap the <em>+</em> button</p>
+      </li>
+      <li>
+        <p>5. Type: <strong>repo.evaneliasyoung.com</strong> or <strong>repo.eey.pw</strong></p>
+      </li>
+      <li>
+        <p>5. Tap <em>Add</em></p>
+      </li>
+      <li>
+        <p>6. Profit!</p>
+      </li>
+    </ul>
+
+    <h2>Sileo Setup</h2>
+    <ul>
+      <li>
+        <p>1. Open Sileo</p>
+      </li>
+      <li>
+        <p>2. Tap the <em>Sources</em> tab</p>
+      </li>
+      <li>
+        <p>3. Tap the <em>+</em> button</p>
+      </li>
+      <li>
+        <p>4. Type: <strong>repo.evaneliasyoung.com</strong> or <strong>repo.eey.pw</strong></p>
+      </li>
+      <li>
+        <p>5. Tap <em>Add Source</em></p>
+      </li>
+      <li>
+        <p>6. Profit</p>
       </li>
     </ul>
 

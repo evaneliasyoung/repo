@@ -1,35 +1,43 @@
+/**
+ * Author  : Evan Elias Young
+ * Date    : 2019-03-12
+ * Updated : 2020-01-10
+ */
+
 @font-face {
-  font-family: "San Fran Symbols";
+  font-family: 'San Fran Symbols';
   font-weight: normal;
   font-style: normal;
 
-  src: url("/assets/fonts/sanfransymbols.woff2") format("woff2"),url("/assets/fonts/sanfransymbols.woff") format("woff");
+  src: url('/assets/fonts/sanfransymbols.woff2') format('woff2'),
+    url('/assets/fonts/sanfransymbols.woff') format('woff');
 }
+
 * {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
 
-  background: #EFEFF4;
-
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
-html:not(.cydia) main h2:first-child {
-  margin-top: 0px;
-}
+
 .fleft {
   float: left;
 }
+
 .fright {
   float: right;
 }
+
 body {
   font: -apple-system-body;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3em;
@@ -40,34 +48,40 @@ body {
 
   grid-template-rows: 44px auto auto;
 }
-.cydia body {
-  grid-template-rows: 0px auto auto;
+
+small {
+  font-size: 80%;
 }
-.cydia header {
-  display: none;
-}
-.cydia main {
-  padding-top: 0px;
-}
+
 h1 {
   font: -apple-system-headline;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
 }
+
 ul {
   padding-inline-start: 30px;
 }
-footer, body > p, h2 {
+
+footer,
+body > p,
+h2 {
   font-size: 14px;
   font-weight: 400;
 
   margin: 15px;
 
-  color: #6D6D72;
+  color: #6d6d72;
 }
-article, aside, footer, header, nav, section {
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
   display: block;
 }
+
 header {
   position: fixed;
   z-index: 10;
@@ -77,21 +91,24 @@ header {
   width: 100%;
   height: 44px;
 
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  background: rgba(249,249,249,0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(249, 249, 249, 0.85);
 
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   grid-row: 1 / span 1;
 }
+
 header * {
   overflow-x: hidden;
 }
+
 header div {
   display: grid;
 
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 header div a:first-child::before {
   font-size: 28px;
 
@@ -101,8 +118,9 @@ header div a:first-child::before {
   height: 21px;
   margin-top: 1px;
 
-  content: "\E92A";
+  content: '\E92A';
 }
+
 header div a {
   position: relative;
 
@@ -110,24 +128,28 @@ header div a {
 
   text-align: left;
 }
+
 header div a:first-child::before {
-  font-family: "San Fran Symbols";
+  font-family: 'San Fran Symbols';
 
   position: absolute;
 
   display: block;
 }
+
 header div h1 {
   text-align: center;
 
   grid-column: 2 / span 1;
 }
+
 header div * {
   font-size: 18px;
   line-height: 44px;
 
   margin: 0px;
 }
+
 main {
   display: block;
 
@@ -135,48 +157,66 @@ main {
 
   grid-row: 2 / span 1;
 }
+
+html:not(.cydia) main h2:first-child,
+html:not(.zebra) main h2:first-child {
+  margin-top: 0px;
+}
+
 main ul.tablelike {
   position: relative;
 }
+
 main ul.tablelike li span:first-child {
   font-weight: 600;
 }
+
 main ul.tablelike li span:last-child {
   position: absolute;
   right: 15px;
 }
+
 main > ul {
   margin: 5px 0px 35px 0px;
   padding: 0px;
 
   list-style: none;
-
-  background: #FFFFFF;
 }
+
 main > ul ul {
   list-style-type: disc;
 }
+
 main > ul li:last-child {
   border-bottom: 0px;
 }
+
 main > ul > li {
   margin-left: 15px;
   padding: 11px 15px 11px 0px;
 
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-main > ul > li [role=button], main > ul > li [role=link], main > ul > li p {
+
+main > ul > li [role='button'],
+main > ul > li [role='link'],
+main > ul > li p {
   margin: -11px -15px;
   padding: 11px 15px;
 }
-main ul li [role=button]:after, main ul li [role=link]:after, main ul li header > div > a:first-child::before {
-  font-family: "San Fran Symbols";
+
+main ul li [role='button']:after,
+main ul li [role='link']:after,
+main ul li header > div > a:first-child::before {
+  font-family: 'San Fran Symbols';
 
   position: absolute;
 
   display: block;
 }
-main ul li [role=button]:after, main ul li [role=link]:after {
+
+main ul li [role='button']:after,
+main ul li [role='link']:after {
   top: 50%;
   right: 15px;
 
@@ -184,51 +224,61 @@ main ul li [role=button]:after, main ul li [role=link]:after {
   height: 13px;
   margin-top: -10px;
 
-  content: "\E929";
+  content: '\E929';
 
-  color: #C7C7CC;
+  color: #c7c7cc;
 }
-main ul li [role=button], main ul li [role=link], main ul li p {
+
+main ul li [role='button'],
+main ul li [role='link'],
+main ul li p {
   margin: -11px -15px;
   padding: 11px 15px;
 }
-main ul li [role=button], main ul li [role=link] {
+
+main ul li [role='button'],
+main ul li [role='link'] {
   position: relative;
   z-index: 2;
 
   display: block;
 
   padding-right: 30px;
-
-  color: #007AFF;
 }
+
 main ul:last-child {
   margin: 5px 0px 0px 0px;
 }
+
 h2 {
   margin-bottom: 5px;
 
   text-transform: uppercase;
 }
-.font-bold, b, strong {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+.font-bold,
+b,
+strong {
   font-weight: 600;
 }
-a, button {
-  text-decoration: none;
 
-  color: #007AFF;
+a,
+button {
+  text-decoration: none;
 }
+
 a {
   background-color: transparent;
 
   -webkit-text-decoration-skip: objects;
 }
+
 footer {
   text-align: center;
 
   grid-row: 3 / span 1;
 }
+
 img.screenshot-image {
   display: block;
 
@@ -238,21 +288,85 @@ img.screenshot-image {
 
   border-style: none;
 }
+
 @media (min-width: 708px) {
-  main, header > div {
+  main,
+  header > div {
     width: 708px;
     margin: 0px auto;
   }
-  footer, body > p, h2 {
+
+  footer,
+  body > p,
+  h2 {
     margin-right: 0px;
     margin-left: 0px;
   }
 }
+
 @media (min-width: 964px) {
-  main, header > div {
+  main,
+  header > div {
     width: 964px;
   }
 }
-small {
-  font-size: 80%;
+
+/* Repo Modifications */
+.zebra body,
+.cydia body {
+  grid-template-rows: 0px auto auto;
+}
+
+.zebra header,
+.cydia header {
+  display: none;
+}
+
+/* Master Theme */
+main ul li [role='button'],
+main ul li [role='link'],
+a,
+button {
+  color: #007aff;
+}
+
+.zebra main ul li [role='button'],
+.zebra main ul li [role='link'],
+.zebra a,
+.zebra button {
+  color: inherit;
+}
+
+.zebra main > ul > li {
+  border-bottom: none;
+}
+
+/* Light Theme */
+html.light {
+  background: #efeff4;
+  color: #000000;
+}
+
+.light main > ul {
+  background: #ffffff;
+}
+
+/* Dark Theme */
+html.dark {
+  background: #000000;
+  color: #ffffff;
+}
+
+.dark main > ul {
+  background-color: #161616;
+}
+
+/* OLED Theme */
+html.oled {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.oled main > ul {
+  background-color: #000000;
 }

@@ -1,46 +1,78 @@
 <?php
 
 $COPYRIGHT = '&copy; Evan Elias Young 2017-' . date('Y');
+$URL = 'https://repo.evaneliasyoung.com/';
+$ua = $_SERVER['HTTP_USER_AGENT'];
 
 function loadAllTweaks() {
   global $allTweaks;
+
   $allTweaks = json_decode(file_get_contents(getcwd() . '/assets/data/all.json'), true);
   asort($allTweaks, SORT_FLAG_CASE | SORT_NATURAL);
 }
 
 function loadSocials() {
   global $socials;
+
   $socials = json_decode(file_get_contents(getcwd() . '/assets/data/socials.json'), true);
 }
 
+function loadDevice() {
+  global $device, $ua;
+
+  $machineid = json_decode(file_get_contents(getcwd() . '/assets/data/machineid.json'), true);
+  $device = 'Device Unknown';
+
+  if (isset($_SERVER['HTTP_X_MACHINE']) && array_key_exists($_SERVER['HTTP_X_MACHINE'], $machineid)) {
+    $device = $machineid[$_SERVER['HTTP_X_MACHINE']];
+  } elseif (!!strpos($ua, 'iPhone')) {
+    $device = 'iPhone';
+  } elseif (!!strpos($ua, 'iPad')) {
+    $device = 'iPad';
+  } elseif (!!strpos($ua, 'iPod')) {
+    $device = 'iPod';
+  }
+}
+
 function loadVersion() {
-  global $version;
-  $ua = $_SERVER['HTTP_USER_AGENT'];
+  global $version, $ua;
+
   $version = 'Unknown';
 
-  if (strpos($ua, ' OS ') !== false && strpos($ua, ' like') !== false) {
+  if (isset($_SERVER['HTTP_X_FIRMWARE'])) {
+    $version = $_SERVER['HTTP_X_FIRMWARE'];
+  } elseif (!!strpos($ua, ' OS ') && !!strpos($ua, ' like')) {
     $version = str_replace('_', '.', substr($ua, strpos($ua, ' OS ') + 4, strpos($ua, ' like') - strpos($ua, ' OS ') - 4));
   }
 }
 
-function isCydia() {
-  return !!strpos($_SERVER['HTTP_USER_AGENT'], 'Cydia/');
-}
+function loadManager() {
+  global $manager;
 
-function isZebra() {
-  return !!strpos($_SERVER['HTTP_USER_AGENT'], 'Zebra (Cydia)');
-}
-
-function getDisplayMode() {
-  if (isZebra()) {
-    if (strpos($_SERVER['HTTP_USER_AGENT'], 'Zebra (Cydia) Dark Oled')) {
-      return 'oled';
-    }
-    if (strpos($_SERVER['HTTP_USER_AGENT'], 'Zebra (Cydia) Dark')) {
-      return 'dark';
-    }
+  if (!!strpos($_SERVER['HTTP_USER_AGENT'], 'Zebra (Cydia)')) {
+    $manager = 'zebra';
   }
-  return 'light';
+  elseif (!!strpos($_SERVER['HTTP_USER_AGENT'], 'Cydia/')) {
+    $manager = 'cydia';
+  } else {
+    $manager = 'unknown';
+  }
+}
+
+function loadDisplayMode() {
+  global $manager, $display;
+
+  if ($manager === 'zebra') {
+    if (isset($_SERVER['HTTP_OLED'])) {
+      $display = 'oled';
+    } elseif (isset($_SERVER['HTTP_DARK'])) {
+      $display = 'dark';
+    } else {
+      $display = 'light';
+    }
+  } else {
+    $display = 'light';
+  }
 }
 
 function dataPathDie() {
@@ -59,16 +91,6 @@ function dataPathDie() {
   }
 
   $data = json_decode(file_get_contents($path), true);
-}
-
-function getFooter() {
-  global $allTweaks, $version;
-
-  return 'Hosting ' . count(array_keys($allTweaks)) . ' Packages' .
-  '<br>' .
-  'iOS ' . $version .
-  '<br>' .
-  $COPYRIGHT;
 }
 
 function compareVersion($a, $b) {
@@ -92,6 +114,7 @@ function compareVersion($a, $b) {
 
 function getCompat() {
   global $data, $version;
+
   if ($version === 'Unknown') {
     return 'Unknown';
   }
@@ -101,6 +124,7 @@ function getCompat() {
 
 function getSocials() {
   global $socials;
+
   $ret = '';
   foreach ($socials as $name => $url) {
     $ret .= '<li><a href="' . $url . '" role="button">' . $name . '</a></li>';
@@ -108,7 +132,20 @@ function getSocials() {
   return $ret;
 }
 
+function getFooter() {
+  global $allTweaks, $version, $manager, $device, $COPYRIGHT;
+
+  return 'Hosting ' . count(array_keys($allTweaks)) . ' Packages' .
+  '<br>' .
+  $device . ' - iOS ' . $version .
+  '<br>' .
+  $COPYRIGHT;
+}
+
 loadAllTweaks();
 loadSocials();
+loadDevice();
 loadVersion();
+loadManager();
+loadDisplayMode();
 ?>
