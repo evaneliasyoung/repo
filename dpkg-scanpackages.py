@@ -2,7 +2,7 @@
 """
 Author   : Evan Elias Young
 Date     : 2019-03-13
-Revision : 2020-01-09
+Revision : 2020-01-30
 """
 
 
@@ -50,10 +50,27 @@ fields: List[str] = [
 
 
 def runCommand(cmd: List[str]) -> str:
+    """Runs any command and returns the stdout.
+
+    Arguments:
+        cmd {List[str]} -- The command and arguments to run.
+
+    Returns:
+        str -- The stdout from the command.
+    """
     return subprocess.run(cmd, stdout=subprocess.PIPE).stdout.decode('utf-8')
 
 
 def getHash(file: str, alg: str) -> str:
+    """Gets a specified hash for a file.
+
+    Arguments:
+        file {str} -- The file path.
+        alg {str} -- The hashing algorithm.
+
+    Returns:
+        str -- The hash.
+    """
     raw: bytes = open(file, 'rb').read()
     hsh: hashlib._hashlib.HASH
 
@@ -68,6 +85,14 @@ def getHash(file: str, alg: str) -> str:
 
 
 def getWrite(deb: str) -> List[str]:
+    """Generates a control file.
+
+    Arguments:
+        deb {str} -- The DEB file to generate.
+
+    Returns:
+        List[str] -- The control file.
+    """
     lines: List[str] = []
     t: str
     for f in fields:
@@ -86,24 +111,30 @@ def getWrite(deb: str) -> List[str]:
 
 
 def loopDeb(deb: str) -> None:
+    """The main loop for DEB packing.
+
+    Arguments:
+        deb {str} -- The DEB name.
+    """
     packages.writelines(getWrite(deb))
 
 
-runCommand(['rm', '-rf', os.path.join('.', 'depic', 'Packages*')])
+if __name__ == '__main__':
+    runCommand(['rm', '-rf', os.path.join('.', 'depic', 'Packages*')])
 
-listdir: List[str] = [f for f in os.listdir(os.path.join(
-    '.', 'depic', 'deb')) if (f.endswith('.deb'))]
-listdir.sort()
+    listdir: List[str] = [f for f in os.listdir(os.path.join(
+        '.', 'depic', 'deb')) if (f.endswith('.deb'))]
+    listdir.sort()
 
-packages = open(os.path.join('.', 'depic', 'Packages'), 'w')
+    packages = open(os.path.join('.', 'depic', 'Packages'), 'w')
 
-for f in listdir:
-    loopDeb(os.path.join('.', 'depic', 'deb', f))
-    print(f)
+    for f in listdir:
+        loopDeb(os.path.join('.', 'depic', 'deb', f))
+        print(f)
 
-packages.close()
+    packages.close()
 
-bz2.BZ2File(os.path.join('.', 'depic', 'Packages.bz2'), 'wb').write(
-    open(os.path.join('.', 'depic', 'Packages'), 'rb').read())
-gzip.GzipFile(os.path.join('.', 'depic', 'Packages.gz'), 'wb').write(
-    open(os.path.join('.', 'depic', 'Packages'), 'rb').read())
+    bz2.BZ2File(os.path.join('.', 'depic', 'Packages.bz2'), 'wb').write(
+        open(os.path.join('.', 'depic', 'Packages'), 'rb').read())
+    gzip.GzipFile(os.path.join('.', 'depic', 'Packages.gz'), 'wb').write(
+        open(os.path.join('.', 'depic', 'Packages'), 'rb').read())

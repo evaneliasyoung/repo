@@ -2,7 +2,7 @@
 """
 Author   : Evan Elias Young
 Date     : 2019-03-13
-Revision : 2020-01-09
+Revision : 2020-01-30
 """
 
 
@@ -14,6 +14,8 @@ from typing import List, Dict
 
 
 def deleteDS() -> None:
+    """Deletes .DS_Store files from macOS.
+    """
     for root, dirs, files in os.walk('.'):
         for f in files:
             if f.endswith('.DS_Store'):
@@ -21,10 +23,26 @@ def deleteDS() -> None:
 
 
 def runCommand(cmd: List[str]) -> str:
+    """Runs any command and returns the stdout.
+
+    Arguments:
+        cmd {List[str]} -- The command and arguments to run.
+
+    Returns:
+        str -- The stdout from the command.
+    """
     return subprocess.run(cmd, stdout=subprocess.PIPE).stdout.decode('utf-8')
 
 
-def parseControl(root) -> Dict[str, str]:
+def parseControl(root: str) -> Dict[str, str]:
+    """Parses a control file into a dictionary.
+
+    Arguments:
+        root {str} -- The root directory.
+
+    Returns:
+        Dict[str, str] -- The data from the control file.
+    """
     ret: Dict[str, str] = {}
     ctrl = open(os.path.join(root, 'DEBIAN', 'control'), 'r').read().strip()
     for l in ctrl.split('\n'):
@@ -33,6 +51,11 @@ def parseControl(root) -> Dict[str, str]:
 
 
 def loopPackage(pkg: str) -> None:
+    """The main loop for each package.
+
+    Arguments:
+        pkg {str} -- The package name.
+    """
     ctrl: Dict[str, str] = parseControl(os.path.join('.', 'src', pkg))
     pkgRoot: str = os.path.join('.', 'src', pkg)
     oldDeb: str = f'{pkg}.deb'
@@ -56,9 +79,10 @@ def loopPackage(pkg: str) -> None:
     print(f'[+] {pkg} => {newDeb}')
 
 
-deleteDS()
-os.system('find /var/www/repo -type d -exec chmod 755 {} \\;')
-for f in os.listdir(os.path.join('.', 'src')):
-    if (os.path.isfile(f)):
-        continue
-    loopPackage(f)
+if __name__ == '__main__':
+    deleteDS()
+    runCommand('find /var/www/repo -type d -exec chmod 755 {} \\;')
+    for f in os.listdir(os.path.join('.', 'src')):
+        if (os.path.isfile(f)):
+            continue
+        loopPackage(f)
