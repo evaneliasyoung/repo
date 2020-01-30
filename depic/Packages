@@ -150,16 +150,16 @@ Depiction: https://repo.evaneliasyoung.com/cydia/com.evaneliasyoung.flachsperre/
 SileoDepiction: https://repo.evaneliasyoung.com/sileo/com.evaneliasyoung.flachsperre/
 
 Package: com.evaneliasyoung.gravy
-Version: 1.15
+Version: 1.16
 Section: Themes
 Maintainer: Evan Elias Young <evanyoung762@gmail.com>
 Depends: com.anemonetheming.anemone
 Architecture: iphoneos-arm
-Filename: /deb/com.evaneliasyoung.gravy_1.15_iphoneos-arm.deb
-Size: 3369568
-MD5sum: 629a14129b52230515133f83a505367f
-SHA1: 18af33bf60364f39d2b9fa49beaa1c1597781584
-SHA256: c995fc1eca39e2e2860ee1f6e6eb5d68eabd405d77b2f6d5957173a708c81203
+Filename: /deb/com.evaneliasyoung.gravy_1.16_iphoneos-arm.deb
+Size: 3671028
+MD5sum: 3ec0e8bc5ec332a0dbcbdbaa4aa894ba
+SHA1: 20342dec905587eef9adbee011369b692043b949
+SHA256: b475e368db5cd6ec18cb44b2af2e632e391d5438d881401b0a4d23233702bd06
 Description: More icons for ArkLotif's Biscuit
 Name: Gravy
 Author: Evan Elias Young <evanyoung762@gmail.com>
